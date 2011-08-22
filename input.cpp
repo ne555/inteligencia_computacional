@@ -14,7 +14,7 @@ int oper(const valarray<float> &v){
 int main(int argc, char **argv){
 	srand(0);
 	int n=2000, p=2;
-	float ratio = 0.1;
+	float ratio = 0.9;
 	cout << n << ' ' << p << endl;
 	for(int K=0; K<n; ++K){
 		valarray<float> percepcion(p), desvio(p);

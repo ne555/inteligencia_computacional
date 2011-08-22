@@ -5,7 +5,7 @@ project = perceptron_simple.bin
 auxiliar = input.bin
 input = input.txt
 
-objects = ej1_1.o neurona.o
+objects = ej1_1.o neurona.o simulator.o
 aux_obj = input.o
 
 $(project) : $(objects)
@@ -20,7 +20,8 @@ test: $(project) $(auxiliar)
 
 
 neurona.o : neurona.h util.h
-ej1_1.o : neurona.h util.h
+simulator.o : neurona.h util.h
+ej1_1.o : simulator.h util.h
 input.o : util.h
 
 .PHONY: clean test

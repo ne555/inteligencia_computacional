@@ -12,17 +12,19 @@
 */
 
 class neurona{
+public:
 	typedef float value_type;
 	typedef std::valarray<value_type> vector;
-private:
-	vector weight;
-	value_type gamma;
-public:
+
 	neurona(int p, value_type gamma);
 	//input es la entrada aumentada (la correspondiente al umbral es siempre 1)
 	int test(const vector &input, int expect); 
 	void train(const vector &input, int expect); 
 	void print(std::ostream &out);
+
+private:
+	vector weight;
+	value_type gamma;
 };
 
 #endif
