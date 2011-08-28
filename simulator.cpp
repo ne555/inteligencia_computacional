@@ -1,13 +1,10 @@
 #include <iostream>
 #include <valarray>
 #include "simulator.h"
-#include <fstream>
 using namespace std;
 
-extern ofstream out;
-
-simulator::simulator(size_t n, size_t p, value_type gamma): 
-	result(n), input(vector(p+1), n), simple(p, gamma) {}
+simulator::simulator(size_t n, size_t p, value_type gamma, ostream *out): 
+	result(n), input(vector(p+1), n), simple(p, gamma), out(out) {}
 
 void simulator::read(istream &in){
 	const size_t n=input.size(), p=input[0].size()-1;
@@ -47,7 +44,7 @@ int simulator::train(size_t cant, float success_rate){
 	for(size_t K=0; K<cant; ++K){
 		for(int L=0; L<n; ++L){
 			simple.train(input[L], result[L]);
-			simple.print(out);
+			if(out) simple.print(*out);
 		}
 		if( done(success_rate) )
 			return K+1;

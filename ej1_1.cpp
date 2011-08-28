@@ -30,13 +30,13 @@ void usage (int status)
 	exit (status);
 }
 
-ofstream out("recta.txt");
 
 int main(int argc, char **argv){
 	//Entrada n p 
 	//n = cantidad de ejemplos
 	//p = cantidad de percepciones
 	srand(0);
+	ofstream out("recta.txt");
 	out << "set terminal gif animate delay 10\n";
 	out << "set output \"animate.gif\"\n" << flush;
 
@@ -45,8 +45,7 @@ int main(int argc, char **argv){
 	int option;
 	while( (option=getopt(argc, argv, "t:g:s:h")) != -1 ){
 		switch(option){
-		case 't': 
-			epoch=convert<int>(optarg); break;
+		case 't': epoch=convert<int>(optarg); break;
 		case 'g': gamma=convert<float>(optarg); break;
 		case 's': success=convert<float>(optarg); break;
 		case 'h': usage(EXIT_SUCCESS); break;
@@ -63,7 +62,7 @@ int main(int argc, char **argv){
 	cout << "epocas " << epoch << endl;
 	cout << "Expected success rate %" << success*100 << endl;
 
-	simulator benchmark(n, p, gamma);
+	simulator benchmark(n, p, gamma, &out);
 
 	benchmark.read(cin);
 	cerr << "lectura de entrenamiento\n";
