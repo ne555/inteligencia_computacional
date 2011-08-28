@@ -24,7 +24,7 @@ public:
 
 private:
 	vector weight;
-	value_type gamma, safe_zone;
+	value_type gamma;
 };
 
 #endif
