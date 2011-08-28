@@ -16,8 +16,8 @@ $(auxiliar) : $(aux_obj)
 	./$@ > $(input)
 
 test: $(project) $(auxiliar)
-	./$(project) -t 100 -g 0.022 -s 0.999 < $(input)
-
+	./$(project) -t 100 -g 0.022 -s 0.99 < $(input)
+	gnuplot recta.txt
 
 neurona.o : neurona.h util.h
 simulator.o : neurona.h util.h

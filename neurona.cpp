@@ -1,13 +1,12 @@
 #include "neurona.h"
 #include "util.h"
 #include <iostream>
-#include <valarray>
 #include <algorithm>
 using namespace std;
 
 neurona::neurona(int p, value_type gamma): 
 	weight(p+1), gamma(gamma){
-	const value_type ratio=0.5;
+	const value_type ratio=1;
 	generate_n(
 		&weight[0],
 		weight.size(),
@@ -25,11 +24,7 @@ void neurona::train(const vector &input, int expect){
 }
 
 void neurona::print(ostream &out){
-	//for(size_t K=0; K<weight.size(); ++K)
-		//out << weight[K]/weight[0] << ' ';
-		//out << weight[K] << ' ';
-	//out << "plot [-2:2] [-2:2] \"./input.txt\" using 1:2 with points, ";
-	out << ", " << -weight[1]/weight[0] << "*x + "<<-weight[2]/weight[0];
-	//out << "pause 1" << endl;
+	out << "plot [-2:2] [-2:2] \"./input.txt\" using 1:2 with points";
+	out << ", " << -weight[1]/weight[0] << "*x + "<<-weight[2]/weight[0]<<'\n';
 }
 
