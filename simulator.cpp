@@ -3,8 +3,8 @@
 #include "simulator.h"
 using namespace std;
 
-simulator::simulator(size_t n, size_t p, value_type gamma, ostream *out): 
-	result(n), input(vector(p+1), n), simple(p, gamma), out(out) {}
+simulator::simulator(size_t n, size_t p, value_type gamma, value_type dead_zone, ostream *out): 
+	result(n), input(vector(p+1), n), simple(p, gamma, dead_zone), out(out) {}
 
 void simulator::read(istream &in){
 	const size_t n=input.size(), p=input[0].size()-1;

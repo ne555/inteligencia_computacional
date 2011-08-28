@@ -4,8 +4,8 @@
 #include <algorithm>
 using namespace std;
 
-neurona::neurona(int p, value_type gamma): 
-	weight(p+1), gamma(gamma){
+neurona::neurona(int p, value_type gamma, value_type dead_zone):
+	weight(p+1), gamma(gamma), dead_zone(dead_zone){
 	const value_type ratio=1;
 	generate_n(
 		&weight[0],
@@ -15,12 +15,14 @@ neurona::neurona(int p, value_type gamma):
 }
 
 int neurona::test(const vector &input, int expect){ 
-	return expect-sign( (weight*input).sum() );
+	return expect-sign( weight.dot(input) );
 }
 
 void neurona::train(const vector &input, int expect){
-	int error = test(input, expect);
-	weight += gamma*error*input;
+	float error = weight.dot(input);
+	int correction = ( fabs(error)<dead_zone )? expect: expect-sign(error);
+
+	weight += gamma*correction * input/input.norm2();
 }
 
 void neurona::print(ostream &out){

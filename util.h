@@ -47,18 +47,4 @@ inline int randomize<int>::operator()(){
 	return rand()%(upper-lower+1) + lower;
 }
 
-template<class T>
-inline T dot(const std::valarray<T> &a, const std::valarray<T> &b){
-	return (a*b).sum();
-}
-
-//template<class T>
-//inline std::valarray<T> dot(const std::valarray< std::valarray<T> > &M, const std::valarray<T> &v){
-//	std::valarray<T> w = 
-//}
-
-template<class T>
-inline std::valarray<T> dot(const std::valarray<T> &v, const std::valarray< std::valarray<T> > &M){
-	return (M*v).sum();
-}
 #endif
