@@ -6,9 +6,25 @@
 #include <cstdlib>
 #include <iterator>
 #include <algorithm>
+#include <cmath>
 
-inline int sign(float r){
-	return (r<0)? -1: 1;
+#include <iostream>
+template<class T>
+static void printv(const T &v){
+	for(size_t K=0; K<v.size(); ++K)
+		std::cerr << v[K] << ' ';
+	std::cerr << std::endl;
+}
+
+namespace math{
+	inline int sign(float r){
+		return (r<0)? -1: 1;
+	}
+	
+	template<class T>
+	inline T sigmoid(T v){
+		return 2/(1+exp(-v)) - 1;
+	}
 }
 
 template<class T>

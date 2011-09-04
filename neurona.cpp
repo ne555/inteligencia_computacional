@@ -4,8 +4,10 @@
 #include <algorithm>
 using namespace std;
 
-neurona::neurona(int p, value_type gamma, value_type dead_zone):
-	weight(p+1), gamma(gamma), dead_zone(dead_zone){
+neurona::neurona(int p, value_type alpha):
+	weight(p+1), alpha(alpha){}
+
+void neurona::init(){
 	const value_type ratio=1;
 	generate_n(
 		&weight[0],
@@ -14,19 +16,23 @@ neurona::neurona(int p, value_type gamma, value_type dead_zone):
 	);
 }
 
-int neurona::test(const vector &input, int expect){ 
-	return expect-sign( weight.dot(input) );
+neurona::value_type neurona::test(const vector &input){ 
+	//return math::sign( weight.dot(input) );
+	return math::sigmoid( weight.dot(input) );
 }
 
-void neurona::train(const vector &input, int expect){
-	float error = weight.dot(input);
-	int correction = ( fabs(error)<dead_zone )? expect: expect-sign(error);
-
-	weight += gamma*correction * input/input.norm2();
+void neurona::train(const vector &input, value_type delta){
+	weight += alpha*delta*input;
 }
 
 void neurona::print(ostream &out){
-	out << "plot [-2:2] [-2:2] \"./input.txt\" using 1:2 with points";
-	out << ", " << -weight[1]/weight[0] << "*x + "<<-weight[2]/weight[0]<<'\n';
+	for(size_t K=0; K<weight.size(); ++K)
+		out << weight[K] << ' ';
+	
+	out << endl;
+}
+
+neurona::vector neurona::error(neurona::value_type delta){
+	return vector(delta*weight);
 }
 

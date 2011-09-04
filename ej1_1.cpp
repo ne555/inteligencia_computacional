@@ -35,13 +35,13 @@ int main(int argc, char **argv){
 	//Entrada n p 
 	//n = cantidad de ejemplos
 	//p = cantidad de percepciones
-	srand(0);
+	srand( time(NULL) );
 	ofstream out("recta.txt");
 	out << "set terminal gif animate delay 10\n";
 	out << "set output \"animate.gif\"\n" << flush;
 
-	int n,p,epoch=100;
-	float success=0.8, gamma=0.01, dead_zone=0.2;
+	int n,p,epoch=200;
+	float success=0.9, gamma=0.1, dead_zone=0.2;
 	int option;
 	while( (option=getopt(argc, argv, "t:g:s:d:h")) != -1 ){
 		switch(option){
@@ -55,6 +55,7 @@ int main(int argc, char **argv){
 	}
 
 	cin>>n>>p;
+	#if 0
 	cout << "Perceptron simple ";
 	cout << "Parametros " << endl;
 	cout << "Ejemplos " << n << endl;
@@ -63,23 +64,28 @@ int main(int argc, char **argv){
 	cout << "epocas " << epoch << endl;
 	cout << "Expected success rate %" << success*100 << endl;
 
-	simulator benchmark(n, p, gamma, dead_zone, &out);
+	cout << "fin de informe *";
+	#endif
+
+	simulator benchmark(n,p,1,&cout);
 
 	benchmark.read(cin);
-	cerr << "lectura de entrenamiento\n";
-	int cant = benchmark.train(epoch, success);
+	benchmark.addlayer(2,gamma);
+	benchmark.addlayer(1,gamma);
 
+	int cant = benchmark.train(epoch, success, 0);
 	//benchmark.read(cin);
-	cerr << "lectura de prueba\n";
 	float rate = benchmark.test();
 
 	if(cant == -1)
-		cout << "No hubo convergencia" <<endl;
+		cerr << "No hubo convergencia" <<endl;
 	else
-		cout << "Convergencia en " << cant << " epocas" << endl;
+		cerr << "Convergencia en " << cant << " epocas" << endl;
+	
+		//benchmark.print();
 	//benchmark.print(cout);
 
-	cout << "Con los datos de prueba se obtuvo %" << rate*100 << " de acierto" <<endl;
+	cerr << "Con los datos de prueba se obtuvo %" << rate*100 << " de acierto" <<endl;
 	return EXIT_SUCCESS;
 }
 

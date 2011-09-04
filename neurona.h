@@ -18,15 +18,21 @@ public:
 	//typedef std::valarray<value_type> vector;
 	typedef math::vector<value_type> vector;
 
-	neurona(int p, value_type gamma, value_type dead_zone);
+	neurona(){}
+	neurona(int p, value_type gamma); //, value_type dead_zone);
 	//input es la entrada aumentada (la correspondiente al umbral es siempre 1)
-	int test(const vector &input, int expect); 
-	void train(const vector &input, int expect); 
+	value_type test(const vector &input); 
+	void train(const vector &input, value_type delta); 
 	void print(std::ostream &out);
 
-private:
+	vector error(value_type delta);
+
+	void init(); //error prone
+
+//private:
+	//value_type delta;
 	vector weight;
-	value_type gamma, dead_zone;
+	value_type alpha; //, dead_zone;
 };
 
 #endif

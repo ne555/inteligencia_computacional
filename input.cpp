@@ -4,12 +4,25 @@
 #include "util.h"
 using namespace std;
 
+typedef int (*fun)(const valarray<float> &);
+
+//int oper(const valarray<float> &v){
+//	for(size_t K=0; K<v.size(); ++K)
+//		if( v[K]>0 )
+//			return 1;
+//	return -1;
+//}
+
 int oper(const valarray<float> &v){
+	int cant=0;
 	for(size_t K=0; K<v.size(); ++K)
 		if( v[K]>0 )
-			return 1;
-	return -1;
+			cant++;
+
+	if(cant%2==0) return -1;
+	else return 1;
 }
+
 
 int main(int argc, char **argv){
 	srand(0);
