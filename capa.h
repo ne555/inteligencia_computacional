@@ -2,15 +2,18 @@
 #define CAPA_H
 
 #include <valarray>
+#include <vector>
+#include "math_vector.h"
 #include "neurona.h"
 	#include <iostream>
 
 class capa{
 public:
 	typedef neurona::value_type value_type;
-	typedef math::vector<value_type> vector;
-	typedef math::vector<vector> matrix;
-	typedef math::vector<neurona> container;
+	typedef neurona::vector vector;
+
+	typedef std::valarray<vector> matrix;
+	typedef std::vector<neurona> container;
 	
 	void update();
 	vector test(const vector &input);

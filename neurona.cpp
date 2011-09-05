@@ -1,5 +1,6 @@
 #include "neurona.h"
 #include "util.h"
+#include "math_vector.h"
 #include <iostream>
 #include <algorithm>
 using namespace std;
@@ -18,7 +19,7 @@ void neurona::init(){
 
 neurona::value_type neurona::test(const vector &input){ 
 	//return math::sign( weight.dot(input) );
-	return math::sigmoid( weight.dot(input) );
+	return math::sigmoid( math::dot(weight,input) );
 }
 
 void neurona::train(const vector &input, value_type delta){

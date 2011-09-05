@@ -5,8 +5,12 @@
 
 using namespace std;
 
-capa::capa(size_t n, size_t in, value_type alpha): 
-	layer(neurona(in, alpha), n), delta(n), salida(n), input(1, in+1) {
+capa::capa(size_t n, size_t cant_entradas, value_type alpha): 
+	layer(n, neurona(cant_entradas, alpha) ), 
+	delta(n), 
+	salida(n), 
+	input(1, cant_entradas+1) 
+{
 	for(size_t K=0; K<layer.size(); ++K) layer[K].init(); 
 }
 

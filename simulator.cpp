@@ -8,8 +8,8 @@ using math::sign;
 using math::sigmoid;
 
 simulator::simulator(size_t patrones, size_t percepciones, size_t salidas, ostream *out):
-	input(vector(percepciones+1), patrones), 
-	result(vector(salidas), patrones), 
+	input(patrones, vector(percepciones+1)), 
+	result(patrones, vector(salidas) ), 
 	out(out){}
 
 static bool equal_sign(const simulator::vector &a, const simulator::vector &b){
@@ -20,13 +20,13 @@ static bool equal_sign(const simulator::vector &a, const simulator::vector &b){
 }
 
 void simulator::addlayer(size_t n, float alpha){
-	size_t in;
+	size_t cant_entradas;
 	if( network.empty() )
-		in = input[0].size()-1;
+		cant_entradas = input[0].size()-1;
 	else
-		in = network.back().size();
+		cant_entradas = network.back().size();
 	
-	network.push_back( capa(n, in, alpha) );
+	network.push_back( capa(n, cant_entradas, alpha) );
 }
 
 void simulator::read(istream &in){
@@ -53,21 +53,29 @@ bool simulator::done(float success, float error){
 float simulator::test(){ //devolver el procentaje de aciertos y el error en las salidas
 	vector error(input.size());
 	int aciertos=0;
+
 	for(size_t K=0; K<input.size(); ++K){
-		vector sal=output(K);
-		error[K] = vector(sal-result[K]).norm2();
+		vector sal=test(K);
+		if(sal.size() != result[K].size()){
+			cerr << "Sizes don't match " << sal.size() << ' ' << result[K].size() << '\n';
+			if(K) cerr << result[K].size() << '\n';
+			else cerr << "K es 0\n";
+			throw "simulator::test";
+		}
+		error[K] = math::norm2( sal-result[K] );
+
 		if( equal_sign(sal, result[K]) )
 			aciertos++;
 	}
+
 	return float(aciertos)/input.size();
 }
 
 
-simulator::vector simulator::output(size_t index){
-	vector output_=input[index];
+simulator::vector simulator::test(simulator::vector v){
 	for(size_t L=0; L<network.size(); ++L)
-		output_ = network[L].test(output_);
-	return output_;
+		math::assign( v, network[L].test(v) );
+	return v;
 }
 
 int simulator::train(size_t cant, float success_rate, float error_umbral){
@@ -76,13 +84,25 @@ int simulator::train(size_t cant, float success_rate, float error_umbral){
 	cerr << "Success " << success_rate << '\n';
 	cerr << "Input " << input.size() << "\n";
 
+	cerr << "Structure " << network.size() << '\n';
+	for(size_t K=0; K<network.size(); ++K)
+		cerr << network[K].size() << ' ';
+	cerr << endl;
+
 	for(size_t epoch=0; epoch<cant; ++epoch){
 		for(size_t K=0; K<input.size(); ++K){
-			vector sal = output(K);
-			vector delta=vector(result[K]-sal);
+			vector sal = test(K);
+
+		if(sal.size() != result[K].size()){
+			cerr << "Sizes don't match " << sal.size() << ' ' << result[K].size() << '\n';
+			if(K) cerr << result[K].size() << '\n';
+			else cerr << "K es 0\n";
+			throw "simulator::test";
+		}
+			vector delta = result[K]-sal;
 
 			for(size_t L=network.size(); L>0; --L)
-				delta = network[L-1].error(delta);
+				math::assign(delta, network[L-1].error(delta));
 
 			for(size_t L=0; L<network.size(); ++L)
 				network[L].update();
@@ -96,21 +116,25 @@ int simulator::train(size_t cant, float success_rate, float error_umbral){
 }
 
 void simulator::graph(){
-	#if 0
+	#if 1
+	const int n=90;
+	const float limit=2.f;
+	cout << n*n << ' ' << 2 << endl; //solo se visualiza con dos percepciones
+	for(int K=0; K<n; ++K){
+		for(int L=0; L<n; ++L){
+			float x = K/float(n)*limit*2 - limit, y = L/float(n)*limit*2 - limit;
+			vector v(2);
+			v[0] = x;
+			v[1] = y;
+			cout << x << ' ' << y << ' ';
+			cout << math::sign(test(v)[0]) << endl;
+		}
+	}
+	#else
 	cout << input.size() << endl;
 	for(size_t K=0; K<input.size(); ++K){
 		cout << input[K][0] << ' ' << input[K][1] << ' ';
-		cout << math::sign(output(K)[0]) << endl;
-	}
-	#else
-	const int n=50;
-	cout << n*n << endl;
-	for(int K=0; K<n; ++K){
-		for(int L=0; L<n; ++L){
-			float x = K/float(n)*3.f-1.5, y = L/float(n)*3.f-1.5;
-			cout << x << ' ' << y << ' ';
-			cout << out_(x,y) << endl;
-		}
+		cout << math::sign(test(K)[0]) << endl;
 	}
 	#endif
 }

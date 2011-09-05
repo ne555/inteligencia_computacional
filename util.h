@@ -63,4 +63,9 @@ inline int randomize<int>::operator()(){
 	return rand()%(upper-lower+1) + lower;
 }
 
+template<class T>
+inline bool between(T inic, T mid, T end){
+	return inic < mid and mid < end;
+}
+
 #endif

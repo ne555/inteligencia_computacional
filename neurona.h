@@ -9,16 +9,16 @@
 	y = f( w_i x_i )
 	w'_i = w_i + gamma*error*x_i
 
-	La salida es un numero entero
+	f = sigmoid
+	Salida es un real
 */
 
 class neurona{
 public:
 	typedef float value_type;
-	//typedef std::valarray<value_type> vector;
-	typedef math::vector<value_type> vector;
+	typedef std::valarray<value_type> vector;
 
-	neurona(){}
+	//neurona(){}
 	neurona(int p, value_type gamma); //, value_type dead_zone);
 	//input es la entrada aumentada (la correspondiente al umbral es siempre 1)
 	value_type test(const vector &input); 

@@ -21,7 +21,9 @@ $(auxiliar) : $(aux_obj)
 
 test: $(project) $(auxiliar)
 	#./$(project) -t 100 -g 0.2 -s 0.99 -d 0.5 < $(input)
-	./$(project) < $(input)
+	#./$(project) < $(input) 2>/dev/null | ./grapher/grapher.bin 
+	./$(project) < $(input) 2>/dev/null | cat $(input) - | ./grapher/grapher.bin 
+
 	#gnuplot recta.txt
 
 $(objdir)/capa.o: neurona.h math_vector.h util.h
@@ -31,7 +33,7 @@ $(objdir)/neurona.o: math_vector.h util.h
 $(objdir)/simulator.o: neurona.h math_vector.h capa.h util.h
 
 $(objdir)/%.o : %.cpp
-	$(cxx) $< -c -o $@
+	$(cxx) $< -c $(cppflags) -o $@
 
 all: $(objs)
 
@@ -44,7 +46,10 @@ foo:
 	echo $(objs)
 	echo $(objdir)
 
-.PHONY: clean test foo
+.PHONY: clean test foo graph
+
+graph: $(auxiliar) 
+	./grapher/grapher.bin < $(input)
 
 clean:
 	-rm $(objs) $(project)
