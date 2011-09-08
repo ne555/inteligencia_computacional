@@ -19,7 +19,7 @@ public:
 	typedef std::valarray<value_type> vector;
 
 	//neurona(){}
-	neurona(int p, value_type gamma); //, value_type dead_zone);
+	neurona(int p, value_type alpha, value_type momentum); //, value_type dead_zone);
 	//input es la entrada aumentada (la correspondiente al umbral es siempre 1)
 	value_type test(const vector &input); 
 	void train(const vector &input, value_type delta); 
@@ -31,8 +31,8 @@ public:
 
 //private:
 	//value_type delta;
-	vector weight;
-	value_type alpha; //, dead_zone;
+	vector weight, delta_weight;
+	value_type alpha, momentum; //, dead_zone;
 };
 
 #endif

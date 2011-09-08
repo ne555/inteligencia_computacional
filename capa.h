@@ -19,7 +19,7 @@ public:
 	vector test(const vector &input);
 	vector error(const vector &delta);
 
-	capa(size_t n, size_t in, value_type alpha);
+	capa(size_t n, size_t in, value_type alpha, value_type momentum);
 	size_t size();
 
 	void print(){

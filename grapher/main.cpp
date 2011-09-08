@@ -9,14 +9,17 @@
 using namespace std;
 
 const float 
-	white[] = {1,1,1,0.5},
-	red[]   = {1,0,0,0.5},
-	green[] = {0,1,0,0.5},
-	blue[]  = {0,0,1,0.5},
-	black[] = {0,0,0,0.5},
-	dark_red[]   = {.5,0,0,1},
-	dark_green[] = {0,.5,0,1},
-	dark_blue[]  = {0,0,.5,1};
+	white[] = {1, 1, 1, 1}, 
+	red[]   = {1, 0, 0, 1}, 
+	green[] = {0, 1, 0, 1}, 
+	blue[]  = {0, 0, 1, 1}, 
+	black[] = {0, 0, 0, 1}, 
+	dark_red[]   = {.5, 0, 0, 1}, 
+	dark_green[] = {0, .5, 0, 1}, 
+	dark_blue[]  = {0, 0, .5, 1}, 
+	light_red[]   = {1, 0.75, 0.75, 1}, 
+	light_green[] = {0.75, 1, 0.75, 1}, 
+	light_blue[]  = {0.75, 0.75, 1, 1};
 
 int width=480, height=480;
 
@@ -26,6 +29,7 @@ vector<int> clase;
 void display();
 void reshape(int w, int h);
 void draw(const float *c1, const float *c2);
+void axis(const float *color);
 void wait_for_input();
 void fixed_background();
 
@@ -39,37 +43,54 @@ int main(int argc, char **argv){
 }
 
 void init(){
-	glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_ACCUM);
+	//glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_ACCUM);
+	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_STENCIL | GLUT_ACCUM);
 	glutInitWindowSize(width,height); glutInitWindowPosition(50,50);
 	glutCreateWindow("Graficador de puntos de colores");
 	glutDisplayFunc(display);
 	//glutReshapeFunc(reshape);
 	glutIdleFunc(wait_for_input);
 
-	glClearColor( white[0], white[1], white[2], 1);
+	glClearColor( black[0], black[1], black[2], 1);
 	glMatrixMode(GL_MODELVIEW); glLoadIdentity();
 
 	const float factor=0.5;
 	glScaled(factor,factor,factor);
 	
-	glEnable(GL_BLEND);
-	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	glEnable(GL_STENCIL_TEST);
+	glClearStencil(1);
 	//glEnable(GL_POINT_SMOOTH);
+	glLineWidth(4);
 }
 
 void display(){
 	glClear(GL_COLOR_BUFFER_BIT);
+	glStencilFunc(GL_EQUAL, 0, ~0);
 	glAccum(GL_RETURN, 1);
-	draw(red, green);
+	glStencilFunc(GL_EQUAL, 1, ~0);
+
+	draw(light_red, light_green);
 
 	glutSwapBuffers();
-	usleep(100e3);
+	//usleep(100e3);
 }
 
 void fixed_background(){
-	glClear(GL_COLOR_BUFFER_BIT);
-	draw(red, green);
+	glPointSize(3);
+
+	glClear(GL_COLOR_BUFFER_BIT | GL_STENCIL_BUFFER_BIT | GL_ACCUM_BUFFER_BIT);
+
+	glStencilFunc(GL_ALWAYS, 0, ~0);
+	glStencilOp(GL_KEEP,GL_ZERO,GL_ZERO);
+
+	axis(black);
+	draw(dark_red, dark_green);
+
+	glStencilFunc(GL_EQUAL, 1, ~0);
+	glStencilOp(GL_KEEP,GL_KEEP,GL_KEEP);
 	glAccum(GL_LOAD, 1);
+
+	glPointSize(7);
 }
 
 void reshape(int w, int h){
@@ -86,7 +107,6 @@ void reshape(int w, int h){
 }
 
 void draw(const float *c1, const float *c2){
-	glPointSize(5);
 	glBegin(GL_POINTS);{
 		for(size_t K=0; K<points.size(); ++K){
 			if(clase[K] == 1) glColor4fv( c1 );
@@ -104,6 +124,16 @@ void draw(const float *c1, const float *c2){
 //	};glEnd();
 }
 
+void axis(const float *color){
+	glColor4fv( color );
+	glBegin(GL_LINES);{
+		glVertex2i(-1, 0);
+		glVertex2i( 1, 0);
+		glVertex2i( 0,-1);
+		glVertex2i( 0, 1);
+	};glEnd();
+}
+
 void wait_for_input(){
 	static bool first_time=true;
 	int n,p;
@@ -111,8 +141,8 @@ void wait_for_input(){
 	if(not cin){
 		cin.clear();
 		string s;
-		getline(cin,s);
-		cerr << s << endl;
+		while(getline(cin,s))
+			cerr << s << endl;
 		glutIdleFunc(NULL);
 		cerr << "Fin\n";
 		return;

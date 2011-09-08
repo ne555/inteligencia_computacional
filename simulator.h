@@ -22,7 +22,7 @@ public:
 	vector test(vector v);
 	//agrega al final. La ultima debe ser la capa de salida (error prone)
 	//solo llamarse luego de cargar los datos
-	void addlayer(size_t n, value_type alpha);
+	void addlayer(size_t n, value_type alpha, value_type momentum);
 
 	//int out_(std::vector<double> aux){
 

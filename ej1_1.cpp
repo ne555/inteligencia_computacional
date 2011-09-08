@@ -36,7 +36,7 @@ int main(int argc, char **argv){
 	srand( time(NULL) );
 
 	int n,p,epoch=200;
-	float success=0.95, alpha=0.05, dead_zone=0.2;
+	float success=0.95, alpha=0.5, momentum=.1, dead_zone=0.2;
 	int option;
 	while( (option=getopt(argc, argv, "t:g:s:d:h")) != -1 ){
 		switch(option){
@@ -65,18 +65,18 @@ int main(int argc, char **argv){
 	simulator benchmark(n,p,1,&cout);
 
 	benchmark.read(cin);
-	benchmark.addlayer(4,alpha);
-	benchmark.addlayer(3,alpha);
-	benchmark.addlayer(1,alpha);
+	benchmark.addlayer(6,alpha,momentum);
+	benchmark.addlayer(4,alpha,momentum);
+	benchmark.addlayer(1,alpha,momentum);
 
 	int cant = benchmark.train(epoch, success, 0);
 	//benchmark.read(cin);
 	float rate = benchmark.test();
 
 	if(cant == -1)
-		cerr << "No hubo convergencia" <<endl;
+		cout << "No hubo convergencia" <<endl;
 	else
-		cerr << "Convergencia en " << cant << " epocas" << endl;
+		cout << "Convergencia en " << cant << " epocas" << endl;
 	
 		//benchmark.print();
 	//benchmark.print(cout);

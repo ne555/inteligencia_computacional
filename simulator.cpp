@@ -19,14 +19,14 @@ static bool equal_sign(const simulator::vector &a, const simulator::vector &b){
 	return true;
 }
 
-void simulator::addlayer(size_t n, float alpha){
+void simulator::addlayer(size_t n, float alpha, float momentum){
 	size_t cant_entradas;
 	if( network.empty() )
 		cant_entradas = input[0].size()-1;
 	else
 		cant_entradas = network.back().size();
 	
-	network.push_back( capa(n, cant_entradas, alpha) );
+	network.push_back( capa(n, cant_entradas, alpha, momentum) );
 }
 
 void simulator::read(istream &in){

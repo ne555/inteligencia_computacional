@@ -37,15 +37,15 @@ int hole_circ(const valarray<float> &v){
 }
 
 int hole_rect(const valarray<float> &v){
-	if( math::norm_inf(v) > 1 ) return 1; 
-	if( between(.75f, math::norm_inf(v), 1.f) ) return -1; //middle
+	if( math::norm_inf(v) > 1.5 ) return 1; 
+	if( between(.75f, math::norm_inf(v), 1.5f) ) return -1; //middle
 	return 1;
 }
 
 int main(int argc, char **argv){
-	fun oper = &hole_circ;
+	fun oper = &hole_rect;
 	srand(0);
-	int n=9000, p=2;
+	int n=10000, p=2;
 	//float ratio = 0.3;
 	cout << n << ' ' << p << endl;
 	for(int K=0; K<n; ++K){

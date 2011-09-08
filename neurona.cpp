@@ -5,8 +5,8 @@
 #include <algorithm>
 using namespace std;
 
-neurona::neurona(int p, value_type alpha):
-	weight(p+1), alpha(alpha){}
+neurona::neurona(int p, value_type alpha, value_type momentum):
+	weight(p+1), delta_weight(p+1), alpha(alpha), momentum(momentum){}
 
 void neurona::init(){
 	const value_type ratio=1;
@@ -23,7 +23,10 @@ neurona::value_type neurona::test(const vector &input){
 }
 
 void neurona::train(const vector &input, value_type delta){
-	weight += alpha*delta*input;
+	delta_weight = alpha*delta*input + momentum*delta_weight;
+	weight += delta_weight;
+	//weight += alpha*delta*input + momentum*prev_delta_weight;
+	//prev_weight = temp;
 }
 
 void neurona::print(ostream &out){
