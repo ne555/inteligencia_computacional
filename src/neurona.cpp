@@ -18,7 +18,7 @@ void neurona::init(){
 }
 
 neurona::value_type neurona::test(const vector &input){ 
-	//return math::sign( weight.dot(input) );
+	//return math::sign( math::dot(weight,input) );
 	return math::sigmoid( math::dot(weight,input) );
 }
 

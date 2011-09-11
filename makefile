@@ -1,56 +1,71 @@
-cxx = g++
-cppflags = -Wall -pedantic-errors -ggdb
-libraries = 
-project = perceptron_simple.bin
-auxiliar = input.bin
-input = input.txt
-
-objects = ej1_1.o neurona.o simulator.o capa.o
-aux_obj = input.o
-
+CXX = g++
+CPPFLAGS = -Wall -pedantic-errors -O2 #-ggdb -pg
+LIBRARIES_grapher = $(addprefix -l,GL GLU glut)
+LIBRARIES_perceptron = 
+LIBRARIES_input = 
 objdir = obj
-objs = $(addprefix $(objdir)/,$(objects))
+headerdir = header
+bindir = bin
+bin = $(addprefix $(bindir)/,perceptron grapher input)
 
-#$(project) : $(objects)
-$(project) : $(objs)
-	$(cxx) $(cppflags) $(libraries) $(objs) -o $@
+obj_perceptron = ej1_1.o neurona.o simulator.o capa.o
+obj_input = input.o
+obj_grapher = grapher.o
 
-$(auxiliar) : $(aux_obj)
-	$(cxx) $(cppflags) $< -o $@
-	./$@ > $(input)
+object_perceptron = $(addprefix $(objdir)/,$(obj_perceptron))
+object_input = $(addprefix $(objdir)/,$(obj_input))
+object_grapher = $(addprefix $(objdir)/,$(obj_grapher))
 
-test: $(project) $(auxiliar)
-	#./$(project) -t 100 -g 0.2 -s 0.99 -d 0.5 < $(input)
-	#./$(project) < $(input) 2>/dev/null | ./grapher/grapher.bin 
-	./$(project) < $(input) 2>/dev/null | cat $(input) - | ./grapher/grapher.bin 
+objects = $(object_perceptron) $(object_grapher) $(object_input)
 
-	#gnuplot recta.txt
+all: $(bin)
 
-$(objdir)/capa.o: neurona.h math_vector.h util.h
-$(objdir)/ej1_1.o: simulator.h neurona.h math_vector.h capa.h util.h
-$(objdir)/input.o: util.h
-$(objdir)/neurona.o: math_vector.h util.h
-$(objdir)/simulator.o: neurona.h math_vector.h capa.h util.h
+test: $(bin) input.txt
+	./$(bindir)/perceptron < input.txt 2>debug.log | cat input.txt - | ./$(bindir)/grapher
+	grep -Po '(?<=Error ).*$$' debug.log  > error.log
+	grep -Po '(?<=Diff ).*$$' debug.log  > diff.log
 
-$(objdir)/%.o : %.cpp
-	$(cxx) $< -c $(cppflags) -o $@
+input.txt: $(bindir)/input
+	$< > $@
+	
 
-all: $(objs)
+bin/perceptron: $(object_perceptron)
+	$(CXX) $(LIBRARIES_perceptron) $(object_perceptron) -o $@
 
-$(objs): | $(objdir)
+bin/grapher: $(object_grapher)
+	$(CXX) $(LIBRARIES_grapher) $(object_grapher) -o $@
+	
+bin/input: $(object_input)
+	$(CXX) $(LIBRARIES_input) $(object_input) -o $@
+	
+
+$(objdir)/capa.o: $(addprefix $(headerdir)/,neurona.h math_vector.h capa.h util.h)
+$(objdir)/ej1_1.o: $(addprefix $(headerdir)/,simulator.h capa.h math_vector.h neurona.h util.h)
+$(objdir)/grapher.o: 
+$(objdir)/input.o: $(addprefix $(headerdir)/,util.h math_vector.h)
+$(objdir)/neurona.o: $(addprefix $(headerdir)/,neurona.h math_vector.h util.h)
+$(objdir)/simulator.o: $(addprefix $(headerdir)/,simulator.h capa.h math_vector.h neurona.h util.h)
+
+	 
+$(objdir)/%.o : src/%.cpp
+	$(CXX) $< -c $(CPPFLAGS) -I$(headerdir) -o $@
+
+obj/simulator.o : src/simulator.cpp
+	$(CXX) $< -c $(CPPFLAGS) -I$(headerdir) -o $@
+
+$(objects): | $(objdir)
 
 $(objdir):
 	mkdir $(objdir)
 
+bar:
+	@echo $(objdir)/%.o
+
 foo:
-	echo $(objs)
-	echo $(objdir)
+	@echo $(objects)
 
-.PHONY: clean test foo graph
-
-graph: $(auxiliar) 
-	./grapher/grapher.bin < $(input)
+.PHONY: clean test graph
 
 clean:
-	-rm $(objs) $(project)
-	-rm $(aux_obj) $(auxiliar) $(input)
+	-rm $(objects) $(bin)
+

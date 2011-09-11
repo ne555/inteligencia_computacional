@@ -10,6 +10,8 @@ using math::sigmoid;
 simulator::simulator(size_t patrones, size_t percepciones, size_t salidas, ostream *out):
 	input(patrones, vector(percepciones+1)), 
 	result(patrones, vector(salidas) ), 
+	//prev_error(patrones, vector(salidas) ), 
+	//actual_error(patrones, vector(salidas) ), 
 	out(out){}
 
 static bool equal_sign(const simulator::vector &a, const simulator::vector &b){
@@ -46,8 +48,23 @@ void simulator::read(istream &in){
 	}
 }
 
-bool simulator::done(float success, float error){
-	return test() > success;
+bool simulator::done(float success, float tol){
+	//vector error(input.size()), diff(input.size());
+	//for(size_t K=0; K<prev_error.size(); ++K){
+	//	diff[K] = math::norm2( actual_error[K]-prev_error[K] );
+	//	error[K] = math::norm2( actual_error[K] );	
+	//}
+	//float umbral = math::norm2(diff)/diff.size();
+	//float umbral = fabs(actual_error - prev_error)/actual_error;
+	//cerr << "Diff " << umbral << '\n';
+	cerr << "Error " << actual_error << ' ' << tol << '\n';
+
+	//prev_error = actual_error;
+		
+	if( test() > success and actual_error<tol )
+		cerr << "Meansaje alusivo de fin final " << actual_error << ' ' << tol << '\n';
+
+	return ( test() > success and actual_error<tol );
 }
 
 float simulator::test(){ //devolver el procentaje de aciertos y el error en las salidas
@@ -62,11 +79,12 @@ float simulator::test(){ //devolver el procentaje de aciertos y el error en las 
 			else cerr << "K es 0\n";
 			throw "simulator::test";
 		}
-		error[K] = math::norm2( sal-result[K] );
+		error[K] = math::norm1( sal-result[K] );
 
 		if( equal_sign(sal, result[K]) )
 			aciertos++;
 	}
+	actual_error = math::norm1(error)/error.size();
 
 	return float(aciertos)/input.size();
 }
@@ -107,7 +125,6 @@ int simulator::train(size_t cant, float success_rate, float error_umbral){
 			for(size_t L=0; L<network.size(); ++L)
 				network[L].update();
 		}
-		//print();
 		graph();
 		if( done(success_rate, error_umbral) )
 			return epoch+1;

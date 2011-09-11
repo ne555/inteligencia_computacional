@@ -69,7 +69,7 @@ void display(){
 	glAccum(GL_RETURN, 1);
 	glStencilFunc(GL_EQUAL, 1, ~0);
 
-	draw(light_red, light_green);
+	draw(white, light_blue);
 
 	glutSwapBuffers();
 	//usleep(100e3);
@@ -84,7 +84,7 @@ void fixed_background(){
 	glStencilOp(GL_KEEP,GL_ZERO,GL_ZERO);
 
 	axis(black);
-	draw(dark_red, dark_green);
+	draw(red, dark_blue);
 
 	glStencilFunc(GL_EQUAL, 1, ~0);
 	glStencilOp(GL_KEEP,GL_KEEP,GL_KEEP);

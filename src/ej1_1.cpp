@@ -33,10 +33,11 @@ int main(int argc, char **argv){
 	//Entrada n p 
 	//n = cantidad de ejemplos
 	//p = cantidad de percepciones
-	srand( time(NULL) );
+	//srand( time(NULL) );
+	srand(42);
 
-	int n,p,epoch=200;
-	float success=0.95, alpha=0.5, momentum=.1, dead_zone=0.2;
+	int n,p,epoch=1000;
+	float success=0.95, alpha=0.01, momentum=0.05, dead_zone=0.2;
 	int option;
 	while( (option=getopt(argc, argv, "t:g:s:d:h")) != -1 ){
 		switch(option){
@@ -65,11 +66,11 @@ int main(int argc, char **argv){
 	simulator benchmark(n,p,1,&cout);
 
 	benchmark.read(cin);
-	benchmark.addlayer(6,alpha,momentum);
+	benchmark.addlayer(4,alpha,momentum);
 	benchmark.addlayer(4,alpha,momentum);
 	benchmark.addlayer(1,alpha,momentum);
 
-	int cant = benchmark.train(epoch, success, 0);
+	int cant = benchmark.train(epoch, success, 0.1);
 	//benchmark.read(cin);
 	float rate = benchmark.test();
 

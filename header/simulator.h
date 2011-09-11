@@ -42,8 +42,10 @@ public:
 		return test(input[index]);
 	}
 
-	matrix input, result;
+	matrix input, result; //, prev_error, actual_error;
 	container network;
+
+	float prev_error, actual_error;
 
 	std::ostream *out;
 };
