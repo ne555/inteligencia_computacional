@@ -33,11 +33,11 @@ int main(int argc, char **argv){
 	//Entrada n p 
 	//n = cantidad de ejemplos
 	//p = cantidad de percepciones
-	//srand( time(NULL) );
-	srand(42);
+	srand( time(NULL) );
+	//srand(42);
 
-	int n,p,epoch=1000;
-	float success=0.95, alpha=0.01, momentum=0.05, dead_zone=0.2;
+	int n,p,s,epoch=3000;
+	float success=0.95, alpha=0.05, momentum=0.03, dead_zone=0.2;
 	int option;
 	while( (option=getopt(argc, argv, "t:g:s:d:h")) != -1 ){
 		switch(option){
@@ -50,7 +50,7 @@ int main(int argc, char **argv){
 		}
 	}
 
-	cin>>n>>p;
+	cin>>n>>p>>s;
 	#if 0
 	cout << "Perceptron simple ";
 	cout << "Parametros " << endl;
@@ -63,26 +63,26 @@ int main(int argc, char **argv){
 	cout << "fin de informe *";
 	#endif
 
-	simulator benchmark(n,p,1,&cout);
+	simulator benchmark(n,p,s,&cout);
 
 	benchmark.read(cin);
-	benchmark.addlayer(4,alpha,momentum);
-	benchmark.addlayer(4,alpha,momentum);
-	benchmark.addlayer(1,alpha,momentum);
+	benchmark.addlayer(3,alpha,momentum);
+	benchmark.addlayer(2,alpha,momentum);
+	benchmark.addlayer(s,alpha,momentum);
 
-	int cant = benchmark.train(epoch, success, 0.1);
+	int cant = benchmark.train(epoch, success, 0.2);
 	//benchmark.read(cin);
 	float rate = benchmark.test();
 
 	if(cant == -1)
-		cout << "No hubo convergencia" <<endl;
+		cerr << "No hubo convergencia" <<endl;
 	else
-		cout << "Convergencia en " << cant << " epocas" << endl;
+		cerr << "Convergencia en " << cant << " epocas" << endl;
 	
 		//benchmark.print();
-	//benchmark.print(cout);
+	//benchmark.print(cerr);
 
-	cout << "Con los datos de prueba se obtuvo %" << rate*100 << " de acierto" <<endl;
+	cerr << "Con los datos de prueba se obtuvo %" << rate*100 << " de acierto" <<endl;
 	return EXIT_SUCCESS;
 }
 

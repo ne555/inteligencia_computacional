@@ -42,6 +42,8 @@ public:
 		return test(input[index]);
 	}
 
+	void print_result();
+
 	matrix input, result; //, prev_error, actual_error;
 	container network;
 

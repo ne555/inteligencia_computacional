@@ -57,14 +57,15 @@ bool simulator::done(float success, float tol){
 	//float umbral = math::norm2(diff)/diff.size();
 	//float umbral = fabs(actual_error - prev_error)/actual_error;
 	//cerr << "Diff " << umbral << '\n';
-	cerr << "Error " << actual_error << ' ' << tol << '\n';
+	float aciertos = test();
+	cerr << "Error " << actual_error << "\nAcierto " << aciertos << '\n';
 
 	//prev_error = actual_error;
 		
-	if( test() > success and actual_error<tol )
-		cerr << "Meansaje alusivo de fin final " << actual_error << ' ' << tol << '\n';
+	//if( test() > success and actual_error<tol )
+	//	cerr << "Meansaje alusivo de fin final " << actual_error << ' ' << tol << '\n';
 
-	return ( test() > success and actual_error<tol );
+	return ( aciertos > success and actual_error<tol );
 }
 
 float simulator::test(){ //devolver el procentaje de aciertos y el error en las salidas
@@ -74,9 +75,9 @@ float simulator::test(){ //devolver el procentaje de aciertos y el error en las 
 	for(size_t K=0; K<input.size(); ++K){
 		vector sal=test(K);
 		if(sal.size() != result[K].size()){
-			cerr << "Sizes don't match " << sal.size() << ' ' << result[K].size() << '\n';
-			if(K) cerr << result[K].size() << '\n';
-			else cerr << "K es 0\n";
+			//cerr << "Sizes don't match " << sal.size() << ' ' << result[K].size() << '\n';
+			//if(K) cerr << result[K].size() << '\n';
+			//else cerr << "K es 0\n";
 			throw "simulator::test";
 		}
 		error[K] = math::norm1( sal-result[K] );
@@ -125,11 +126,26 @@ int simulator::train(size_t cant, float success_rate, float error_umbral){
 			for(size_t L=0; L<network.size(); ++L)
 				network[L].update();
 		}
-		graph();
-		if( done(success_rate, error_umbral) )
+		//graph();
+		if( done(success_rate, error_umbral) ){
+			print_result();
 			return epoch+1;
+		}
 	}
+	print_result();
 	return -1;
+}
+
+void simulator::print_result(){
+	cout << input.size() << ' ' << input[0].size()-1 << ' ' << result[0].size() << endl;
+	for(size_t K=0; K<input.size(); ++K){
+		vector sal = test(K);
+		for(size_t L=0; L<input[0].size()-1; ++L)
+			cout << input[K][L] << ' ';
+		for(size_t L=0; L<sal.size(); ++L)
+			cout << math::sign(sal[L]) << ' ';
+		cout << endl;
+	}
 }
 
 void simulator::graph(){

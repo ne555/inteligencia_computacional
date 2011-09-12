@@ -1,778 +1,6008 @@
 Inicio del entrenamiento 
-Epocas 1000
+Epocas 3000
 Success 0.95
-Input 700
+Input 150
 Structure 3
-4 4 1 
-Error 4.59163e-41 0.1
-Error 0.905639 0.1
-Error 0.881486 0.1
-Error 0.877744 0.1
-Error 0.876403 0.1
-Error 0.87557 0.1
-Error 0.87495 0.1
-Error 0.874459 0.1
-Error 0.874051 0.1
-Error 0.873701 0.1
-Error 0.873392 0.1
-Error 0.873109 0.1
-Error 0.872845 0.1
-Error 0.872592 0.1
-Error 0.872346 0.1
-Error 0.872099 0.1
-Error 0.871847 0.1
-Error 0.87159 0.1
-Error 0.871323 0.1
-Error 0.87104 0.1
-Error 0.870742 0.1
-Error 0.870423 0.1
-Error 0.870079 0.1
-Error 0.869708 0.1
-Error 0.869306 0.1
-Error 0.868867 0.1
-Error 0.868388 0.1
-Error 0.867864 0.1
-Error 0.867287 0.1
-Error 0.866652 0.1
-Error 0.86595 0.1
-Error 0.865174 0.1
-Error 0.864314 0.1
-Error 0.863359 0.1
-Error 0.862295 0.1
-Error 0.861111 0.1
-Error 0.859788 0.1
-Error 0.858312 0.1
-Error 0.856664 0.1
-Error 0.854826 0.1
-Error 0.852781 0.1
-Error 0.850515 0.1
-Error 0.848019 0.1
-Error 0.845294 0.1
-Error 0.84235 0.1
-Error 0.839213 0.1
-Error 0.835924 0.1
-Error 0.832538 0.1
-Error 0.82912 0.1
-Error 0.825735 0.1
-Error 0.822449 0.1
-Error 0.819311 0.1
-Error 0.816365 0.1
-Error 0.813633 0.1
-Error 0.811127 0.1
-Error 0.808844 0.1
-Error 0.806774 0.1
-Error 0.804903 0.1
-Error 0.80321 0.1
-Error 0.801673 0.1
-Error 0.800274 0.1
-Error 0.79899 0.1
-Error 0.797803 0.1
-Error 0.796696 0.1
-Error 0.79565 0.1
-Error 0.794649 0.1
-Error 0.793675 0.1
-Error 0.792712 0.1
-Error 0.791735 0.1
-Error 0.790725 0.1
-Error 0.789644 0.1
-Error 0.788457 0.1
-Error 0.787109 0.1
-Error 0.78553 0.1
-Error 0.783631 0.1
-Error 0.7813 0.1
-Error 0.778404 0.1
-Error 0.774799 0.1
-Error 0.770361 0.1
-Error 0.765019 0.1
-Error 0.758793 0.1
-Error 0.751811 0.1
-Error 0.744284 0.1
-Error 0.736451 0.1
-Error 0.728537 0.1
-Error 0.720712 0.1
-Error 0.713098 0.1
-Error 0.705773 0.1
-Error 0.698773 0.1
-Error 0.692117 0.1
-Error 0.685803 0.1
-Error 0.679824 0.1
-Error 0.674163 0.1
-Error 0.668805 0.1
-Error 0.663732 0.1
-Error 0.658927 0.1
-Error 0.654373 0.1
-Error 0.650054 0.1
-Error 0.645957 0.1
-Error 0.642066 0.1
-Error 0.638368 0.1
-Error 0.634851 0.1
-Error 0.631502 0.1
-Error 0.628311 0.1
-Error 0.625267 0.1
-Error 0.62236 0.1
-Error 0.619581 0.1
-Error 0.61692 0.1
-Error 0.614371 0.1
-Error 0.611926 0.1
-Error 0.609576 0.1
-Error 0.607316 0.1
-Error 0.605141 0.1
-Error 0.603043 0.1
-Error 0.601019 0.1
-Error 0.599063 0.1
-Error 0.59717 0.1
-Error 0.595338 0.1
-Error 0.593562 0.1
-Error 0.59184 0.1
-Error 0.590168 0.1
-Error 0.588544 0.1
-Error 0.586964 0.1
-Error 0.585429 0.1
-Error 0.583935 0.1
-Error 0.58248 0.1
-Error 0.581065 0.1
-Error 0.579688 0.1
-Error 0.578348 0.1
-Error 0.577043 0.1
-Error 0.575774 0.1
-Error 0.574542 0.1
-Error 0.573343 0.1
-Error 0.57218 0.1
-Error 0.571051 0.1
-Error 0.569957 0.1
-Error 0.568897 0.1
-Error 0.567872 0.1
-Error 0.56688 0.1
-Error 0.56592 0.1
-Error 0.564992 0.1
-Error 0.564094 0.1
-Error 0.563224 0.1
-Error 0.562379 0.1
-Error 0.561558 0.1
-Error 0.560756 0.1
-Error 0.55997 0.1
-Error 0.559197 0.1
-Error 0.558432 0.1
-Error 0.557671 0.1
-Error 0.556911 0.1
-Error 0.556148 0.1
-Error 0.555378 0.1
-Error 0.554599 0.1
-Error 0.553809 0.1
-Error 0.553004 0.1
-Error 0.552186 0.1
-Error 0.551353 0.1
-Error 0.550504 0.1
-Error 0.549642 0.1
-Error 0.548766 0.1
-Error 0.547877 0.1
-Error 0.546976 0.1
-Error 0.546066 0.1
-Error 0.545146 0.1
-Error 0.54422 0.1
-Error 0.543287 0.1
-Error 0.54235 0.1
-Error 0.541409 0.1
-Error 0.540466 0.1
-Error 0.539521 0.1
-Error 0.538576 0.1
-Error 0.53763 0.1
-Error 0.536687 0.1
-Error 0.535743 0.1
-Error 0.534802 0.1
-Error 0.533863 0.1
-Error 0.532927 0.1
-Error 0.531994 0.1
-Error 0.531063 0.1
-Error 0.530137 0.1
-Error 0.529214 0.1
-Error 0.528294 0.1
-Error 0.52738 0.1
-Error 0.526467 0.1
-Error 0.525559 0.1
-Error 0.524655 0.1
-Error 0.523755 0.1
-Error 0.52286 0.1
-Error 0.521968 0.1
-Error 0.521081 0.1
-Error 0.520198 0.1
-Error 0.51932 0.1
-Error 0.518446 0.1
-Error 0.517576 0.1
-Error 0.516711 0.1
-Error 0.515851 0.1
-Error 0.514996 0.1
-Error 0.514145 0.1
-Error 0.5133 0.1
-Error 0.512459 0.1
-Error 0.511624 0.1
-Error 0.510793 0.1
-Error 0.509966 0.1
-Error 0.509146 0.1
-Error 0.508329 0.1
-Error 0.507518 0.1
-Error 0.50671 0.1
-Error 0.505906 0.1
-Error 0.505107 0.1
-Error 0.50431 0.1
-Error 0.503516 0.1
-Error 0.502723 0.1
-Error 0.501931 0.1
-Error 0.501139 0.1
-Error 0.500345 0.1
-Error 0.499547 0.1
-Error 0.498744 0.1
-Error 0.497935 0.1
-Error 0.497116 0.1
-Error 0.496286 0.1
-Error 0.495442 0.1
-Error 0.494581 0.1
-Error 0.4937 0.1
-Error 0.492798 0.1
-Error 0.49187 0.1
-Error 0.490914 0.1
-Error 0.489927 0.1
-Error 0.488906 0.1
-Error 0.487849 0.1
-Error 0.486751 0.1
-Error 0.485609 0.1
-Error 0.48442 0.1
-Error 0.483173 0.1
-Error 0.481864 0.1
-Error 0.48048 0.1
-Error 0.479006 0.1
-Error 0.477423 0.1
-Error 0.475707 0.1
-Error 0.473829 0.1
-Error 0.471759 0.1
-Error 0.469466 0.1
-Error 0.466923 0.1
-Error 0.464108 0.1
-Error 0.461006 0.1
-Error 0.457611 0.1
-Error 0.453924 0.1
-Error 0.449956 0.1
-Error 0.445722 0.1
-Error 0.441244 0.1
-Error 0.436546 0.1
-Error 0.431652 0.1
-Error 0.426589 0.1
-Error 0.42138 0.1
-Error 0.416046 0.1
-Error 0.410609 0.1
-Error 0.405087 0.1
-Error 0.399499 0.1
-Error 0.393865 0.1
-Error 0.388205 0.1
-Error 0.382541 0.1
-Error 0.376895 0.1
-Error 0.371292 0.1
-Error 0.365756 0.1
-Error 0.36031 0.1
-Error 0.354975 0.1
-Error 0.349765 0.1
-Error 0.344692 0.1
-Error 0.339762 0.1
-Error 0.33498 0.1
-Error 0.330344 0.1
-Error 0.325854 0.1
-Error 0.321506 0.1
-Error 0.317298 0.1
-Error 0.313224 0.1
-Error 0.309281 0.1
-Error 0.305463 0.1
-Error 0.301767 0.1
-Error 0.298186 0.1
-Error 0.294717 0.1
-Error 0.291356 0.1
-Error 0.288097 0.1
-Error 0.284937 0.1
-Error 0.281872 0.1
-Error 0.278897 0.1
-Error 0.276009 0.1
-Error 0.273204 0.1
-Error 0.270479 0.1
-Error 0.26783 0.1
-Error 0.265255 0.1
-Error 0.26275 0.1
-Error 0.260313 0.1
-Error 0.25794 0.1
-Error 0.255629 0.1
-Error 0.253378 0.1
-Error 0.251184 0.1
-Error 0.249046 0.1
-Error 0.24696 0.1
-Error 0.244926 0.1
-Error 0.24294 0.1
-Error 0.241002 0.1
-Error 0.23911 0.1
-Error 0.237262 0.1
-Error 0.235456 0.1
-Error 0.23369 0.1
-Error 0.231965 0.1
-Error 0.230278 0.1
-Error 0.228627 0.1
-Error 0.227012 0.1
-Error 0.225432 0.1
-Error 0.223886 0.1
-Error 0.222371 0.1
-Error 0.220888 0.1
-Error 0.219436 0.1
-Error 0.218013 0.1
-Error 0.216618 0.1
-Error 0.215251 0.1
-Error 0.213912 0.1
-Error 0.212598 0.1
-Error 0.21131 0.1
-Error 0.210046 0.1
-Error 0.208807 0.1
-Error 0.207591 0.1
-Error 0.206397 0.1
-Error 0.205226 0.1
-Error 0.204076 0.1
-Error 0.202948 0.1
-Error 0.201839 0.1
-Error 0.200751 0.1
-Error 0.199682 0.1
-Error 0.198632 0.1
-Error 0.1976 0.1
-Error 0.196587 0.1
-Error 0.195591 0.1
-Error 0.194612 0.1
-Error 0.19365 0.1
-Error 0.192705 0.1
-Error 0.191775 0.1
-Error 0.190861 0.1
-Error 0.189962 0.1
-Error 0.189078 0.1
-Error 0.188209 0.1
-Error 0.187354 0.1
-Error 0.186512 0.1
-Error 0.185685 0.1
-Error 0.184871 0.1
-Error 0.18407 0.1
-Error 0.183282 0.1
-Error 0.182506 0.1
-Error 0.181742 0.1
-Error 0.180991 0.1
-Error 0.180251 0.1
-Error 0.179522 0.1
-Error 0.178805 0.1
-Error 0.178099 0.1
-Error 0.177404 0.1
-Error 0.176719 0.1
-Error 0.176045 0.1
-Error 0.175381 0.1
-Error 0.174727 0.1
-Error 0.174082 0.1
-Error 0.173447 0.1
-Error 0.172822 0.1
-Error 0.172205 0.1
-Error 0.171598 0.1
-Error 0.171 0.1
-Error 0.17041 0.1
-Error 0.169828 0.1
-Error 0.169255 0.1
-Error 0.16869 0.1
-Error 0.168133 0.1
-Error 0.167584 0.1
-Error 0.167043 0.1
-Error 0.166508 0.1
-Error 0.165981 0.1
-Error 0.165461 0.1
-Error 0.164949 0.1
-Error 0.164443 0.1
-Error 0.163943 0.1
-Error 0.163451 0.1
-Error 0.162964 0.1
-Error 0.162484 0.1
-Error 0.16201 0.1
-Error 0.161542 0.1
-Error 0.16108 0.1
-Error 0.160623 0.1
-Error 0.160172 0.1
-Error 0.159727 0.1
-Error 0.159286 0.1
-Error 0.158851 0.1
-Error 0.158421 0.1
-Error 0.157996 0.1
-Error 0.157575 0.1
-Error 0.157159 0.1
-Error 0.156749 0.1
-Error 0.156342 0.1
-Error 0.15594 0.1
-Error 0.155542 0.1
-Error 0.155148 0.1
-Error 0.154758 0.1
-Error 0.154373 0.1
-Error 0.153991 0.1
-Error 0.153613 0.1
-Error 0.153239 0.1
-Error 0.152868 0.1
-Error 0.152501 0.1
-Error 0.152137 0.1
-Error 0.151777 0.1
-Error 0.151421 0.1
-Error 0.151067 0.1
-Error 0.150717 0.1
-Error 0.15037 0.1
-Error 0.150026 0.1
-Error 0.149684 0.1
-Error 0.149346 0.1
-Error 0.149011 0.1
-Error 0.148679 0.1
-Error 0.148349 0.1
-Error 0.148022 0.1
-Error 0.147698 0.1
-Error 0.147377 0.1
-Error 0.147058 0.1
-Error 0.146742 0.1
-Error 0.146428 0.1
-Error 0.146117 0.1
-Error 0.145807 0.1
-Error 0.145501 0.1
-Error 0.145196 0.1
-Error 0.144895 0.1
-Error 0.144595 0.1
-Error 0.144298 0.1
-Error 0.144002 0.1
-Error 0.143709 0.1
-Error 0.143418 0.1
-Error 0.143129 0.1
-Error 0.142842 0.1
-Error 0.142557 0.1
-Error 0.142274 0.1
-Error 0.141993 0.1
-Error 0.141714 0.1
-Error 0.141437 0.1
-Error 0.141162 0.1
-Error 0.140889 0.1
-Error 0.140617 0.1
-Error 0.140348 0.1
-Error 0.14008 0.1
-Error 0.139815 0.1
-Error 0.13955 0.1
-Error 0.139288 0.1
-Error 0.139028 0.1
-Error 0.138769 0.1
-Error 0.138512 0.1
-Error 0.138257 0.1
-Error 0.138003 0.1
-Error 0.137751 0.1
-Error 0.137501 0.1
-Error 0.137251 0.1
-Error 0.137004 0.1
-Error 0.136759 0.1
-Error 0.136515 0.1
-Error 0.136272 0.1
-Error 0.136031 0.1
-Error 0.135791 0.1
-Error 0.135554 0.1
-Error 0.135317 0.1
-Error 0.135082 0.1
-Error 0.134849 0.1
-Error 0.134617 0.1
-Error 0.134387 0.1
-Error 0.134157 0.1
-Error 0.13393 0.1
-Error 0.133704 0.1
-Error 0.133479 0.1
-Error 0.133255 0.1
-Error 0.133034 0.1
-Error 0.132813 0.1
-Error 0.132594 0.1
-Error 0.132376 0.1
-Error 0.132159 0.1
-Error 0.131944 0.1
-Error 0.131731 0.1
-Error 0.131518 0.1
-Error 0.131308 0.1
-Error 0.131098 0.1
-Error 0.13089 0.1
-Error 0.130683 0.1
-Error 0.130477 0.1
-Error 0.130273 0.1
-Error 0.13007 0.1
-Error 0.129868 0.1
-Error 0.129667 0.1
-Error 0.129467 0.1
-Error 0.129269 0.1
-Error 0.129072 0.1
-Error 0.128876 0.1
-Error 0.128682 0.1
-Error 0.128488 0.1
-Error 0.128296 0.1
-Error 0.128105 0.1
-Error 0.127915 0.1
-Error 0.127726 0.1
-Error 0.127539 0.1
-Error 0.127352 0.1
-Error 0.127167 0.1
-Error 0.126983 0.1
-Error 0.1268 0.1
-Error 0.126618 0.1
-Error 0.126437 0.1
-Error 0.126257 0.1
-Error 0.126079 0.1
-Error 0.125901 0.1
-Error 0.125724 0.1
-Error 0.125549 0.1
-Error 0.125375 0.1
-Error 0.125202 0.1
-Error 0.125029 0.1
-Error 0.124858 0.1
-Error 0.124688 0.1
-Error 0.124519 0.1
-Error 0.124351 0.1
-Error 0.124184 0.1
-Error 0.124018 0.1
-Error 0.123853 0.1
-Error 0.123689 0.1
-Error 0.123526 0.1
-Error 0.123364 0.1
-Error 0.123202 0.1
-Error 0.123042 0.1
-Error 0.122883 0.1
-Error 0.122725 0.1
-Error 0.122567 0.1
-Error 0.122411 0.1
-Error 0.122255 0.1
-Error 0.122101 0.1
-Error 0.121947 0.1
-Error 0.121794 0.1
-Error 0.121642 0.1
-Error 0.121491 0.1
-Error 0.121341 0.1
-Error 0.121192 0.1
-Error 0.121043 0.1
-Error 0.120896 0.1
-Error 0.120749 0.1
-Error 0.120603 0.1
-Error 0.120458 0.1
-Error 0.120313 0.1
-Error 0.12017 0.1
-Error 0.120027 0.1
-Error 0.119885 0.1
-Error 0.119744 0.1
-Error 0.119604 0.1
-Error 0.119464 0.1
-Error 0.119325 0.1
-Error 0.119187 0.1
-Error 0.11905 0.1
-Error 0.118914 0.1
-Error 0.118778 0.1
-Error 0.118643 0.1
-Error 0.118509 0.1
-Error 0.118376 0.1
-Error 0.118243 0.1
-Error 0.118111 0.1
-Error 0.117979 0.1
-Error 0.117849 0.1
-Error 0.117719 0.1
-Error 0.11759 0.1
-Error 0.117461 0.1
-Error 0.117333 0.1
-Error 0.117206 0.1
-Error 0.117079 0.1
-Error 0.116953 0.1
-Error 0.116828 0.1
-Error 0.116703 0.1
-Error 0.116579 0.1
-Error 0.116456 0.1
-Error 0.116333 0.1
-Error 0.116211 0.1
-Error 0.11609 0.1
-Error 0.115969 0.1
-Error 0.115848 0.1
-Error 0.115729 0.1
-Error 0.11561 0.1
-Error 0.115491 0.1
-Error 0.115374 0.1
-Error 0.115256 0.1
-Error 0.11514 0.1
-Error 0.115024 0.1
-Error 0.114908 0.1
-Error 0.114793 0.1
-Error 0.114679 0.1
-Error 0.114565 0.1
-Error 0.114452 0.1
-Error 0.114339 0.1
-Error 0.114227 0.1
-Error 0.114115 0.1
-Error 0.114004 0.1
-Error 0.113893 0.1
-Error 0.113784 0.1
-Error 0.113674 0.1
-Error 0.113565 0.1
-Error 0.113456 0.1
-Error 0.113348 0.1
-Error 0.113241 0.1
-Error 0.113134 0.1
-Error 0.113028 0.1
-Error 0.112921 0.1
-Error 0.112816 0.1
-Error 0.112711 0.1
-Error 0.112606 0.1
-Error 0.112502 0.1
-Error 0.112398 0.1
-Error 0.112296 0.1
-Error 0.112193 0.1
-Error 0.112091 0.1
-Error 0.111989 0.1
-Error 0.111888 0.1
-Error 0.111787 0.1
-Error 0.111687 0.1
-Error 0.111587 0.1
-Error 0.111487 0.1
-Error 0.111388 0.1
-Error 0.11129 0.1
-Error 0.111192 0.1
-Error 0.111094 0.1
-Error 0.110997 0.1
-Error 0.1109 0.1
-Error 0.110803 0.1
-Error 0.110707 0.1
-Error 0.110612 0.1
-Error 0.110517 0.1
-Error 0.110422 0.1
-Error 0.110328 0.1
-Error 0.110233 0.1
-Error 0.11014 0.1
-Error 0.110047 0.1
-Error 0.109954 0.1
-Error 0.109862 0.1
-Error 0.10977 0.1
-Error 0.109678 0.1
-Error 0.109587 0.1
-Error 0.109496 0.1
-Error 0.109405 0.1
-Error 0.109315 0.1
-Error 0.109226 0.1
-Error 0.109136 0.1
-Error 0.109047 0.1
-Error 0.108958 0.1
-Error 0.10887 0.1
-Error 0.108782 0.1
-Error 0.108695 0.1
-Error 0.108607 0.1
-Error 0.10852 0.1
-Error 0.108434 0.1
-Error 0.108348 0.1
-Error 0.108262 0.1
-Error 0.108176 0.1
-Error 0.108091 0.1
-Error 0.108006 0.1
-Error 0.107921 0.1
-Error 0.107837 0.1
-Error 0.107753 0.1
-Error 0.107669 0.1
-Error 0.107586 0.1
-Error 0.107503 0.1
-Error 0.10742 0.1
-Error 0.107338 0.1
-Error 0.107255 0.1
-Error 0.107174 0.1
-Error 0.107092 0.1
-Error 0.107011 0.1
-Error 0.10693 0.1
-Error 0.106849 0.1
-Error 0.106769 0.1
-Error 0.106689 0.1
-Error 0.106609 0.1
-Error 0.10653 0.1
-Error 0.10645 0.1
-Error 0.106372 0.1
-Error 0.106293 0.1
-Error 0.106215 0.1
-Error 0.106136 0.1
-Error 0.106059 0.1
-Error 0.105981 0.1
-Error 0.105904 0.1
-Error 0.105827 0.1
-Error 0.10575 0.1
-Error 0.105673 0.1
-Error 0.105597 0.1
-Error 0.105521 0.1
-Error 0.105445 0.1
-Error 0.10537 0.1
-Error 0.105294 0.1
-Error 0.105219 0.1
-Error 0.105145 0.1
-Error 0.10507 0.1
-Error 0.104995 0.1
-Error 0.104921 0.1
-Error 0.104847 0.1
-Error 0.104774 0.1
-Error 0.1047 0.1
-Error 0.104627 0.1
-Error 0.104554 0.1
-Error 0.104481 0.1
-Error 0.104409 0.1
-Error 0.104336 0.1
-Error 0.104264 0.1
-Error 0.104192 0.1
-Error 0.104121 0.1
-Error 0.104049 0.1
-Error 0.103978 0.1
-Error 0.103906 0.1
-Error 0.103835 0.1
-Error 0.103765 0.1
-Error 0.103694 0.1
-Error 0.103624 0.1
-Error 0.103554 0.1
-Error 0.103484 0.1
-Error 0.103414 0.1
-Error 0.103344 0.1
-Error 0.103275 0.1
-Error 0.103206 0.1
-Error 0.103137 0.1
-Error 0.103068 0.1
-Error 0.102999 0.1
-Error 0.102931 0.1
-Error 0.102863 0.1
-Error 0.102795 0.1
-Error 0.102727 0.1
-Error 0.10266 0.1
-Error 0.102592 0.1
-Error 0.102525 0.1
-Error 0.102458 0.1
-Error 0.102391 0.1
-Error 0.102325 0.1
-Error 0.102258 0.1
-Error 0.102192 0.1
-Error 0.102126 0.1
-Error 0.102061 0.1
-Error 0.101995 0.1
-Error 0.10193 0.1
-Error 0.101865 0.1
-Error 0.1018 0.1
-Error 0.101736 0.1
-Error 0.101672 0.1
-Error 0.101607 0.1
-Error 0.101544 0.1
-Error 0.10148 0.1
-Error 0.101417 0.1
-Error 0.101354 0.1
-Error 0.101291 0.1
-Error 0.101228 0.1
-Error 0.101166 0.1
-Error 0.101105 0.1
-Error 0.101043 0.1
-Error 0.100982 0.1
-Error 0.100921 0.1
-Error 0.10086 0.1
-Error 0.1008 0.1
-Error 0.10074 0.1
-Error 0.10068 0.1
-Error 0.100621 0.1
-Error 0.100562 0.1
-Error 0.100503 0.1
-Error 0.100445 0.1
-Error 0.100387 0.1
-Error 0.10033 0.1
-Error 0.100273 0.1
-Error 0.100217 0.1
-Error 0.100161 0.1
-Error 0.100105 0.1
-Error 0.100051 0.1
-Meansaje alusivo de fin final 0.0999961 0.1
+3 2 3 
+Error 2.76381
+Acierto 0.333333
+Error 2.7057
+Acierto 0.333333
+Error 2.60037
+Acierto 0.333333
+Error 2.51291
+Acierto 0.333333
+Error 2.46529
+Acierto 0.333333
+Error 2.47905
+Acierto 0.333333
+Error 2.458
+Acierto 0.333333
+Error 2.42378
+Acierto 0.333333
+Error 2.35038
+Acierto 0.333333
+Error 2.30804
+Acierto 0.333333
+Error 2.30542
+Acierto 0.333333
+Error 2.31173
+Acierto 0.333333
+Error 2.33787
+Acierto 0.333333
+Error 2.31397
+Acierto 0.333333
+Error 2.36241
+Acierto 0.333333
+Error 2.31682
+Acierto 0.333333
+Error 2.33097
+Acierto 0.333333
+Error 2.32696
+Acierto 0.333333
+Error 2.30711
+Acierto 0.333333
+Error 2.30406
+Acierto 0.333333
+Error 2.36188
+Acierto 0.333333
+Error 2.3395
+Acierto 0.333333
+Error 2.35866
+Acierto 0.333333
+Error 2.23684
+Acierto 0.333333
+Error 2.26095
+Acierto 0.333333
+Error 2.37962
+Acierto 0.333333
+Error 2.27242
+Acierto 0.333333
+Error 2.3043
+Acierto 0.333333
+Error 2.27996
+Acierto 0.333333
+Error 2.35627
+Acierto 0.333333
+Error 2.11206
+Acierto 0.346667
+Error 2.07718
+Acierto 0.346667
+Error 2.06359
+Acierto 0.346667
+Error 2.35769
+Acierto 0.333333
+Error 2.10695
+Acierto 0.346667
+Error 2.04777
+Acierto 0.346667
+Error 2.00204
+Acierto 0.366667
+Error 2.12332
+Acierto 0.346667
+Error 2.00455
+Acierto 0.36
+Error 1.98601
+Acierto 0.353333
+Error 1.88687
+Acierto 0.333333
+Error 2.1294
+Acierto 0.34
+Error 2.00551
+Acierto 0.36
+Error 2.20737
+Acierto 0.34
+Error 2.34287
+Acierto 0.333333
+Error 1.9769
+Acierto 0.393333
+Error 2.31691
+Acierto 0.333333
+Error 2.21577
+Acierto 0.346667
+Error 2.317
+Acierto 0.333333
+Error 2.07287
+Acierto 0.346667
+Error 1.8385
+Acierto 0.453333
+Error 2.33445
+Acierto 0.333333
+Error 2.30431
+Acierto 0.333333
+Error 2.26126
+Acierto 0.34
+Error 2.28225
+Acierto 0.34
+Error 1.83576
+Acierto 0.46
+Error 2.26926
+Acierto 0.346667
+Error 2.05202
+Acierto 0.36
+Error 1.84452
+Acierto 0.426667
+Error 1.9855
+Acierto 0.413333
+Error 2.21775
+Acierto 0.346667
+Error 2.13692
+Acierto 0.346667
+Error 2.09622
+Acierto 0.353333
+Error 1.97496
+Acierto 0.42
+Error 1.92085
+Acierto 0.426667
+Error 1.77961
+Acierto 0.48
+Error 1.76607
+Acierto 0.48
+Error 1.94224
+Acierto 0.426667
+Error 1.98307
+Acierto 0.413333
+Error 1.93248
+Acierto 0.426667
+Error 1.99382
+Acierto 0.413333
+Error 1.81724
+Acierto 0.46
+Error 1.73613
+Acierto 0.5
+Error 1.71315
+Acierto 0.513333
+Error 1.71189
+Acierto 0.513333
+Error 2.04358
+Acierto 0.38
+Error 1.79176
+Acierto 0.46
+Error 1.79151
+Acierto 0.466667
+Error 1.76118
+Acierto 0.48
+Error 1.83387
+Acierto 0.46
+Error 1.68929
+Acierto 0.52
+Error 1.68648
+Acierto 0.52
+Error 1.66196
+Acierto 0.54
+Error 1.65372
+Acierto 0.54
+Error 1.93077
+Acierto 0.426667
+Error 1.64784
+Acierto 0.54
+Error 2.29507
+Acierto 0.346667
+Error 1.73622
+Acierto 0.506667
+Error 1.91438
+Acierto 0.426667
+Error 1.72486
+Acierto 0.513333
+Error 1.63942
+Acierto 0.54
+Error 1.86133
+Acierto 0.46
+Error 2.28259
+Acierto 0.346667
+Error 1.66913
+Acierto 0.52
+Error 1.71106
+Acierto 0.513333
+Error 1.63474
+Acierto 0.54
+Error 2.2285
+Acierto 0.346667
+Error 1.63373
+Acierto 0.54
+Error 1.63036
+Acierto 0.54
+Error 1.64584
+Acierto 0.54
+Error 1.62232
+Acierto 0.546667
+Error 1.66978
+Acierto 0.533333
+Error 2.31947
+Acierto 0.333333
+Error 1.84921
+Acierto 0.446667
+Error 1.63488
+Acierto 0.54
+Error 1.64578
+Acierto 0.533333
+Error 1.87579
+Acierto 0.46
+Error 1.60389
+Acierto 0.573333
+Error 1.60058
+Acierto 0.573333
+Error 1.60488
+Acierto 0.553333
+Error 1.60016
+Acierto 0.56
+Error 2.03838
+Acierto 0.386667
+Error 1.77792
+Acierto 0.426667
+Error 1.63868
+Acierto 0.54
+Error 1.6713
+Acierto 0.526667
+Error 1.60531
+Acierto 0.56
+Error 2.30023
+Acierto 0.346667
+Error 1.85421
+Acierto 0.466667
+Error 1.58463
+Acierto 0.58
+Error 1.66322
+Acierto 0.533333
+Error 2.09133
+Acierto 0.353333
+Error 1.58744
+Acierto 0.58
+Error 1.65666
+Acierto 0.526667
+Error 1.70389
+Acierto 0.52
+Error 1.80879
+Acierto 0.473333
+Error 2.22568
+Acierto 0.333333
+Error 1.89128
+Acierto 0.333333
+Error 1.78189
+Acierto 0.573333
+Error 1.61667
+Acierto 0.666667
+Error 1.58809
+Acierto 0.666667
+Error 1.45606
+Acierto 0.666667
+Error 1.39647
+Acierto 0.666667
+Error 1.31666
+Acierto 0.68
+Error 1.42122
+Acierto 0.666667
+Error 1.42396
+Acierto 0.666667
+Error 1.37793
+Acierto 0.666667
+Error 1.37809
+Acierto 0.666667
+Error 1.17456
+Acierto 0.68
+Error 1.3156
+Acierto 0.666667
+Error 1.40123
+Acierto 0.666667
+Error 1.1271
+Acierto 0.693333
+Error 1.05815
+Acierto 0.746667
+Error 1.15663
+Acierto 0.686667
+Error 1.39636
+Acierto 0.666667
+Error 1.16615
+Acierto 0.686667
+Error 1.24023
+Acierto 0.68
+Error 1.03689
+Acierto 0.753333
+Error 1.3878
+Acierto 0.666667
+Error 1.31487
+Acierto 0.68
+Error 1.35657
+Acierto 0.666667
+Error 1.30786
+Acierto 0.68
+Error 1.33512
+Acierto 0.68
+Error 0.815232
+Acierto 0.82
+Error 1.35379
+Acierto 0.673333
+Error 0.759505
+Acierto 0.84
+Error 1.3236
+Acierto 0.68
+Error 1.30562
+Acierto 0.68
+Error 0.819993
+Acierto 0.813333
+Error 1.36229
+Acierto 0.666667
+Error 1.31934
+Acierto 0.68
+Error 1.23537
+Acierto 0.68
+Error 1.31481
+Acierto 0.68
+Error 1.32051
+Acierto 0.68
+Error 0.848702
+Acierto 0.8
+Error 0.729697
+Acierto 0.846667
+Error 0.568844
+Acierto 0.88
+Error 1.24764
+Acierto 0.68
+Error 1.32326
+Acierto 0.68
+Error 0.599173
+Acierto 0.873333
+Error 1.24564
+Acierto 0.68
+Error 1.31249
+Acierto 0.68
+Error 1.28232
+Acierto 0.68
+Error 1.36781
+Acierto 0.666667
+Error 1.2015
+Acierto 0.693333
+Error 1.02943
+Acierto 0.76
+Error 1.25318
+Acierto 0.68
+Error 1.29083
+Acierto 0.68
+Error 0.928096
+Acierto 0.793333
+Error 1.32919
+Acierto 0.68
+Error 1.29056
+Acierto 0.68
+Error 0.456028
+Acierto 0.92
+Error 1.17484
+Acierto 0.7
+Error 0.486215
+Acierto 0.92
+Error 0.412361
+Acierto 0.926667
+Error 1.3612
+Acierto 0.666667
+Error 1.36337
+Acierto 0.666667
+Error 1.35536
+Acierto 0.666667
+Error 0.505195
+Acierto 0.926667
+Error 1.33374
+Acierto 0.68
+Error 0.49604
+Acierto 0.92
+Error 0.682202
+Acierto 0.866667
+Error 1.31968
+Acierto 0.68
+Error 1.22481
+Acierto 0.686667
+Error 1.20537
+Acierto 0.693333
+Error 0.397536
+Acierto 0.94
+Error 1.24636
+Acierto 0.686667
+Error 0.773716
+Acierto 0.833333
+Error 1.31727
+Acierto 0.68
+Error 0.911524
+Acierto 0.793333
+Error 0.542413
+Acierto 0.88
+Error 0.847086
+Acierto 0.793333
+Error 0.966465
+Acierto 0.766667
+Error 1.35882
+Acierto 0.666667
+Error 1.35952
+Acierto 0.666667
+Error 1.35877
+Acierto 0.666667
+Error 0.77544
+Acierto 0.873333
+Error 0.469014
+Acierto 0.926667
+Error 0.583469
+Acierto 0.88
+Error 0.644065
+Acierto 0.873333
+Error 0.417065
+Acierto 0.933333
+Error 0.692814
+Acierto 0.86
+Error 0.324005
+Acierto 0.96
+Error 1.35634
+Acierto 0.666667
+Error 0.466254
+Acierto 0.946667
+Error 0.449112
+Acierto 0.926667
+Error 1.35822
+Acierto 0.666667
+Error 0.817008
+Acierto 0.813333
+Error 0.428322
+Acierto 0.94
+Error 0.418689
+Acierto 0.94
+Error 0.591819
+Acierto 0.88
+Error 0.477364
+Acierto 0.92
+Error 0.323056
+Acierto 0.96
+Error 0.367045
+Acierto 0.946667
+Error 1.35879
+Acierto 0.666667
+Error 1.35906
+Acierto 0.666667
+Error 1.3587
+Acierto 0.666667
+Error 1.35372
+Acierto 0.666667
+Error 0.727178
+Acierto 0.873333
+Error 0.373223
+Acierto 0.96
+Error 0.861882
+Acierto 0.8
+Error 0.410737
+Acierto 0.94
+Error 0.335674
+Acierto 0.96
+Error 0.310283
+Acierto 0.966667
+Error 1.31971
+Acierto 0.666667
+Error 0.448984
+Acierto 0.96
+Error 0.419466
+Acierto 0.94
+Error 0.738247
+Acierto 0.846667
+Error 0.706816
+Acierto 0.853333
+Error 0.309931
+Acierto 0.966667
+Error 0.314712
+Acierto 0.966667
+Error 1.02456
+Acierto 0.76
+Error 0.848217
+Acierto 0.8
+Error 1.17189
+Acierto 0.72
+Error 0.301067
+Acierto 0.966667
+Error 0.293308
+Acierto 0.966667
+Error 0.883276
+Acierto 0.793333
+Error 0.789667
+Acierto 0.82
+Error 0.856278
+Acierto 0.793333
+Error 0.279577
+Acierto 0.966667
+Error 0.574251
+Acierto 0.873333
+Error 1.37458
+Acierto 0.666667
+Error 0.462505
+Acierto 0.953333
+Error 0.363494
+Acierto 0.966667
+Error 0.370045
+Acierto 0.953333
+Error 0.418394
+Acierto 0.94
+Error 0.957707
+Acierto 0.786667
+Error 0.51537
+Acierto 0.906667
+Error 0.302416
+Acierto 0.966667
+Error 0.398934
+Acierto 0.94
+Error 0.466243
+Acierto 0.926667
+Error 1.36688
+Acierto 0.666667
+Error 0.712161
+Acierto 0.873333
+Error 0.488141
+Acierto 0.933333
+Error 0.337357
+Acierto 0.966667
+Error 0.349662
+Acierto 0.966667
+Error 0.457919
+Acierto 0.933333
+Error 0.426635
+Acierto 0.94
+Error 0.379839
+Acierto 0.953333
+Error 0.328066
+Acierto 0.966667
+Error 0.625585
+Acierto 0.873333
+Error 0.420611
+Acierto 0.933333
+Error 0.316604
+Acierto 0.966667
+Error 0.506284
+Acierto 0.913333
+Error 0.302581
+Acierto 0.966667
+Error 0.319979
+Acierto 0.96
+Error 0.361404
+Acierto 0.946667
+Error 0.325299
+Acierto 0.96
+Error 0.292563
+Acierto 0.966667
+Error 0.29926
+Acierto 0.96
+Error 0.323114
+Acierto 0.953333
+Error 0.2684
+Acierto 0.973333
+Error 0.267601
+Acierto 0.973333
+Error 0.390825
+Acierto 0.933333
+Error 0.55657
+Acierto 0.886667
+Error 0.266709
+Acierto 0.973333
+Error 1.00617
+Acierto 0.76
+Error 0.283468
+Acierto 0.96
+Error 0.911686
+Acierto 0.786667
+Error 0.596289
+Acierto 0.866667
+Error 0.269593
+Acierto 0.973333
+Error 0.276217
+Acierto 0.96
+Error 0.259034
+Acierto 0.973333
+Error 1.04161
+Acierto 0.76
+Error 0.31125
+Acierto 0.96
+Error 0.267959
+Acierto 0.973333
+Error 0.261444
+Acierto 0.973333
+Error 0.24912
+Acierto 0.973333
+Error 0.455277
+Acierto 0.913333
+Error 1.02595
+Acierto 0.76
+Error 0.252328
+Acierto 0.973333
+Error 0.253115
+Acierto 0.973333
+Error 0.362167
+Acierto 0.94
+Error 0.630303
+Acierto 0.86
+Error 0.570806
+Acierto 0.873333
+Error 0.332306
+Acierto 0.946667
+Error 0.274138
+Acierto 0.96
+Error 0.282467
+Acierto 0.96
+Error 0.237749
+Acierto 0.973333
+Error 0.798299
+Acierto 0.813333
+Error 0.372326
+Acierto 0.933333
+Error 0.243817
+Acierto 0.973333
+Error 0.286786
+Acierto 0.96
+Error 0.411454
+Acierto 0.92
+Error 0.411626
+Acierto 0.92
+Error 0.957793
+Acierto 0.773333
+Error 0.281044
+Acierto 0.96
+Error 0.549991
+Acierto 0.88
+Error 0.839824
+Acierto 0.813333
+Error 0.242593
+Acierto 0.966667
+Error 0.858493
+Acierto 0.8
+Error 0.296626
+Acierto 0.96
+Error 0.428431
+Acierto 0.92
+Error 0.299185
+Acierto 0.96
+Error 0.232835
+Acierto 0.973333
+Error 0.903602
+Acierto 0.786667
+Error 0.282337
+Acierto 0.96
+Error 0.433251
+Acierto 0.92
+Error 0.782724
+Acierto 0.813333
+Error 0.266598
+Acierto 0.98
+Error 0.543732
+Acierto 0.893333
+Error 0.632349
+Acierto 0.866667
+Error 0.419321
+Acierto 0.933333
+Error 0.697689
+Acierto 0.846667
+Error 0.262686
+Acierto 0.966667
+Error 0.247068
+Acierto 0.973333
+Error 0.333214
+Acierto 0.946667
+Error 0.322664
+Acierto 0.946667
+Error 0.359699
+Acierto 0.94
+Error 0.303815
+Acierto 0.953333
+Error 0.31346
+Acierto 0.946667
+Error 0.253636
+Acierto 0.98
+Error 0.341288
+Acierto 0.946667
+Error 0.236129
+Acierto 0.98
+Error 0.528617
+Acierto 0.9
+Error 0.302506
+Acierto 0.96
+Error 0.32368
+Acierto 0.946667
+Error 0.267524
+Acierto 0.966667
+Error 0.238607
+Acierto 0.98
+Error 0.340127
+Acierto 0.946667
+Error 0.232105
+Acierto 0.973333
+Error 0.227674
+Acierto 0.98
+Error 0.517993
+Acierto 0.9
+Error 0.344219
+Acierto 0.946667
+Error 0.446599
+Acierto 0.92
+Error 0.243092
+Acierto 0.966667
+Error 0.380705
+Acierto 0.933333
+Error 0.247885
+Acierto 0.966667
+Error 0.738105
+Acierto 0.833333
+Error 0.38882
+Acierto 0.933333
+Error 0.257433
+Acierto 0.966667
+Error 0.242698
+Acierto 0.966667
+Error 0.33646
+Acierto 0.946667
+Error 0.264687
+Acierto 0.96
+Error 0.241325
+Acierto 0.966667
+Error 0.245477
+Acierto 0.966667
+Error 0.24652
+Acierto 0.966667
+Error 0.219551
+Acierto 0.98
+Error 0.25762
+Acierto 0.966667
+Error 0.219517
+Acierto 0.973333
+Error 0.348677
+Acierto 0.94
+Error 0.36505
+Acierto 0.933333
+Error 0.265302
+Acierto 0.96
+Error 0.308973
+Acierto 0.946667
+Error 0.391167
+Acierto 0.92
+Error 0.341317
+Acierto 0.94
+Error 0.235614
+Acierto 0.966667
+Error 0.734324
+Acierto 0.833333
+Error 0.213783
+Acierto 0.98
+Error 0.224415
+Acierto 0.973333
+Error 0.29521
+Acierto 0.953333
+Error 0.209652
+Acierto 0.98
+Error 0.24023
+Acierto 0.966667
+Error 0.240166
+Acierto 0.966667
+Error 0.248898
+Acierto 0.966667
+Error 0.349308
+Acierto 0.94
+Error 0.384079
+Acierto 0.92
+Error 0.231365
+Acierto 0.966667
+Error 0.688468
+Acierto 0.846667
+Error 0.224158
+Acierto 0.966667
+Error 0.43414
+Acierto 0.92
+Error 0.24399
+Acierto 0.966667
+Error 0.208371
+Acierto 0.98
+Error 0.372489
+Acierto 0.933333
+Error 0.351599
+Acierto 0.933333
+Error 0.248113
+Acierto 0.966667
+Error 0.237568
+Acierto 0.966667
+Error 0.199428
+Acierto 0.98
+Error 0.19965
+Acierto 0.98
+Error 0.197321
+Acierto 0.98
+Error 0.444688
+Acierto 0.913333
+Error 0.203712
+Acierto 0.98
+Error 0.218736
+Acierto 0.966667
+Error 0.824568
+Acierto 0.813333
+Error 0.290585
+Acierto 0.946667
+Error 0.240096
+Acierto 0.966667
+Error 0.297976
+Acierto 0.946667
+Error 0.200967
+Acierto 0.98
+Error 0.313038
+Acierto 0.953333
+Error 0.214154
+Acierto 0.98
+Error 0.210576
+Acierto 0.98
+Error 0.217389
+Acierto 0.98
+Error 0.357447
+Acierto 0.933333
+Error 0.402907
+Acierto 0.92
+Error 0.444311
+Acierto 0.92
+Error 0.589967
+Acierto 0.866667
+Error 0.233902
+Acierto 0.966667
+Error 0.213118
+Acierto 0.98
+Error 0.272923
+Acierto 0.96
+Error 0.318041
+Acierto 0.946667
+Error 0.307981
+Acierto 0.946667
+Error 0.236218
+Acierto 0.966667
+Error 0.312602
+Acierto 0.946667
+Error 0.239088
+Acierto 0.966667
+Error 0.755037
+Acierto 0.826667
+Error 0.217143
+Acierto 0.98
+Error 0.210889
+Acierto 0.98
+Error 0.220802
+Acierto 0.973333
+Error 0.231762
+Acierto 0.966667
+Error 0.234333
+Acierto 0.966667
+Error 0.301785
+Acierto 0.946667
+Error 0.199659
+Acierto 0.98
+Error 0.301813
+Acierto 0.946667
+Error 0.235155
+Acierto 0.966667
+Error 0.196329
+Acierto 0.98
+Error 0.387679
+Acierto 0.92
+Error 0.584967
+Acierto 0.866667
+Error 0.201616
+Acierto 0.98
+Error 0.335505
+Acierto 0.94
+Error 0.252032
+Acierto 0.966667
+Error 0.263045
+Acierto 0.96
+Error 0.237093
+Acierto 0.966667
+Error 0.292045
+Acierto 0.953333
+Error 0.320674
+Acierto 0.946667
+Error 0.251446
+Acierto 0.966667
+Error 0.314835
+Acierto 0.946667
+Error 0.623404
+Acierto 0.86
+Error 0.560277
+Acierto 0.866667
+Error 0.225851
+Acierto 0.966667
+Error 0.197251
+Acierto 0.98
+Error 0.258942
+Acierto 0.96
+Error 0.24566
+Acierto 0.966667
+Error 0.277956
+Acierto 0.953333
+Error 0.230551
+Acierto 0.966667
+Error 0.554659
+Acierto 0.866667
+Error 0.230844
+Acierto 0.973333
+Error 0.225056
+Acierto 0.973333
+Error 0.283898
+Acierto 0.953333
+Error 0.406702
+Acierto 0.92
+Error 0.629155
+Acierto 0.86
+Error 0.323595
+Acierto 0.946667
+Error 0.233804
+Acierto 0.966667
+Error 0.202219
+Acierto 0.98
+Error 0.687915
+Acierto 0.846667
+Error 0.555639
+Acierto 0.873333
+Error 0.209312
+Acierto 0.973333
+Error 0.480268
+Acierto 0.906667
+Error 0.492587
+Acierto 0.906667
+Error 0.212831
+Acierto 0.98
+Error 0.419783
+Acierto 0.92
+Error 0.21714
+Acierto 0.973333
+Error 0.228934
+Acierto 0.966667
+Error 0.196417
+Acierto 0.98
+Error 0.392415
+Acierto 0.92
+Error 0.198116
+Acierto 0.98
+Error 0.330874
+Acierto 0.94
+Error 0.410834
+Acierto 0.92
+Error 0.356866
+Acierto 0.933333
+Error 0.533952
+Acierto 0.88
+Error 0.244069
+Acierto 0.966667
+Error 0.286221
+Acierto 0.953333
+Error 0.384269
+Acierto 0.926667
+Error 0.261221
+Acierto 0.96
+Error 0.583914
+Acierto 0.866667
+Error 0.200274
+Acierto 0.973333
+Error 0.547883
+Acierto 0.88
+Error 0.312267
+Acierto 0.946667
+Error 0.314722
+Acierto 0.946667
+Error 0.282951
+Acierto 0.953333
+Error 0.391104
+Acierto 0.92
+Error 0.627116
+Acierto 0.86
+Error 0.317186
+Acierto 0.946667
+Error 0.388342
+Acierto 0.92
+Error 0.403
+Acierto 0.92
+Error 0.379582
+Acierto 0.926667
+Error 0.471165
+Acierto 0.913333
+Error 0.241677
+Acierto 0.966667
+Error 0.223364
+Acierto 0.966667
+Error 0.188728
+Acierto 0.98
+Error 0.186988
+Acierto 0.98
+Error 0.201722
+Acierto 0.973333
+Error 0.704437
+Acierto 0.84
+Error 0.192483
+Acierto 0.973333
+Error 0.193488
+Acierto 0.973333
+Error 0.187839
+Acierto 0.973333
+Error 0.195847
+Acierto 0.973333
+Error 0.191364
+Acierto 0.973333
+Error 0.203646
+Acierto 0.973333
+Error 0.615937
+Acierto 0.86
+Error 0.392818
+Acierto 0.92
+Error 0.270213
+Acierto 0.953333
+Error 0.213653
+Acierto 0.973333
+Error 0.204926
+Acierto 0.973333
+Error 0.289409
+Acierto 0.953333
+Error 0.578563
+Acierto 0.86
+Error 0.20607
+Acierto 0.973333
+Error 0.393006
+Acierto 0.926667
+Error 0.607049
+Acierto 0.86
+Error 0.30677
+Acierto 0.946667
+Error 0.434771
+Acierto 0.913333
+Error 0.266351
+Acierto 0.96
+Error 0.232986
+Acierto 0.966667
+Error 0.199646
+Acierto 0.973333
+Error 0.36089
+Acierto 0.933333
+Error 0.225026
+Acierto 0.973333
+Error 0.223206
+Acierto 0.966667
+Error 0.60962
+Acierto 0.86
+Error 0.210361
+Acierto 0.973333
+Error 0.245069
+Acierto 0.96
+Error 0.193549
+Acierto 0.973333
+Error 0.446375
+Acierto 0.913333
+Error 0.204166
+Acierto 0.973333
+Error 0.204519
+Acierto 0.973333
+Error 0.308721
+Acierto 0.946667
+Error 0.206131
+Acierto 0.973333
+Error 0.423089
+Acierto 0.913333
+Error 0.361086
+Acierto 0.933333
+Error 0.205817
+Acierto 0.973333
+Error 0.497505
+Acierto 0.893333
+Error 0.215458
+Acierto 0.973333
+Error 0.399888
+Acierto 0.92
+Error 0.205634
+Acierto 0.973333
+Error 0.201268
+Acierto 0.973333
+Error 0.282491
+Acierto 0.953333
+Error 0.204814
+Acierto 0.973333
+Error 0.451815
+Acierto 0.913333
+Error 0.255511
+Acierto 0.96
+Error 0.291957
+Acierto 0.953333
+Error 0.29322
+Acierto 0.953333
+Error 0.218488
+Acierto 0.973333
+Error 0.208622
+Acierto 0.973333
+Error 0.212402
+Acierto 0.973333
+Error 0.225245
+Acierto 0.973333
+Error 0.208866
+Acierto 0.973333
+Error 0.312132
+Acierto 0.946667
+Error 0.213994
+Acierto 0.973333
+Error 0.269724
+Acierto 0.96
+Error 0.316007
+Acierto 0.946667
+Error 0.432171
+Acierto 0.913333
+Error 0.21774
+Acierto 0.973333
+Error 0.430928
+Acierto 0.913333
+Error 0.324682
+Acierto 0.946667
+Error 0.213839
+Acierto 0.973333
+Error 0.24596
+Acierto 0.966667
+Error 0.425362
+Acierto 0.913333
+Error 0.392658
+Acierto 0.926667
+Error 0.254758
+Acierto 0.966667
+Error 0.286678
+Acierto 0.953333
+Error 0.223082
+Acierto 0.973333
+Error 0.207316
+Acierto 0.973333
+Error 0.507605
+Acierto 0.893333
+Error 0.327234
+Acierto 0.946667
+Error 0.367449
+Acierto 0.926667
+Error 0.423515
+Acierto 0.913333
+Error 0.249232
+Acierto 0.966667
+Error 0.250846
+Acierto 0.966667
+Error 0.211908
+Acierto 0.973333
+Error 0.40729
+Acierto 0.92
+Error 0.444475
+Acierto 0.913333
+Error 0.256402
+Acierto 0.96
+Error 0.456862
+Acierto 0.906667
+Error 0.201898
+Acierto 0.973333
+Error 0.464395
+Acierto 0.906667
+Error 0.398279
+Acierto 0.92
+Error 0.287081
+Acierto 0.953333
+Error 0.330041
+Acierto 0.94
+Error 0.294921
+Acierto 0.953333
+Error 0.211604
+Acierto 0.973333
+Error 0.226281
+Acierto 0.973333
+Error 0.430535
+Acierto 0.913333
+Error 0.372835
+Acierto 0.926667
+Error 0.338227
+Acierto 0.933333
+Error 0.355836
+Acierto 0.933333
+Error 0.443498
+Acierto 0.913333
+Error 0.267411
+Acierto 0.953333
+Error 0.201373
+Acierto 0.98
+Error 0.280129
+Acierto 0.953333
+Error 0.330917
+Acierto 0.946667
+Error 0.369316
+Acierto 0.926667
+Error 0.33892
+Acierto 0.933333
+Error 0.297635
+Acierto 0.953333
+Error 0.207224
+Acierto 0.973333
+Error 0.247474
+Acierto 0.966667
+Error 0.395749
+Acierto 0.92
+Error 0.422226
+Acierto 0.913333
+Error 0.201477
+Acierto 0.973333
+Error 0.21933
+Acierto 0.973333
+Error 0.400451
+Acierto 0.92
+Error 0.197468
+Acierto 0.973333
+Error 0.233096
+Acierto 0.966667
+Error 0.328612
+Acierto 0.94
+Error 0.423321
+Acierto 0.913333
+Error 0.236979
+Acierto 0.966667
+Error 0.376195
+Acierto 0.926667
+Error 0.265021
+Acierto 0.953333
+Error 0.34954
+Acierto 0.933333
+Error 0.456594
+Acierto 0.906667
+Error 0.336899
+Acierto 0.94
+Error 0.211917
+Acierto 0.973333
+Error 0.208505
+Acierto 0.973333
+Error 0.215405
+Acierto 0.973333
+Error 0.26126
+Acierto 0.953333
+Error 0.200714
+Acierto 0.973333
+Error 0.348176
+Acierto 0.933333
+Error 0.21344
+Acierto 0.973333
+Error 0.203189
+Acierto 0.973333
+Error 0.269284
+Acierto 0.953333
+Error 0.204454
+Acierto 0.973333
+Error 0.256817
+Acierto 0.96
+Error 0.204135
+Acierto 0.973333
+Error 0.197386
+Acierto 0.973333
+Error 0.287748
+Acierto 0.953333
+Error 0.212867
+Acierto 0.973333
+Error 0.298285
+Acierto 0.953333
+Error 0.231287
+Acierto 0.966667
+Error 0.254625
+Acierto 0.96
+Error 0.211305
+Acierto 0.973333
+Error 0.365985
+Acierto 0.926667
+Error 0.237877
+Acierto 0.966667
+Error 0.348514
+Acierto 0.933333
+Error 0.225185
+Acierto 0.966667
+Error 0.222334
+Acierto 0.966667
+Error 0.279477
+Acierto 0.946667
+Error 0.26609
+Acierto 0.953333
+Error 0.259312
+Acierto 0.953333
+Error 0.207598
+Acierto 0.966667
+Error 0.26722
+Acierto 0.953333
+Error 0.263002
+Acierto 0.953333
+Error 0.208121
+Acierto 0.973333
+Error 0.35408
+Acierto 0.926667
+Error 0.373861
+Acierto 0.926667
+Error 0.215985
+Acierto 0.966667
+Error 0.265646
+Acierto 0.953333
+Error 0.197147
+Acierto 0.973333
+Error 0.189671
+Acierto 0.98
+Error 0.281265
+Acierto 0.953333
+Error 0.332405
+Acierto 0.94
+Error 0.363746
+Acierto 0.926667
+Error 0.193755
+Acierto 0.973333
+Error 0.195716
+Acierto 0.973333
+Error 0.239209
+Acierto 0.96
+Error 0.414172
+Acierto 0.913333
+Error 0.209513
+Acierto 0.966667
+Error 0.262567
+Acierto 0.953333
+Error 0.196932
+Acierto 0.973333
+Error 0.188825
+Acierto 0.973333
+Error 0.359267
+Acierto 0.926667
+Error 0.280456
+Acierto 0.953333
+Error 0.441823
+Acierto 0.906667
+Error 0.27007
+Acierto 0.953333
+Error 0.22175
+Acierto 0.966667
+Error 0.307599
+Acierto 0.946667
+Error 0.285477
+Acierto 0.953333
+Error 0.229742
+Acierto 0.966667
+Error 0.296678
+Acierto 0.946667
+Error 0.267299
+Acierto 0.953333
+Error 0.20093
+Acierto 0.973333
+Error 0.192409
+Acierto 0.973333
+Error 0.186772
+Acierto 0.973333
+Error 0.266255
+Acierto 0.953333
+Error 0.217849
+Acierto 0.966667
+Error 0.189375
+Acierto 0.973333
+Error 0.263003
+Acierto 0.953333
+Error 0.276621
+Acierto 0.953333
+Error 0.202755
+Acierto 0.973333
+Error 0.195149
+Acierto 0.973333
+Error 0.189882
+Acierto 0.973333
+Error 0.190598
+Acierto 0.973333
+Error 0.200154
+Acierto 0.973333
+Error 0.422766
+Acierto 0.913333
+Error 0.227027
+Acierto 0.966667
+Error 0.186972
+Acierto 0.973333
+Error 0.183732
+Acierto 0.973333
+Error 0.255728
+Acierto 0.953333
+Error 0.19296
+Acierto 0.973333
+Error 0.227827
+Acierto 0.966667
+Error 0.548368
+Acierto 0.873333
+Error 0.339842
+Acierto 0.933333
+Error 0.203184
+Acierto 0.966667
+Error 0.220067
+Acierto 0.966667
+Error 0.177947
+Acierto 0.973333
+Error 0.244713
+Acierto 0.953333
+Error 0.494717
+Acierto 0.893333
+Error 0.261492
+Acierto 0.953333
+Error 0.367029
+Acierto 0.926667
+Error 0.197212
+Acierto 0.973333
+Error 0.329361
+Acierto 0.933333
+Error 0.420789
+Acierto 0.913333
+Error 0.183976
+Acierto 0.973333
+Error 0.202536
+Acierto 0.973333
+Error 0.194064
+Acierto 0.973333
+Error 0.491543
+Acierto 0.893333
+Error 0.370875
+Acierto 0.926667
+Error 0.269136
+Acierto 0.953333
+Error 0.27757
+Acierto 0.953333
+Error 0.200303
+Acierto 0.973333
+Error 0.193601
+Acierto 0.973333
+Error 0.30679
+Acierto 0.946667
+Error 0.265339
+Acierto 0.953333
+Error 0.273784
+Acierto 0.953333
+Error 0.198718
+Acierto 0.973333
+Error 0.223777
+Acierto 0.966667
+Error 0.181974
+Acierto 0.973333
+Error 0.263007
+Acierto 0.953333
+Error 0.193643
+Acierto 0.973333
+Error 0.187582
+Acierto 0.973333
+Error 0.198527
+Acierto 0.973333
+Error 0.18255
+Acierto 0.973333
+Error 0.18627
+Acierto 0.973333
+Error 0.187183
+Acierto 0.973333
+Error 0.187104
+Acierto 0.973333
+Error 0.187885
+Acierto 0.973333
+Error 0.19291
+Acierto 0.973333
+Error 0.189265
+Acierto 0.973333
+Error 0.187608
+Acierto 0.973333
+Error 0.263354
+Acierto 0.953333
+Error 0.186914
+Acierto 0.973333
+Error 0.183912
+Acierto 0.973333
+Error 0.183993
+Acierto 0.973333
+Error 0.288812
+Acierto 0.946667
+Error 0.262254
+Acierto 0.953333
+Error 0.193493
+Acierto 0.973333
+Error 0.186315
+Acierto 0.973333
+Error 0.266184
+Acierto 0.953333
+Error 0.215748
+Acierto 0.966667
+Error 0.345971
+Acierto 0.933333
+Error 0.210255
+Acierto 0.973333
+Error 0.191717
+Acierto 0.973333
+Error 0.188211
+Acierto 0.973333
+Error 0.317993
+Acierto 0.94
+Error 0.352756
+Acierto 0.926667
+Error 0.252366
+Acierto 0.953333
+Error 0.41601
+Acierto 0.913333
+Error 0.1951
+Acierto 0.973333
+Error 0.192591
+Acierto 0.973333
+Error 0.191486
+Acierto 0.973333
+Error 0.191111
+Acierto 0.973333
+Error 0.190521
+Acierto 0.973333
+Error 0.189949
+Acierto 0.973333
+Error 0.189441
+Acierto 0.973333
+Error 0.189107
+Acierto 0.973333
+Error 0.188585
+Acierto 0.973333
+Error 0.188787
+Acierto 0.973333
+Error 0.184333
+Acierto 0.973333
+Error 0.326729
+Acierto 0.933333
+Error 0.184277
+Acierto 0.973333
+Error 0.179911
+Acierto 0.973333
+Error 0.187819
+Acierto 0.973333
+Error 0.348546
+Acierto 0.926667
+Error 0.19174
+Acierto 0.973333
+Error 0.190183
+Acierto 0.973333
+Error 0.189415
+Acierto 0.973333
+Error 0.189031
+Acierto 0.973333
+Error 0.182093
+Acierto 0.973333
+Error 0.180029
+Acierto 0.973333
+Error 0.176907
+Acierto 0.98
+Error 0.264368
+Acierto 0.953333
+Error 0.206203
+Acierto 0.973333
+Error 0.252661
+Acierto 0.953333
+Error 0.180503
+Acierto 0.973333
+Error 0.318524
+Acierto 0.933333
+Error 0.183014
+Acierto 0.973333
+Error 0.185283
+Acierto 0.973333
+Error 0.175141
+Acierto 0.973333
+Error 0.28693
+Acierto 0.946667
+Error 0.17738
+Acierto 0.973333
+Error 0.172658
+Acierto 0.98
+Error 0.176069
+Acierto 0.98
+Error 0.174801
+Acierto 0.98
+Error 0.177778
+Acierto 0.973333
+Error 0.17837
+Acierto 0.973333
+Error 0.279678
+Acierto 0.946667
+Error 0.189603
+Acierto 0.973333
+Error 0.181794
+Acierto 0.973333
+Error 0.179674
+Acierto 0.973333
+Error 0.32154
+Acierto 0.933333
+Error 0.473138
+Acierto 0.9
+Error 0.256791
+Acierto 0.953333
+Error 0.226251
+Acierto 0.96
+Error 0.182477
+Acierto 0.973333
+Error 0.297928
+Acierto 0.946667
+Error 0.411399
+Acierto 0.913333
+Error 0.207194
+Acierto 0.966667
+Error 0.320592
+Acierto 0.933333
+Error 0.429553
+Acierto 0.906667
+Error 0.372518
+Acierto 0.926667
+Error 0.257476
+Acierto 0.953333
+Error 0.198745
+Acierto 0.973333
+Error 0.192315
+Acierto 0.973333
+Error 0.190623
+Acierto 0.973333
+Error 0.189471
+Acierto 0.973333
+Error 0.382941
+Acierto 0.92
+Error 0.20107
+Acierto 0.966667
+Error 0.360791
+Acierto 0.926667
+Error 0.192145
+Acierto 0.973333
+Error 0.184505
+Acierto 0.973333
+Error 0.182038
+Acierto 0.973333
+Error 0.216506
+Acierto 0.966667
+Error 0.446229
+Acierto 0.906667
+Error 0.476728
+Acierto 0.9
+Error 0.311635
+Acierto 0.94
+Error 0.187133
+Acierto 0.973333
+Error 0.188715
+Acierto 0.973333
+Error 0.185837
+Acierto 0.973333
+Error 0.180165
+Acierto 0.973333
+Error 0.186379
+Acierto 0.973333
+Error 0.223249
+Acierto 0.966667
+Error 0.304803
+Acierto 0.94
+Error 0.164576
+Acierto 0.98
+Error 0.271002
+Acierto 0.953333
+Error 0.262303
+Acierto 0.953333
+Error 0.217173
+Acierto 0.966667
+Error 0.189769
+Acierto 0.973333
+Error 0.190134
+Acierto 0.973333
+Error 0.180855
+Acierto 0.973333
+Error 0.314274
+Acierto 0.94
+Error 0.171103
+Acierto 0.98
+Error 0.255944
+Acierto 0.953333
+Error 0.536194
+Acierto 0.873333
+Error 0.250659
+Acierto 0.953333
+Error 0.25248
+Acierto 0.953333
+Error 0.256983
+Acierto 0.953333
+Error 0.259842
+Acierto 0.953333
+Error 0.19037
+Acierto 0.973333
+Error 0.189545
+Acierto 0.973333
+Error 0.18856
+Acierto 0.973333
+Error 0.187237
+Acierto 0.973333
+Error 0.190958
+Acierto 0.973333
+Error 0.271258
+Acierto 0.953333
+Error 0.268839
+Acierto 0.953333
+Error 0.340513
+Acierto 0.933333
+Error 0.196138
+Acierto 0.973333
+Error 0.183132
+Acierto 0.973333
+Error 0.188313
+Acierto 0.973333
+Error 0.185359
+Acierto 0.973333
+Error 0.194538
+Acierto 0.973333
+Error 0.172041
+Acierto 0.98
+Error 0.170482
+Acierto 0.98
+Error 0.189951
+Acierto 0.973333
+Error 0.230559
+Acierto 0.96
+Error 0.599242
+Acierto 0.86
+Error 0.188232
+Acierto 0.973333
+Error 0.189409
+Acierto 0.973333
+Error 0.187699
+Acierto 0.973333
+Error 0.184094
+Acierto 0.973333
+Error 0.189874
+Acierto 0.973333
+Error 0.268074
+Acierto 0.953333
+Error 0.269176
+Acierto 0.953333
+Error 0.196114
+Acierto 0.973333
+Error 0.196561
+Acierto 0.973333
+Error 0.18879
+Acierto 0.973333
+Error 0.189751
+Acierto 0.973333
+Error 0.187102
+Acierto 0.973333
+Error 0.183289
+Acierto 0.973333
+Error 0.187848
+Acierto 0.973333
+Error 0.19469
+Acierto 0.973333
+Error 0.250214
+Acierto 0.953333
+Error 0.207634
+Acierto 0.966667
+Error 0.17478
+Acierto 0.973333
+Error 0.198257
+Acierto 0.966667
+Error 0.195706
+Acierto 0.966667
+Error 0.541625
+Acierto 0.873333
+Error 0.176802
+Acierto 0.973333
+Error 0.188575
+Acierto 0.973333
+Error 0.18373
+Acierto 0.973333
+Error 0.183806
+Acierto 0.973333
+Error 0.187293
+Acierto 0.973333
+Error 0.262229
+Acierto 0.953333
+Error 0.186318
+Acierto 0.973333
+Error 0.184619
+Acierto 0.973333
+Error 0.21634
+Acierto 0.966667
+Error 0.162184
+Acierto 0.98
+Error 0.374195
+Acierto 0.926667
+Error 0.187354
+Acierto 0.973333
+Error 0.258623
+Acierto 0.953333
+Error 0.225682
+Acierto 0.966667
+Error 0.212775
+Acierto 0.973333
+Error 0.258979
+Acierto 0.953333
+Error 0.379787
+Acierto 0.926667
+Error 0.229449
+Acierto 0.966667
+Error 0.16186
+Acierto 0.98
+Error 0.186215
+Acierto 0.973333
+Error 0.252037
+Acierto 0.953333
+Error 0.253353
+Acierto 0.953333
+Error 0.223525
+Acierto 0.966667
+Error 0.215134
+Acierto 0.966667
+Error 0.200305
+Acierto 0.966667
+Error 0.27909
+Acierto 0.946667
+Error 0.209529
+Acierto 0.966667
+Error 0.170369
+Acierto 0.98
+Error 0.460958
+Acierto 0.9
+Error 0.329871
+Acierto 0.933333
+Error 0.295132
+Acierto 0.946667
+Error 0.193148
+Acierto 0.973333
+Error 0.20101
+Acierto 0.973333
+Error 0.192952
+Acierto 0.973333
+Error 0.19739
+Acierto 0.973333
+Error 0.186757
+Acierto 0.973333
+Error 0.188166
+Acierto 0.973333
+Error 0.187151
+Acierto 0.973333
+Error 0.20198
+Acierto 0.973333
+Error 0.187028
+Acierto 0.973333
+Error 0.347558
+Acierto 0.926667
+Error 0.382551
+Acierto 0.92
+Error 0.206883
+Acierto 0.973333
+Error 0.184149
+Acierto 0.973333
+Error 0.185776
+Acierto 0.973333
+Error 0.192383
+Acierto 0.973333
+Error 0.249096
+Acierto 0.953333
+Error 0.256845
+Acierto 0.953333
+Error 0.197674
+Acierto 0.973333
+Error 0.365096
+Acierto 0.926667
+Error 0.242906
+Acierto 0.96
+Error 0.316824
+Acierto 0.94
+Error 0.238023
+Acierto 0.96
+Error 0.267062
+Acierto 0.953333
+Error 0.205543
+Acierto 0.973333
+Error 0.195726
+Acierto 0.973333
+Error 0.477222
+Acierto 0.893333
+Error 0.203053
+Acierto 0.973333
+Error 0.211568
+Acierto 0.973333
+Error 0.216775
+Acierto 0.966667
+Error 0.365326
+Acierto 0.926667
+Error 0.278643
+Acierto 0.953333
+Error 0.278719
+Acierto 0.953333
+Error 0.189572
+Acierto 0.98
+Error 0.198405
+Acierto 0.973333
+Error 0.19209
+Acierto 0.973333
+Error 0.192535
+Acierto 0.973333
+Error 0.191412
+Acierto 0.973333
+Error 0.195773
+Acierto 0.973333
+Error 0.309243
+Acierto 0.946667
+Error 0.306444
+Acierto 0.946667
+Error 0.212154
+Acierto 0.973333
+Error 0.232797
+Acierto 0.966667
+Error 0.364257
+Acierto 0.926667
+Error 0.202883
+Acierto 0.973333
+Error 0.190225
+Acierto 0.98
+Error 0.204561
+Acierto 0.973333
+Error 0.382941
+Acierto 0.926667
+Error 0.198102
+Acierto 0.973333
+Error 0.218783
+Acierto 0.966667
+Error 0.200982
+Acierto 0.973333
+Error 0.244515
+Acierto 0.96
+Error 0.321428
+Acierto 0.94
+Error 0.299162
+Acierto 0.946667
+Error 0.393409
+Acierto 0.92
+Error 0.355002
+Acierto 0.926667
+Error 0.319162
+Acierto 0.94
+Error 0.19867
+Acierto 0.973333
+Error 0.283746
+Acierto 0.953333
+Error 0.281741
+Acierto 0.953333
+Error 0.205545
+Acierto 0.973333
+Error 0.211566
+Acierto 0.973333
+Error 0.204503
+Acierto 0.973333
+Error 0.205036
+Acierto 0.973333
+Error 0.199901
+Acierto 0.973333
+Error 0.205139
+Acierto 0.973333
+Error 0.197866
+Acierto 0.973333
+Error 0.218914
+Acierto 0.966667
+Error 0.299812
+Acierto 0.946667
+Error 0.379251
+Acierto 0.926667
+Error 0.262193
+Acierto 0.953333
+Error 0.210888
+Acierto 0.973333
+Error 0.186735
+Acierto 0.98
+Error 0.211847
+Acierto 0.966667
+Error 0.267147
+Acierto 0.953333
+Error 0.213473
+Acierto 0.973333
+Error 0.201279
+Acierto 0.973333
+Error 0.269434
+Acierto 0.953333
+Error 0.207903
+Acierto 0.973333
+Error 0.198843
+Acierto 0.973333
+Error 0.230469
+Acierto 0.966667
+Error 0.181806
+Acierto 0.973333
+Error 0.188936
+Acierto 0.973333
+Error 0.189809
+Acierto 0.973333
+Error 0.19008
+Acierto 0.973333
+Error 0.193633
+Acierto 0.973333
+Error 0.200851
+Acierto 0.973333
+Error 0.183738
+Acierto 0.973333
+Error 0.196388
+Acierto 0.973333
+Error 0.654572
+Acierto 0.846667
+Error 0.286295
+Acierto 0.946667
+Error 0.213735
+Acierto 0.966667
+Error 0.27781
+Acierto 0.953333
+Error 0.272925
+Acierto 0.953333
+Error 0.209432
+Acierto 0.973333
+Error 0.194488
+Acierto 0.973333
+Error 0.199794
+Acierto 0.973333
+Error 0.238542
+Acierto 0.96
+Error 0.191421
+Acierto 0.973333
+Error 0.235931
+Acierto 0.96
+Error 0.172107
+Acierto 0.98
+Error 0.258149
+Acierto 0.953333
+Error 0.201716
+Acierto 0.973333
+Error 0.18614
+Acierto 0.973333
+Error 0.238263
+Acierto 0.96
+Error 0.170555
+Acierto 0.98
+Error 0.182287
+Acierto 0.973333
+Error 0.17248
+Acierto 0.98
+Error 0.202771
+Acierto 0.973333
+Error 0.166422
+Acierto 0.98
+Error 0.257015
+Acierto 0.953333
+Error 0.183782
+Acierto 0.98
+Error 0.200928
+Acierto 0.973333
+Error 0.258912
+Acierto 0.953333
+Error 0.19585
+Acierto 0.973333
+Error 0.177597
+Acierto 0.98
+Error 0.17338
+Acierto 0.98
+Error 0.22366
+Acierto 0.966667
+Error 0.195265
+Acierto 0.973333
+Error 0.189716
+Acierto 0.973333
+Error 0.169928
+Acierto 0.98
+Error 0.168617
+Acierto 0.98
+Error 0.360692
+Acierto 0.926667
+Error 0.225132
+Acierto 0.966667
+Error 0.227285
+Acierto 0.966667
+Error 0.184144
+Acierto 0.98
+Error 0.180084
+Acierto 0.98
+Error 0.205468
+Acierto 0.973333
+Error 0.192359
+Acierto 0.973333
+Error 0.46888
+Acierto 0.893333
+Error 0.220227
+Acierto 0.966667
+Error 0.196409
+Acierto 0.973333
+Error 0.184366
+Acierto 0.973333
+Error 0.178967
+Acierto 0.98
+Error 0.201185
+Acierto 0.973333
+Error 0.183465
+Acierto 0.973333
+Error 0.189216
+Acierto 0.973333
+Error 0.309092
+Acierto 0.94
+Error 0.251494
+Acierto 0.953333
+Error 0.191864
+Acierto 0.973333
+Error 0.272905
+Acierto 0.953333
+Error 0.280189
+Acierto 0.953333
+Error 0.214071
+Acierto 0.973333
+Error 0.177716
+Acierto 0.98
+Error 0.196609
+Acierto 0.973333
+Error 0.318696
+Acierto 0.94
+Error 0.25726
+Acierto 0.953333
+Error 0.219183
+Acierto 0.966667
+Error 0.242986
+Acierto 0.96
+Error 0.210011
+Acierto 0.966667
+Error 0.183987
+Acierto 0.973333
+Error 0.2704
+Acierto 0.953333
+Error 0.269093
+Acierto 0.953333
+Error 0.291181
+Acierto 0.953333
+Error 0.286326
+Acierto 0.953333
+Error 0.215328
+Acierto 0.973333
+Error 0.365834
+Acierto 0.926667
+Error 0.198928
+Acierto 0.973333
+Error 0.180106
+Acierto 0.98
+Error 0.194483
+Acierto 0.973333
+Error 0.279394
+Acierto 0.953333
+Error 0.282128
+Acierto 0.953333
+Error 0.198844
+Acierto 0.973333
+Error 0.182531
+Acierto 0.98
+Error 0.181145
+Acierto 0.98
+Error 0.17829
+Acierto 0.98
+Error 0.254258
+Acierto 0.953333
+Error 0.236691
+Acierto 0.96
+Error 0.265012
+Acierto 0.953333
+Error 0.271869
+Acierto 0.953333
+Error 0.185514
+Acierto 0.98
+Error 0.227153
+Acierto 0.966667
+Error 0.199906
+Acierto 0.973333
+Error 0.379405
+Acierto 0.92
+Error 0.217808
+Acierto 0.966667
+Error 0.169948
+Acierto 0.98
+Error 0.172462
+Acierto 0.98
+Error 0.177373
+Acierto 0.98
+Error 0.191768
+Acierto 0.973333
+Error 0.346926
+Acierto 0.926667
+Error 0.260717
+Acierto 0.953333
+Error 0.232815
+Acierto 0.966667
+Error 0.314008
+Acierto 0.94
+Error 0.177558
+Acierto 0.973333
+Error 0.168115
+Acierto 0.98
+Error 0.251503
+Acierto 0.953333
+Error 0.363929
+Acierto 0.926667
+Error 0.244712
+Acierto 0.966667
+Error 0.204219
+Acierto 0.973333
+Error 0.177908
+Acierto 0.98
+Error 0.179581
+Acierto 0.98
+Error 0.189881
+Acierto 0.973333
+Error 0.187939
+Acierto 0.973333
+Error 0.176203
+Acierto 0.98
+Error 0.185777
+Acierto 0.98
+Error 0.193575
+Acierto 0.973333
+Error 0.186576
+Acierto 0.973333
+Error 0.277894
+Acierto 0.946667
+Error 0.272294
+Acierto 0.953333
+Error 0.211542
+Acierto 0.973333
+Error 0.328657
+Acierto 0.933333
+Error 0.191538
+Acierto 0.973333
+Error 0.191588
+Acierto 0.98
+Error 0.276369
+Acierto 0.953333
+Error 0.307477
+Acierto 0.94
+Error 0.42047
+Acierto 0.906667
+Error 0.270929
+Acierto 0.953333
+Error 0.197712
+Acierto 0.973333
+Error 0.187117
+Acierto 0.98
+Error 0.194727
+Acierto 0.973333
+Error 0.181213
+Acierto 0.98
+Error 0.191812
+Acierto 0.973333
+Error 0.179282
+Acierto 0.98
+Error 0.187153
+Acierto 0.973333
+Error 0.176372
+Acierto 0.98
+Error 0.187801
+Acierto 0.973333
+Error 0.175372
+Acierto 0.98
+Error 0.230946
+Acierto 0.966667
+Error 0.280536
+Acierto 0.946667
+Error 0.276851
+Acierto 0.953333
+Error 0.222752
+Acierto 0.966667
+Error 0.184172
+Acierto 0.98
+Error 0.266989
+Acierto 0.953333
+Error 0.272758
+Acierto 0.953333
+Error 0.299349
+Acierto 0.946667
+Error 0.333148
+Acierto 0.933333
+Error 0.18426
+Acierto 0.973333
+Error 0.174228
+Acierto 0.98
+Error 0.174285
+Acierto 0.98
+Error 0.182463
+Acierto 0.98
+Error 0.175761
+Acierto 0.98
+Error 0.186346
+Acierto 0.973333
+Error 0.173957
+Acierto 0.98
+Error 0.249796
+Acierto 0.953333
+Error 0.299965
+Acierto 0.946667
+Error 0.269624
+Acierto 0.953333
+Error 0.220119
+Acierto 0.973333
+Error 0.175307
+Acierto 0.98
+Error 0.214784
+Acierto 0.966667
+Error 0.322864
+Acierto 0.94
+Error 0.260756
+Acierto 0.953333
+Error 0.163399
+Acierto 0.98
+Error 0.307768
+Acierto 0.94
+Error 0.39832
+Acierto 0.92
+Error 0.286735
+Acierto 0.946667
+Error 0.213244
+Acierto 0.966667
+Error 0.222902
+Acierto 0.966667
+Error 0.27148
+Acierto 0.953333
+Error 0.270868
+Acierto 0.96
+Error 0.40682
+Acierto 0.92
+Error 0.274817
+Acierto 0.953333
+Error 0.27476
+Acierto 0.953333
+Error 0.280327
+Acierto 0.953333
+Error 0.207611
+Acierto 0.973333
+Error 0.195927
+Acierto 0.98
+Error 0.213428
+Acierto 0.973333
+Error 0.191624
+Acierto 0.98
+Error 0.249946
+Acierto 0.96
+Error 0.277347
+Acierto 0.953333
+Error 0.270781
+Acierto 0.953333
+Error 0.193984
+Acierto 0.98
+Error 0.210136
+Acierto 0.973333
+Error 0.192921
+Acierto 0.98
+Error 0.220124
+Acierto 0.966667
+Error 0.19874
+Acierto 0.973333
+Error 0.23982
+Acierto 0.966667
+Error 0.176707
+Acierto 0.98
+Error 0.272497
+Acierto 0.953333
+Error 0.268853
+Acierto 0.953333
+Error 0.204386
+Acierto 0.973333
+Error 0.277645
+Acierto 0.953333
+Error 0.276449
+Acierto 0.953333
+Error 0.222258
+Acierto 0.973333
+Error 0.276365
+Acierto 0.953333
+Error 0.196816
+Acierto 0.973333
+Error 0.183911
+Acierto 0.98
+Error 0.185207
+Acierto 0.98
+Error 0.195506
+Acierto 0.973333
+Error 0.184165
+Acierto 0.98
+Error 0.1848
+Acierto 0.98
+Error 0.265192
+Acierto 0.953333
+Error 0.195548
+Acierto 0.973333
+Error 0.302283
+Acierto 0.946667
+Error 0.340657
+Acierto 0.933333
+Error 0.176685
+Acierto 0.98
+Error 0.174614
+Acierto 0.98
+Error 0.251648
+Acierto 0.953333
+Error 0.201267
+Acierto 0.973333
+Error 0.178818
+Acierto 0.98
+Error 0.177343
+Acierto 0.98
+Error 0.281326
+Acierto 0.946667
+Error 0.276126
+Acierto 0.953333
+Error 0.246414
+Acierto 0.966667
+Error 0.192401
+Acierto 0.98
+Error 0.191959
+Acierto 0.973333
+Error 0.180446
+Acierto 0.98
+Error 0.193282
+Acierto 0.973333
+Error 0.254137
+Acierto 0.953333
+Error 0.200494
+Acierto 0.973333
+Error 0.264812
+Acierto 0.953333
+Error 0.182123
+Acierto 0.98
+Error 0.178266
+Acierto 0.98
+Error 0.174957
+Acierto 0.98
+Error 0.216641
+Acierto 0.966667
+Error 0.317806
+Acierto 0.94
+Error 0.169308
+Acierto 0.98
+Error 0.271589
+Acierto 0.953333
+Error 0.280644
+Acierto 0.953333
+Error 0.195912
+Acierto 0.98
+Error 0.271023
+Acierto 0.953333
+Error 0.279556
+Acierto 0.953333
+Error 0.187399
+Acierto 0.98
+Error 0.200701
+Acierto 0.973333
+Error 0.285577
+Acierto 0.946667
+Error 0.274317
+Acierto 0.953333
+Error 0.187418
+Acierto 0.98
+Error 0.183579
+Acierto 0.98
+Error 0.298963
+Acierto 0.946667
+Error 0.199679
+Acierto 0.973333
+Error 0.314389
+Acierto 0.946667
+Error 0.268901
+Acierto 0.953333
+Error 0.270375
+Acierto 0.953333
+Error 0.187193
+Acierto 0.973333
+Error 0.270858
+Acierto 0.953333
+Error 0.274092
+Acierto 0.953333
+Error 0.278293
+Acierto 0.953333
+Error 0.211881
+Acierto 0.973333
+Error 0.224674
+Acierto 0.966667
+Error 0.361382
+Acierto 0.926667
+Error 0.321993
+Acierto 0.94
+Error 0.179663
+Acierto 0.98
+Error 0.265699
+Acierto 0.953333
+Error 0.227157
+Acierto 0.966667
+Error 0.324193
+Acierto 0.933333
+Error 0.339189
+Acierto 0.933333
+Error 0.218463
+Acierto 0.966667
+Error 0.326648
+Acierto 0.94
+Error 0.179891
+Acierto 0.98
+Error 0.222937
+Acierto 0.966667
+Error 0.176017
+Acierto 0.98
+Error 0.267942
+Acierto 0.953333
+Error 0.279303
+Acierto 0.96
+Error 0.263502
+Acierto 0.953333
+Error 0.200228
+Acierto 0.973333
+Error 0.277337
+Acierto 0.953333
+Error 0.275843
+Acierto 0.953333
+Error 0.254086
+Acierto 0.96
+Error 0.28086
+Acierto 0.953333
+Error 0.285647
+Acierto 0.953333
+Error 0.276916
+Acierto 0.953333
+Error 0.199852
+Acierto 0.98
+Error 0.195279
+Acierto 0.98
+Error 0.205341
+Acierto 0.973333
+Error 0.188782
+Acierto 0.98
+Error 0.247103
+Acierto 0.96
+Error 0.210632
+Acierto 0.98
+Error 0.197612
+Acierto 0.973333
+Error 0.2721
+Acierto 0.953333
+Error 0.27403
+Acierto 0.953333
+Error 0.333006
+Acierto 0.933333
+Error 0.221268
+Acierto 0.966667
+Error 0.27324
+Acierto 0.953333
+Error 0.220715
+Acierto 0.973333
+Error 0.187314
+Acierto 0.98
+Error 0.203922
+Acierto 0.973333
+Error 0.182481
+Acierto 0.98
+Error 0.273575
+Acierto 0.953333
+Error 0.18787
+Acierto 0.98
+Error 0.233695
+Acierto 0.966667
+Error 0.18309
+Acierto 0.98
+Error 0.280326
+Acierto 0.953333
+Error 0.282256
+Acierto 0.953333
+Error 0.287854
+Acierto 0.953333
+Error 0.209724
+Acierto 0.973333
+Error 0.303233
+Acierto 0.946667
+Error 0.186744
+Acierto 0.98
+Error 0.186324
+Acierto 0.98
+Error 0.224819
+Acierto 0.966667
+Error 0.17779
+Acierto 0.98
+Error 0.186788
+Acierto 0.98
+Error 0.178369
+Acierto 0.98
+Error 0.269666
+Acierto 0.953333
+Error 0.184844
+Acierto 0.98
+Error 0.185515
+Acierto 0.98
+Error 0.187288
+Acierto 0.98
+Error 0.180075
+Acierto 0.98
+Error 0.231197
+Acierto 0.966667
+Error 0.205146
+Acierto 0.973333
+Error 0.318576
+Acierto 0.94
+Error 0.170136
+Acierto 0.98
+Error 0.508924
+Acierto 0.886667
+Error 0.271334
+Acierto 0.953333
+Error 0.184351
+Acierto 0.98
+Error 0.180576
+Acierto 0.98
+Error 0.190543
+Acierto 0.973333
+Error 0.177474
+Acierto 0.98
+Error 0.265656
+Acierto 0.953333
+Error 0.311884
+Acierto 0.946667
+Error 0.308065
+Acierto 0.946667
+Error 0.179956
+Acierto 0.98
+Error 0.179327
+Acierto 0.98
+Error 0.197521
+Acierto 0.973333
+Error 0.364687
+Acierto 0.926667
+Error 0.28379
+Acierto 0.953333
+Error 0.227834
+Acierto 0.966667
+Error 0.281482
+Acierto 0.953333
+Error 0.289818
+Acierto 0.953333
+Error 0.251834
+Acierto 0.966667
+Error 0.194222
+Acierto 0.98
+Error 0.296342
+Acierto 0.946667
+Error 0.223422
+Acierto 0.973333
+Error 0.180436
+Acierto 0.98
+Error 0.189238
+Acierto 0.98
+Error 0.178964
+Acierto 0.98
+Error 0.205787
+Acierto 0.973333
+Error 0.343985
+Acierto 0.933333
+Error 0.359111
+Acierto 0.926667
+Error 0.245298
+Acierto 0.966667
+Error 0.28055
+Acierto 0.953333
+Error 0.223123
+Acierto 0.973333
+Error 0.191731
+Acierto 0.98
+Error 0.228552
+Acierto 0.966667
+Error 0.334255
+Acierto 0.94
+Error 0.267585
+Acierto 0.953333
+Error 0.272758
+Acierto 0.953333
+Error 0.220999
+Acierto 0.973333
+Error 0.183269
+Acierto 0.98
+Error 0.271846
+Acierto 0.953333
+Error 0.190622
+Acierto 0.98
+Error 0.18437
+Acierto 0.98
+Error 0.274367
+Acierto 0.953333
+Error 0.280925
+Acierto 0.953333
+Error 0.290123
+Acierto 0.953333
+Error 0.187282
+Acierto 0.98
+Error 0.258008
+Acierto 0.953333
+Error 0.243632
+Acierto 0.966667
+Error 0.217801
+Acierto 0.966667
+Error 0.271806
+Acierto 0.953333
+Error 0.189335
+Acierto 0.98
+Error 0.198303
+Acierto 0.973333
+Error 0.200226
+Acierto 0.973333
+Error 0.334759
+Acierto 0.933333
+Error 0.336125
+Acierto 0.94
+Error 0.318499
+Acierto 0.94
+Error 0.196
+Acierto 0.973333
+Error 0.206482
+Acierto 0.98
+Error 0.270557
+Acierto 0.953333
+Error 0.264994
+Acierto 0.953333
+Error 0.210878
+Acierto 0.973333
+Error 0.314603
+Acierto 0.946667
+Error 0.247675
+Acierto 0.966667
+Error 0.272742
+Acierto 0.953333
+Error 0.280647
+Acierto 0.953333
+Error 0.26915
+Acierto 0.953333
+Error 0.201573
+Acierto 0.973333
+Error 0.202744
+Acierto 0.973333
+Error 0.181343
+Acierto 0.98
+Error 0.188656
+Acierto 0.98
+Error 0.181978
+Acierto 0.98
+Error 0.180907
+Acierto 0.98
+Error 0.179723
+Acierto 0.98
+Error 0.178278
+Acierto 0.98
+Error 0.178663
+Acierto 0.98
+Error 0.370396
+Acierto 0.926667
+Error 0.33112
+Acierto 0.94
+Error 0.5953
+Acierto 0.86
+Error 0.201275
+Acierto 0.973333
+Error 0.179897
+Acierto 0.98
+Error 0.257517
+Acierto 0.953333
+Error 0.326589
+Acierto 0.94
+Error 0.224948
+Acierto 0.966667
+Error 0.225333
+Acierto 0.966667
+Error 0.332324
+Acierto 0.94
+Error 0.201497
+Acierto 0.973333
+Error 0.202261
+Acierto 0.973333
+Error 0.363653
+Acierto 0.926667
+Error 0.285126
+Acierto 0.953333
+Error 0.231127
+Acierto 0.973333
+Error 0.227128
+Acierto 0.966667
+Error 0.191154
+Acierto 0.98
+Error 0.183798
+Acierto 0.98
+Error 0.2762
+Acierto 0.953333
+Error 0.283671
+Acierto 0.953333
+Error 0.290575
+Acierto 0.953333
+Error 0.225112
+Acierto 0.973333
+Error 0.33477
+Acierto 0.94
+Error 0.336411
+Acierto 0.933333
+Error 0.365148
+Acierto 0.926667
+Error 0.285531
+Acierto 0.953333
+Error 0.196804
+Acierto 0.98
+Error 0.231213
+Acierto 0.966667
+Error 0.278795
+Acierto 0.953333
+Error 0.19858
+Acierto 0.98
+Error 0.300924
+Acierto 0.946667
+Error 0.291541
+Acierto 0.953333
+Error 0.199044
+Acierto 0.98
+Error 0.192116
+Acierto 0.98
+Error 0.187762
+Acierto 0.98
+Error 0.399874
+Acierto 0.92
+Error 0.190722
+Acierto 0.98
+Error 0.186038
+Acierto 0.98
+Error 0.273679
+Acierto 0.953333
+Error 0.206561
+Acierto 0.98
+Error 0.191064
+Acierto 0.98
+Error 0.186667
+Acierto 0.98
+Error 0.362489
+Acierto 0.926667
+Error 0.192138
+Acierto 0.98
+Error 0.278078
+Acierto 0.953333
+Error 0.287059
+Acierto 0.953333
+Error 0.287158
+Acierto 0.953333
+Error 0.204116
+Acierto 0.973333
+Error 0.182901
+Acierto 0.98
+Error 0.306432
+Acierto 0.946667
+Error 0.283749
+Acierto 0.953333
+Error 0.283266
+Acierto 0.953333
+Error 0.292698
+Acierto 0.953333
+Error 0.237267
+Acierto 0.966667
+Error 0.189496
+Acierto 0.98
+Error 0.183894
+Acierto 0.98
+Error 0.195076
+Acierto 0.973333
+Error 0.270674
+Acierto 0.953333
+Error 0.279082
+Acierto 0.953333
+Error 0.244849
+Acierto 0.966667
+Error 0.283728
+Acierto 0.953333
+Error 0.293138
+Acierto 0.953333
+Error 0.23529
+Acierto 0.966667
+Error 0.324044
+Acierto 0.94
+Error 0.178359
+Acierto 0.98
+Error 0.229661
+Acierto 0.966667
+Error 0.174988
+Acierto 0.98
+Error 0.175939
+Acierto 0.98
+Error 0.269971
+Acierto 0.953333
+Error 0.277661
+Acierto 0.953333
+Error 0.286757
+Acierto 0.953333
+Error 0.202916
+Acierto 0.98
+Error 0.234206
+Acierto 0.966667
+Error 0.406662
+Acierto 0.92
+Error 0.26037
+Acierto 0.953333
+Error 0.333477
+Acierto 0.94
+Error 0.258694
+Acierto 0.953333
+Error 0.202036
+Acierto 0.973333
+Error 0.359657
+Acierto 0.926667
+Error 0.273732
+Acierto 0.953333
+Error 0.219555
+Acierto 0.973333
+Error 0.27373
+Acierto 0.953333
+Error 0.272892
+Acierto 0.953333
+Error 0.273361
+Acierto 0.953333
+Error 0.484969
+Acierto 0.893333
+Error 0.189666
+Acierto 0.98
+Error 0.192591
+Acierto 0.98
+Error 0.185188
+Acierto 0.98
+Error 0.201418
+Acierto 0.973333
+Error 0.181214
+Acierto 0.98
+Error 0.274087
+Acierto 0.953333
+Error 0.28061
+Acierto 0.953333
+Error 0.290524
+Acierto 0.953333
+Error 0.384675
+Acierto 0.926667
+Error 0.196476
+Acierto 0.98
+Error 0.193198
+Acierto 0.98
+Error 0.187294
+Acierto 0.98
+Error 0.201193
+Acierto 0.973333
+Error 0.564129
+Acierto 0.873333
+Error 0.197853
+Acierto 0.98
+Error 0.419168
+Acierto 0.92
+Error 0.242613
+Acierto 0.966667
+Error 0.374052
+Acierto 0.926667
+Error 0.295478
+Acierto 0.953333
+Error 0.300411
+Acierto 0.953333
+Error 0.202936
+Acierto 0.98
+Error 0.417583
+Acierto 0.92
+Error 0.298912
+Acierto 0.953333
+Error 0.301959
+Acierto 0.953333
+Error 0.272258
+Acierto 0.953333
+Error 0.240076
+Acierto 0.966667
+Error 0.194138
+Acierto 0.98
+Error 0.204127
+Acierto 0.973333
+Error 0.216322
+Acierto 0.966667
+Error 0.232444
+Acierto 0.966667
+Error 0.297426
+Acierto 0.946667
+Error 0.200388
+Acierto 0.973333
+Error 0.186681
+Acierto 0.98
+Error 0.274646
+Acierto 0.953333
+Error 0.170932
+Acierto 0.98
+Error 0.576509
+Acierto 0.866667
+Error 0.283632
+Acierto 0.953333
+Error 0.253662
+Acierto 0.96
+Error 0.299595
+Acierto 0.946667
+Error 0.248433
+Acierto 0.966667
+Error 0.189486
+Acierto 0.98
+Error 0.186521
+Acierto 0.98
+Error 0.189555
+Acierto 0.98
+Error 0.184567
+Acierto 0.98
+Error 0.201303
+Acierto 0.973333
+Error 0.190426
+Acierto 0.98
+Error 0.18228
+Acierto 0.98
+Error 0.52607
+Acierto 0.886667
+Error 0.488814
+Acierto 0.893333
+Error 0.191568
+Acierto 0.98
+Error 0.479676
+Acierto 0.893333
+Error 0.296332
+Acierto 0.953333
+Error 0.299168
+Acierto 0.953333
+Error 0.20541
+Acierto 0.98
+Error 0.420054
+Acierto 0.92
+Error 0.296485
+Acierto 0.953333
+Error 0.202654
+Acierto 0.98
+Error 0.19409
+Acierto 0.98
+Error 0.40459
+Acierto 0.92
+Error 0.199613
+Acierto 0.98
+Error 0.453994
+Acierto 0.906667
+Error 0.324581
+Acierto 0.946667
+Error 0.194465
+Acierto 0.98
+Error 0.181939
+Acierto 0.98
+Error 0.181571
+Acierto 0.98
+Error 0.274029
+Acierto 0.953333
+Error 0.27632
+Acierto 0.953333
+Error 0.222924
+Acierto 0.966667
+Error 0.20563
+Acierto 0.973333
+Error 0.184291
+Acierto 0.98
+Error 0.2743
+Acierto 0.953333
+Error 0.187223
+Acierto 0.98
+Error 0.491814
+Acierto 0.893333
+Error 0.189456
+Acierto 0.98
+Error 0.2291
+Acierto 0.966667
+Error 0.329838
+Acierto 0.946667
+Error 0.460962
+Acierto 0.906667
+Error 0.262506
+Acierto 0.966667
+Error 0.229206
+Acierto 0.966667
+Error 0.324739
+Acierto 0.946667
+Error 0.510074
+Acierto 0.886667
+Error 0.281655
+Acierto 0.953333
+Error 0.377873
+Acierto 0.926667
+Error 0.274521
+Acierto 0.953333
+Error 0.20949
+Acierto 0.973333
+Error 0.296603
+Acierto 0.946667
+Error 0.287555
+Acierto 0.953333
+Error 0.294093
+Acierto 0.953333
+Error 0.203173
+Acierto 0.98
+Error 0.427167
+Acierto 0.92
+Error 0.403829
+Acierto 0.92
+Error 0.413338
+Acierto 0.92
+Error 0.300203
+Acierto 0.953333
+Error 0.301429
+Acierto 0.953333
+Error 0.399754
+Acierto 0.92
+Error 0.199037
+Acierto 0.98
+Error 0.192632
+Acierto 0.98
+Error 0.221473
+Acierto 0.966667
+Error 0.276313
+Acierto 0.953333
+Error 0.227245
+Acierto 0.973333
+Error 0.336206
+Acierto 0.94
+Error 0.181077
+Acierto 0.98
+Error 0.279324
+Acierto 0.953333
+Error 0.281823
+Acierto 0.953333
+Error 0.291121
+Acierto 0.953333
+Error 0.220752
+Acierto 0.973333
+Error 0.197797
+Acierto 0.98
+Error 0.191042
+Acierto 0.98
+Error 0.188612
+Acierto 0.98
+Error 0.265032
+Acierto 0.953333
+Error 0.28328
+Acierto 0.953333
+Error 0.284834
+Acierto 0.953333
+Error 0.293691
+Acierto 0.953333
+Error 0.24415
+Acierto 0.966667
+Error 0.321481
+Acierto 0.946667
+Error 0.191068
+Acierto 0.98
+Error 0.188146
+Acierto 0.98
+Error 0.218618
+Acierto 0.966667
+Error 0.223652
+Acierto 0.966667
+Error 0.276993
+Acierto 0.953333
+Error 0.285177
+Acierto 0.953333
+Error 0.287636
+Acierto 0.953333
+Error 0.27116
+Acierto 0.953333
+Error 0.227468
+Acierto 0.966667
+Error 0.228118
+Acierto 0.966667
+Error 0.187793
+Acierto 0.98
+Error 0.413434
+Acierto 0.92
+Error 0.293906
+Acierto 0.953333
+Error 0.30056
+Acierto 0.953333
+Error 0.234387
+Acierto 0.973333
+Error 0.189966
+Acierto 0.98
+Error 0.188658
+Acierto 0.98
+Error 0.18609
+Acierto 0.98
+Error 0.276757
+Acierto 0.953333
+Error 0.281961
+Acierto 0.953333
+Error 0.209037
+Acierto 0.973333
+Error 0.280791
+Acierto 0.953333
+Error 0.290285
+Acierto 0.953333
+Error 0.395185
+Acierto 0.92
+Error 0.19759
+Acierto 0.98
+Error 0.192339
+Acierto 0.98
+Error 0.408012
+Acierto 0.92
+Error 0.231164
+Acierto 0.973333
+Error 0.194602
+Acierto 0.98
+Error 0.18852
+Acierto 0.98
+Error 0.186435
+Acierto 0.98
+Error 0.370755
+Acierto 0.926667
+Error 0.192718
+Acierto 0.98
+Error 0.420142
+Acierto 0.92
+Error 0.29712
+Acierto 0.953333
+Error 0.280999
+Acierto 0.96
+Error 0.213186
+Acierto 0.973333
+Error 0.188367
+Acierto 0.98
+Error 0.419674
+Acierto 0.92
+Error 0.25099
+Acierto 0.96
+Error 0.333967
+Acierto 0.933333
+Error 0.419981
+Acierto 0.913333
+Error 0.430116
+Acierto 0.913333
+Error 0.296878
+Acierto 0.953333
+Error 0.387173
+Acierto 0.926667
+Error 0.194661
+Acierto 0.98
+Error 0.185989
+Acierto 0.98
+Error 0.40014
+Acierto 0.92
+Error 0.197108
+Acierto 0.98
+Error 0.396365
+Acierto 0.92
+Error 0.211878
+Acierto 0.973333
+Error 0.368474
+Acierto 0.926667
+Error 0.190215
+Acierto 0.98
+Error 0.227886
+Acierto 0.966667
+Error 0.179988
+Acierto 0.98
+Error 0.179539
+Acierto 0.98
+Error 0.369932
+Acierto 0.926667
+Error 0.195842
+Acierto 0.98
+Error 0.299297
+Acierto 0.946667
+Error 0.289494
+Acierto 0.953333
+Error 0.296781
+Acierto 0.953333
+Error 0.357162
+Acierto 0.933333
+Error 0.205805
+Acierto 0.98
+Error 0.189525
+Acierto 0.98
+Error 0.203803
+Acierto 0.973333
+Error 0.276373
+Acierto 0.953333
+Error 0.285664
+Acierto 0.953333
+Error 0.243692
+Acierto 0.966667
+Error 0.24395
+Acierto 0.966667
+Error 0.278575
+Acierto 0.953333
+Error 0.283268
+Acierto 0.953333
+Error 0.293111
+Acierto 0.953333
+Error 0.391897
+Acierto 0.926667
+Error 0.391504
+Acierto 0.92
+Error 0.19229
+Acierto 0.98
+Error 0.191484
+Acierto 0.98
+Error 0.186148
+Acierto 0.98
+Error 0.214866
+Acierto 0.973333
+Error 0.176337
+Acierto 0.98
+Error 0.179577
+Acierto 0.98
+Error 0.177087
+Acierto 0.98
+Error 0.395612
+Acierto 0.92
+Error 0.183031
+Acierto 0.986667
+Error 0.236242
+Acierto 0.966667
+Error 0.35326
+Acierto 0.926667
+Error 0.278068
+Acierto 0.953333
+Error 0.286869
+Acierto 0.953333
+Error 0.203556
+Acierto 0.98
+Error 0.194965
+Acierto 0.98
+Error 0.190322
+Acierto 0.98
+Error 0.267454
+Acierto 0.953333
+Error 0.337864
+Acierto 0.933333
+Error 0.321816
+Acierto 0.946667
+Error 0.240275
+Acierto 0.966667
+Error 0.291287
+Acierto 0.953333
+Error 0.287884
+Acierto 0.953333
+Error 0.289614
+Acierto 0.953333
+Error 0.197081
+Acierto 0.98
+Error 0.380959
+Acierto 0.926667
+Error 0.208258
+Acierto 0.973333
+Error 0.312377
+Acierto 0.946667
+Error 0.227688
+Acierto 0.966667
+Error 0.181099
+Acierto 0.98
+Error 0.180605
+Acierto 0.98
+Error 0.209711
+Acierto 0.973333
+Error 0.242805
+Acierto 0.966667
+Error 0.397293
+Acierto 0.92
+Error 0.192241
+Acierto 0.98
+Error 0.379212
+Acierto 0.926667
+Error 0.38308
+Acierto 0.926667
+Error 0.283454
+Acierto 0.953333
+Error 0.211908
+Acierto 0.98
+Error 0.198868
+Acierto 0.98
+Error 0.194471
+Acierto 0.98
+Error 0.190795
+Acierto 0.98
+Error 0.186281
+Acierto 0.98
+Error 0.400094
+Acierto 0.92
+Error 0.334086
+Acierto 0.94
+Error 0.370038
+Acierto 0.926667
+Error 0.286356
+Acierto 0.953333
+Error 0.181131
+Acierto 0.98
+Error 0.194743
+Acierto 0.98
+Error 0.339421
+Acierto 0.933333
+Error 0.376413
+Acierto 0.926667
+Error 0.233287
+Acierto 0.966667
+Error 0.319179
+Acierto 0.946667
+Error 0.286016
+Acierto 0.953333
+Error 0.291564
+Acierto 0.953333
+Error 0.301558
+Acierto 0.953333
+Error 0.209059
+Acierto 0.98
+Error 0.197546
+Acierto 0.98
+Error 0.317164
+Acierto 0.946667
+Error 0.269251
+Acierto 0.953333
+Error 0.283221
+Acierto 0.953333
+Error 0.292376
+Acierto 0.953333
+Error 0.296653
+Acierto 0.953333
+Error 0.198393
+Acierto 0.98
+Error 0.199698
+Acierto 0.98
+Error 0.191372
+Acierto 0.98
+Error 0.278273
+Acierto 0.953333
+Error 0.226041
+Acierto 0.973333
+Error 0.264475
+Acierto 0.953333
+Error 0.277276
+Acierto 0.953333
+Error 0.216542
+Acierto 0.973333
+Error 0.28679
+Acierto 0.953333
+Error 0.295422
+Acierto 0.953333
+Error 0.301272
+Acierto 0.953333
+Error 0.248561
+Acierto 0.966667
+Error 0.239968
+Acierto 0.966667
+Error 0.379287
+Acierto 0.926667
+Error 0.297338
+Acierto 0.953333
+Error 0.23884
+Acierto 0.973333
+Error 0.278649
+Acierto 0.953333
+Error 0.238035
+Acierto 0.966667
+Error 0.19152
+Acierto 0.98
+Error 0.187325
+Acierto 0.98
+Error 0.275675
+Acierto 0.953333
+Error 0.278868
+Acierto 0.953333
+Error 0.24095
+Acierto 0.966667
+Error 0.278985
+Acierto 0.953333
+Error 0.270171
+Acierto 0.953333
+Error 0.377788
+Acierto 0.926667
+Error 0.390377
+Acierto 0.92
+Error 0.398714
+Acierto 0.92
+Error 0.230395
+Acierto 0.966667
+Error 0.277344
+Acierto 0.953333
+Error 0.287294
+Acierto 0.953333
+Error 0.285027
+Acierto 0.953333
+Error 0.201045
+Acierto 0.973333
+Error 0.246028
+Acierto 0.966667
+Error 0.357467
+Acierto 0.926667
+Error 0.282635
+Acierto 0.953333
+Error 0.292792
+Acierto 0.953333
+Error 0.225643
+Acierto 0.973333
+Error 0.243377
+Acierto 0.966667
+Error 0.196314
+Acierto 0.98
+Error 0.388651
+Acierto 0.92
+Error 0.292352
+Acierto 0.946667
+Error 0.286991
+Acierto 0.953333
+Error 0.287174
+Acierto 0.953333
+Error 0.256464
+Acierto 0.96
+Error 0.354578
+Acierto 0.926667
+Error 0.283851
+Acierto 0.953333
+Error 0.205863
+Acierto 0.98
+Error 0.195584
+Acierto 0.98
+Error 0.227175
+Acierto 0.966667
+Error 0.291933
+Acierto 0.946667
+Error 0.285184
+Acierto 0.953333
+Error 0.250828
+Acierto 0.966667
+Error 0.200833
+Acierto 0.98
+Error 0.278327
+Acierto 0.953333
+Error 0.401804
+Acierto 0.92
+Error 0.187769
+Acierto 0.98
+Error 0.326132
+Acierto 0.933333
+Error 0.267303
+Acierto 0.96
+Error 0.269029
+Acierto 0.953333
+Error 0.177546
+Acierto 0.98
+Error 0.271625
+Acierto 0.953333
+Error 0.278185
+Acierto 0.953333
+Error 0.253086
+Acierto 0.966667
+Error 0.19582
+Acierto 0.98
+Error 0.191451
+Acierto 0.98
+Error 0.378195
+Acierto 0.926667
+Error 0.279605
+Acierto 0.953333
+Error 0.22264
+Acierto 0.973333
+Error 0.385673
+Acierto 0.926667
+Error 0.27188
+Acierto 0.966667
+Error 0.27827
+Acierto 0.953333
+Error 0.280676
+Acierto 0.953333
+Error 0.253324
+Acierto 0.966667
+Error 0.205183
+Acierto 0.98
+Error 0.190944
+Acierto 0.98
+Error 0.375965
+Acierto 0.926667
+Error 0.29814
+Acierto 0.953333
+Error 0.207397
+Acierto 0.98
+Error 0.195987
+Acierto 0.98
+Error 0.278337
+Acierto 0.953333
+Error 0.389419
+Acierto 0.926667
+Error 0.191225
+Acierto 0.98
+Error 0.204286
+Acierto 0.973333
+Error 0.190907
+Acierto 0.98
+Error 0.182093
+Acierto 0.98
+Error 0.3877
+Acierto 0.92
+Error 0.184763
+Acierto 0.98
+Error 0.355705
+Acierto 0.933333
+Error 0.201047
+Acierto 0.98
+Error 0.379158
+Acierto 0.926667
+Error 0.297451
+Acierto 0.953333
+Error 0.302349
+Acierto 0.953333
+Error 0.277051
+Acierto 0.966667
+Error 0.400562
+Acierto 0.92
+Error 0.296233
+Acierto 0.946667
+Error 0.287158
+Acierto 0.953333
+Error 0.296418
+Acierto 0.953333
+Error 0.250045
+Acierto 0.966667
+Error 0.284544
+Acierto 0.953333
+Error 0.199764
+Acierto 0.98
+Error 0.211916
+Acierto 0.973333
+Error 0.206245
+Acierto 0.973333
+Error 0.306597
+Acierto 0.946667
+Error 0.187651
+Acierto 0.98
+Error 0.182921
+Acierto 0.98
+Error 0.203117
+Acierto 0.973333
+Error 0.331804
+Acierto 0.933333
+Error 0.273599
+Acierto 0.953333
+Error 0.281182
+Acierto 0.953333
+Error 0.197941
+Acierto 0.98
+Error 0.191081
+Acierto 0.98
+Error 0.275039
+Acierto 0.953333
+Error 0.284811
+Acierto 0.953333
+Error 0.201599
+Acierto 0.98
+Error 0.192672
+Acierto 0.98
+Error 0.196021
+Acierto 0.98
+Error 0.214824
+Acierto 0.973333
+Error 0.166218
+Acierto 0.98
+Error 0.270022
+Acierto 0.953333
+Error 0.277088
+Acierto 0.953333
+Error 0.286768
+Acierto 0.953333
+Error 0.278395
+Acierto 0.953333
+Error 0.279839
+Acierto 0.953333
+Error 0.289504
+Acierto 0.953333
+Error 0.234078
+Acierto 0.973333
+Error 0.240834
+Acierto 0.966667
+Error 0.198398
+Acierto 0.973333
+Error 0.202697
+Acierto 0.973333
+Error 0.268798
+Acierto 0.953333
+Error 0.280915
+Acierto 0.953333
+Error 0.284943
+Acierto 0.953333
+Error 0.294459
+Acierto 0.953333
+Error 0.299535
+Acierto 0.953333
+Error 0.383767
+Acierto 0.926667
+Error 0.267343
+Acierto 0.966667
+Error 0.201784
+Acierto 0.98
+Error 0.37778
+Acierto 0.926667
+Error 0.302881
+Acierto 0.953333
+Error 0.287381
+Acierto 0.953333
+Error 0.238902
+Acierto 0.966667
+Error 0.270012
+Acierto 0.953333
+Error 0.392183
+Acierto 0.92
+Error 0.323725
+Acierto 0.946667
+Error 0.275348
+Acierto 0.953333
+Error 0.283289
+Acierto 0.953333
+Error 0.390915
+Acierto 0.926667
+Error 0.301344
+Acierto 0.946667
+Error 0.287578
+Acierto 0.953333
+Error 0.2966
+Acierto 0.953333
+Error 0.300555
+Acierto 0.953333
+Error 0.289322
+Acierto 0.953333
+Error 0.209473
+Acierto 0.98
+Error 0.197488
+Acierto 0.98
+Error 0.191233
+Acierto 0.98
+Error 0.237053
+Acierto 0.966667
+Error 0.338138
+Acierto 0.94
+Error 0.264331
+Acierto 0.953333
+Error 0.247017
+Acierto 0.96
+Error 0.29255
+Acierto 0.946667
+Error 0.274822
+Acierto 0.953333
+Error 0.283399
+Acierto 0.953333
+Error 0.293044
+Acierto 0.953333
+Error 0.199622
+Acierto 0.98
+Error 0.192852
+Acierto 0.98
+Error 0.189202
+Acierto 0.98
+Error 0.327046
+Acierto 0.94
+Error 0.353118
+Acierto 0.933333
+Error 0.278835
+Acierto 0.953333
+Error 0.287528
+Acierto 0.953333
+Error 0.296704
+Acierto 0.953333
+Error 0.286874
+Acierto 0.96
+Error 0.194805
+Acierto 0.98
+Error 0.188242
+Acierto 0.98
+Error 0.185941
+Acierto 0.98
+Error 0.210411
+Acierto 0.973333
+Error 0.17251
+Acierto 0.98
+Error 0.269315
+Acierto 0.953333
+Error 0.269431
+Acierto 0.953333
+Error 0.277013
+Acierto 0.953333
+Error 0.277378
+Acierto 0.953333
+Error 0.192315
+Acierto 0.98
+Error 0.18895
+Acierto 0.98
+Error 0.186415
+Acierto 0.98
+Error 0.226348
+Acierto 0.966667
+Error 0.242469
+Acierto 0.966667
+Error 0.212681
+Acierto 0.966667
+Error 0.177714
+Acierto 0.98
+Error 0.17794
+Acierto 0.98
+Error 0.178282
+Acierto 0.98
+Error 0.367476
+Acierto 0.926667
+Error 0.193869
+Acierto 0.98
+Error 0.393598
+Acierto 0.92
+Error 0.379277
+Acierto 0.926667
+Error 0.196371
+Acierto 0.98
+Error 0.191189
+Acierto 0.98
+Error 0.188518
+Acierto 0.98
+Error 0.278131
+Acierto 0.953333
+Error 0.286917
+Acierto 0.953333
+Error 0.296595
+Acierto 0.953333
+Error 0.208629
+Acierto 0.98
+Error 0.197909
+Acierto 0.98
+Error 0.192861
+Acierto 0.98
+Error 0.345867
+Acierto 0.933333
+Error 0.194581
+Acierto 0.98
+Error 0.388442
+Acierto 0.926667
+Error 0.280605
+Acierto 0.953333
+Error 0.288467
+Acierto 0.953333
+Error 0.29753
+Acierto 0.953333
+Error 0.302625
+Acierto 0.953333
+Error 0.251083
+Acierto 0.966667
+Error 0.282851
+Acierto 0.953333
+Error 0.205283
+Acierto 0.98
+Error 0.195865
+Acierto 0.98
+Error 0.198859
+Acierto 0.98
+Error 0.185151
+Acierto 0.98
+Error 0.317576
+Acierto 0.946667
+Error 0.182283
+Acierto 0.98
+Error 0.413832
+Acierto 0.913333
+Error 0.287815
+Acierto 0.953333
+Error 0.208804
+Acierto 0.98
+Error 0.196923
+Acierto 0.98
+Error 0.190667
+Acierto 0.98
+Error 0.277436
+Acierto 0.953333
+Error 0.286909
+Acierto 0.953333
+Error 0.2943
+Acierto 0.953333
+Error 0.202369
+Acierto 0.98
+Error 0.343452
+Acierto 0.933333
+Error 0.196338
+Acierto 0.98
+Error 0.190576
+Acierto 0.98
+Error 0.239298
+Acierto 0.966667
+Error 0.27553
+Acierto 0.953333
+Error 0.285093
+Acierto 0.953333
+Error 0.241059
+Acierto 0.966667
+Error 0.384188
+Acierto 0.926667
+Error 0.279679
+Acierto 0.953333
+Error 0.308319
+Acierto 0.946667
+Error 0.186614
+Acierto 0.98
+Error 0.184099
+Acierto 0.98
+Error 0.182792
+Acierto 0.98
+Error 0.279362
+Acierto 0.953333
+Error 0.286208
+Acierto 0.953333
+Error 0.295715
+Acierto 0.953333
+Error 0.302963
+Acierto 0.953333
+Error 0.23036
+Acierto 0.973333
+Error 0.19974
+Acierto 0.98
+Error 0.193388
+Acierto 0.98
+Error 0.302088
+Acierto 0.946667
+Error 0.292158
+Acierto 0.953333
+Error 0.300614
+Acierto 0.953333
+Error 0.305155
+Acierto 0.953333
+Error 0.209963
+Acierto 0.98
+Error 0.370057
+Acierto 0.926667
+Error 0.302762
+Acierto 0.953333
+Error 0.381471
+Acierto 0.926667
+Error 0.277632
+Acierto 0.953333
+Error 0.279332
+Acierto 0.953333
+Error 0.265693
+Acierto 0.96
+Error 0.278551
+Acierto 0.953333
+Error 0.287807
+Acierto 0.953333
+Error 0.239863
+Acierto 0.973333
+Error 0.19082
+Acierto 0.98
+Error 0.281951
+Acierto 0.953333
+Error 0.291007
+Acierto 0.953333
+Error 0.299836
+Acierto 0.953333
+Error 0.270771
+Acierto 0.966667
+Error 0.374494
+Acierto 0.926667
+Error 0.300373
+Acierto 0.953333
+Error 0.305844
+Acierto 0.953333
+Error 0.2845
+Acierto 0.96
+Error 0.216535
+Acierto 0.973333
+Error 0.378027
+Acierto 0.926667
+Error 0.213765
+Acierto 0.973333
+Error 0.391493
+Acierto 0.92
+Error 0.189592
+Acierto 0.98
+Error 0.18755
+Acierto 0.98
+Error 0.392519
+Acierto 0.92
+Error 0.275743
+Acierto 0.953333
+Error 0.303201
+Acierto 0.946667
+Error 0.286758
+Acierto 0.953333
+Error 0.296211
+Acierto 0.953333
+Error 0.300153
+Acierto 0.953333
+Error 0.208335
+Acierto 0.98
+Error 0.198441
+Acierto 0.98
+Error 0.193147
+Acierto 0.98
+Error 0.274538
+Acierto 0.953333
+Error 0.227357
+Acierto 0.966667
+Error 0.345737
+Acierto 0.933333
+Error 0.193426
+Acierto 0.98
+Error 0.189791
+Acierto 0.98
+Error 0.187382
+Acierto 0.98
+Error 0.279397
+Acierto 0.953333
+Error 0.287605
+Acierto 0.953333
+Error 0.29674
+Acierto 0.953333
+Error 0.302034
+Acierto 0.953333
+Error 0.210729
+Acierto 0.98
+Error 0.198589
+Acierto 0.98
+Error 0.192787
+Acierto 0.98
+Error 0.188037
+Acierto 0.98
+Error 0.184958
+Acierto 0.98
+Error 0.183367
+Acierto 0.98
+Error 0.182539
+Acierto 0.98
+Error 0.207804
+Acierto 0.973333
+Error 0.267705
+Acierto 0.953333
+Error 0.23097
+Acierto 0.966667
+Error 0.207964
+Acierto 0.973333
+Error 0.276366
+Acierto 0.953333
+Error 0.28556
+Acierto 0.953333
+Error 0.294771
+Acierto 0.953333
+Error 0.20262
+Acierto 0.98
+Error 0.284122
+Acierto 0.953333
+Error 0.203211
+Acierto 0.98
+Error 0.281817
+Acierto 0.953333
+Error 0.291028
+Acierto 0.953333
+Error 0.299144
+Acierto 0.953333
+Error 0.210103
+Acierto 0.98
+Error 0.197952
+Acierto 0.98
+Error 0.269932
+Acierto 0.953333
+Error 0.242409
+Acierto 0.966667
+Error 0.231815
+Acierto 0.966667
+Error 0.231625
+Acierto 0.966667
+Error 0.276596
+Acierto 0.953333
+Error 0.284537
+Acierto 0.953333
+Error 0.293685
+Acierto 0.953333
+Error 0.300657
+Acierto 0.953333
+Error 0.293216
+Acierto 0.953333
+Error 0.29949
+Acierto 0.953333
+Error 0.202756
+Acierto 0.98
+Error 0.263907
+Acierto 0.96
+Error 0.226355
+Acierto 0.966667
+Error 0.275934
+Acierto 0.953333
+Error 0.285001
+Acierto 0.953333
+Error 0.293944
+Acierto 0.953333
+Error 0.235391
+Acierto 0.973333
+Error 0.210958
+Acierto 0.973333
+Error 0.394183
+Acierto 0.92
+Error 0.232109
+Acierto 0.966667
+Error 0.235643
+Acierto 0.966667
+Error 0.378967
+Acierto 0.926667
+Error 0.296731
+Acierto 0.953333
+Error 0.302689
+Acierto 0.953333
+Error 0.304568
+Acierto 0.953333
+Error 0.206752
+Acierto 0.98
+Error 0.27805
+Acierto 0.953333
+Error 0.229362
+Acierto 0.966667
+Error 0.189152
+Acierto 0.98
+Error 0.186134
+Acierto 0.98
+Error 0.273265
+Acierto 0.953333
+Error 0.23302
+Acierto 0.966667
+Error 0.238009
+Acierto 0.966667
+Error 0.217645
+Acierto 0.973333
+Error 0.192375
+Acierto 0.98
+Error 0.188651
+Acierto 0.98
+Error 0.186288
+Acierto 0.98
+Error 0.306022
+Acierto 0.946667
+Error 0.287126
+Acierto 0.953333
+Error 0.246677
+Acierto 0.966667
+Error 0.196717
+Acierto 0.98
+Error 0.237162
+Acierto 0.966667
+Error 0.22259
+Acierto 0.973333
+Error 0.184628
+Acierto 0.98
+Error 0.224265
+Acierto 0.966667
+Error 0.331899
+Acierto 0.933333
+Error 0.280984
+Acierto 0.953333
+Error 0.281768
+Acierto 0.953333
+Error 0.291046
+Acierto 0.953333
+Error 0.201967
+Acierto 0.98
+Error 0.280942
+Acierto 0.953333
+Error 0.290865
+Acierto 0.953333
+Error 0.286858
+Acierto 0.953333
+Error 0.190382
+Acierto 0.98
+Error 0.230605
+Acierto 0.966667
+Error 0.212538
+Acierto 0.973333
+Error 0.188371
+Acierto 0.98
+Error 0.186231
+Acierto 0.98
+Error 0.276177
+Acierto 0.953333
+Error 0.279933
+Acierto 0.953333
+Error 0.290083
+Acierto 0.953333
+Error 0.289939
+Acierto 0.953333
+Error 0.251685
+Acierto 0.966667
+Error 0.203376
+Acierto 0.98
+Error 0.19457
+Acierto 0.98
+Error 0.190015
+Acierto 0.98
+Error 0.185404
+Acierto 0.98
+Error 0.183959
+Acierto 0.98
+Error 0.350865
+Acierto 0.933333
+Error 0.279027
+Acierto 0.953333
+Error 0.194376
+Acierto 0.98
+Error 0.189565
+Acierto 0.98
+Error 0.186302
+Acierto 0.98
+Error 0.248054
+Acierto 0.96
+Error 0.181251
+Acierto 0.98
+Error 0.268624
+Acierto 0.953333
+Error 0.182969
+Acierto 0.98
+Error 0.181852
+Acierto 0.98
+Error 0.210719
+Acierto 0.973333
+Error 0.32853
+Acierto 0.933333
+Error 0.214057
+Acierto 0.966667
+Error 0.266461
+Acierto 0.953333
+Error 0.182287
+Acierto 0.98
+Error 0.220642
+Acierto 0.966667
+Error 0.286888
+Acierto 0.946667
+Error 0.258136
+Acierto 0.96
+Error 0.179532
+Acierto 0.98
+Error 0.272512
+Acierto 0.953333
+Error 0.279063
+Acierto 0.953333
+Error 0.288992
+Acierto 0.953333
+Error 0.297511
+Acierto 0.953333
+Error 0.204652
+Acierto 0.98
+Error 0.200833
+Acierto 0.98
+Error 0.188648
+Acierto 0.98
+Error 0.183296
+Acierto 0.98
+Error 0.182506
+Acierto 0.98
+Error 0.181423
+Acierto 0.98
+Error 0.271878
+Acierto 0.953333
+Error 0.281176
+Acierto 0.953333
+Error 0.233341
+Acierto 0.966667
+Error 0.18806
+Acierto 0.986667
+Error 0.272294
+Acierto 0.953333
+Error 0.270853
+Acierto 0.953333
+Error 0.337224
+Acierto 0.933333
+Error 0.190415
+Acierto 0.98
+Error 0.184974
+Acierto 0.98
+Error 0.261536
+Acierto 0.953333
+Error 0.233772
+Acierto 0.966667
+Error 0.225868
+Acierto 0.966667
+Error 0.184426
+Acierto 0.98
+Error 0.183687
+Acierto 0.98
+Error 0.182886
+Acierto 0.98
+Error 0.224792
+Acierto 0.966667
+Error 0.22286
+Acierto 0.966667
+Error 0.319989
+Acierto 0.946667
+Error 0.178548
+Acierto 0.98
+Error 0.27158
+Acierto 0.953333
+Error 0.280001
+Acierto 0.953333
+Error 0.193356
+Acierto 0.98
+Error 0.263071
+Acierto 0.96
+Error 0.336472
+Acierto 0.94
+Error 0.177226
+Acierto 0.98
+Error 0.289074
+Acierto 0.946667
+Error 0.274342
+Acierto 0.953333
+Error 0.276307
+Acierto 0.953333
+Error 0.189468
+Acierto 0.98
+Error 0.181524
+Acierto 0.98
+Error 0.239586
+Acierto 0.966667
+Error 0.224959
+Acierto 0.966667
+Error 0.330259
+Acierto 0.94
+Error 0.255391
+Acierto 0.96
+Error 0.275022
+Acierto 0.953333
+Error 0.281397
+Acierto 0.953333
+Error 0.291283
+Acierto 0.953333
+Error 0.300247
+Acierto 0.953333
+Error 0.208733
+Acierto 0.98
+Error 0.19894
+Acierto 0.98
+Error 0.193975
+Acierto 0.98
+Error 0.235664
+Acierto 0.966667
+Error 0.282993
+Acierto 0.953333
+Error 0.292501
+Acierto 0.953333
+Error 0.300782
+Acierto 0.953333
+Error 0.298735
+Acierto 0.953333
+Error 0.265647
+Acierto 0.96
+Error 0.195272
+Acierto 0.98
+Error 0.19169
+Acierto 0.98
+Error 0.18946
+Acierto 0.98
+Error 0.369786
+Acierto 0.926667
+Error 0.194351
+Acierto 0.98
+Error 0.190843
+Acierto 0.98
+Error 0.369928
+Acierto 0.926667
+Error 0.194763
+Acierto 0.98
+Error 0.190828
+Acierto 0.98
+Error 0.1881
+Acierto 0.98
+Error 0.228284
+Acierto 0.966667
+Error 0.220281
+Acierto 0.966667
+Error 0.31987
+Acierto 0.946667
+Error 0.177403
+Acierto 0.98
+Error 0.178152
+Acierto 0.98
+Error 0.179149
+Acierto 0.98
+Error 0.267406
+Acierto 0.953333
+Error 0.182136
+Acierto 0.98
+Error 0.182799
+Acierto 0.98
+Error 0.204037
+Acierto 0.973333
+Error 0.184652
+Acierto 0.98
+Error 0.184397
+Acierto 0.98
+Error 0.184428
+Acierto 0.98
+Error 0.36986
+Acierto 0.926667
+Error 0.293727
+Acierto 0.953333
+Error 0.300679
+Acierto 0.953333
+Error 0.299707
+Acierto 0.953333
+Error 0.269612
+Acierto 0.96
+Error 0.260391
+Acierto 0.96
+Error 0.208468
+Acierto 0.973333
+Error 0.219679
+Acierto 0.966667
+Error 0.363664
+Acierto 0.926667
+Error 0.183223
+Acierto 0.98
+Error 0.310529
+Acierto 0.946667
+Error 0.193972
+Acierto 0.98
+Error 0.192375
+Acierto 0.98
+Error 0.240108
+Acierto 0.966667
+Error 0.238422
+Acierto 0.966667
+Error 0.189049
+Acierto 0.98
+Error 0.216556
+Acierto 0.973333
+Error 0.180157
+Acierto 0.98
+Error 0.181162
+Acierto 0.98
+Error 0.186469
+Acierto 0.98
+Error 0.180468
+Acierto 0.98
+Error 0.367921
+Acierto 0.926667
+Error 0.290373
+Acierto 0.953333
+Error 0.299137
+Acierto 0.953333
+Error 0.271245
+Acierto 0.96
+Error 0.237835
+Acierto 0.966667
+Error 0.227067
+Acierto 0.966667
+Error 0.227241
+Acierto 0.966667
+Error 0.187977
+Acierto 0.98
+Error 0.186914
+Acierto 0.98
+Error 0.22718
+Acierto 0.966667
+Error 0.210711
+Acierto 0.973333
+Error 0.276262
+Acierto 0.953333
+Error 0.285422
+Acierto 0.953333
+Error 0.295746
+Acierto 0.953333
+Error 0.290911
+Acierto 0.953333
+Error 0.234632
+Acierto 0.966667
+Error 0.276902
+Acierto 0.953333
+Error 0.242553
+Acierto 0.966667
+Error 0.198419
+Acierto 0.98
+Error 0.191293
+Acierto 0.98
+Error 0.302127
+Acierto 0.946667
+Error 0.286581
+Acierto 0.953333
+Error 0.296257
+Acierto 0.953333
+Error 0.301095
+Acierto 0.953333
+Error 0.201504
+Acierto 0.98
+Error 0.194168
+Acierto 0.98
+Error 0.371416
+Acierto 0.926667
+Error 0.19692
+Acierto 0.98
+Error 0.191608
+Acierto 0.98
+Error 0.188529
+Acierto 0.98
+Error 0.37112
+Acierto 0.926667
+Error 0.294494
+Acierto 0.953333
+Error 0.297135
+Acierto 0.953333
+Error 0.2049
+Acierto 0.98
+Error 0.195158
+Acierto 0.98
+Error 0.190365
+Acierto 0.98
+Error 0.186951
+Acierto 0.98
+Error 0.182286
+Acierto 0.98
+Error 0.275458
+Acierto 0.953333
+Error 0.284574
+Acierto 0.953333
+Error 0.294338
+Acierto 0.953333
+Error 0.299418
+Acierto 0.953333
+Error 0.251034
+Acierto 0.966667
+Error 0.193943
+Acierto 0.98
+Error 0.206166
+Acierto 0.973333
+Error 0.209553
+Acierto 0.973333
+Error 0.272211
+Acierto 0.953333
+Error 0.27948
+Acierto 0.953333
+Error 0.289063
+Acierto 0.953333
+Error 0.297658
+Acierto 0.953333
+Error 0.297026
+Acierto 0.953333
+Error 0.19568
+Acierto 0.98
+Error 0.251468
+Acierto 0.96
+Error 0.226782
+Acierto 0.966667
+Error 0.204523
+Acierto 0.973333
+Error 0.180743
+Acierto 0.98
+Error 0.201367
+Acierto 0.973333
+Error 0.30053
+Acierto 0.946667
+Error 0.268303
+Acierto 0.953333
+Error 0.225532
+Acierto 0.966667
+Error 0.277539
+Acierto 0.953333
+Error 0.282731
+Acierto 0.953333
+Error 0.292432
+Acierto 0.953333
+Error 0.299833
+Acierto 0.953333
+Error 0.291305
+Acierto 0.953333
+Error 0.278795
+Acierto 0.953333
+Error 0.33206
+Acierto 0.94
+Error 0.268013
+Acierto 0.953333
+Error 0.274637
+Acierto 0.953333
+Error 0.283432
+Acierto 0.953333
+Error 0.293112
+Acierto 0.953333
+Error 0.205276
+Acierto 0.98
+Error 0.19646
+Acierto 0.98
+Error 0.191773
+Acierto 0.98
+Error 0.18848
+Acierto 0.98
+Error 0.208224
+Acierto 0.973333
+Error 0.184927
+Acierto 0.98
+Error 0.183748
+Acierto 0.98
+Error 0.182852
+Acierto 0.98
+Error 0.230068
+Acierto 0.966667
+Error 0.227522
+Acierto 0.966667
+Error 0.277246
+Acierto 0.953333
+Error 0.240629
+Acierto 0.966667
+Error 0.313834
+Acierto 0.946667
+Error 0.272779
+Acierto 0.96
+Error 0.19147
+Acierto 0.98
+Error 0.230892
+Acierto 0.966667
+Error 0.28896
+Acierto 0.953333
+Error 0.288867
+Acierto 0.953333
+Error 0.297536
+Acierto 0.953333
+Error 0.207046
+Acierto 0.98
+Error 0.196205
+Acierto 0.98
+Error 0.190689
+Acierto 0.98
+Error 0.229857
+Acierto 0.966667
+Error 0.27619
+Acierto 0.953333
+Error 0.279799
+Acierto 0.953333
+Error 0.234283
+Acierto 0.966667
+Error 0.200597
+Acierto 0.973333
+Error 0.277433
+Acierto 0.953333
+Error 0.284696
+Acierto 0.953333
+Error 0.294094
+Acierto 0.953333
+Error 0.300777
+Acierto 0.953333
+Error 0.301662
+Acierto 0.953333
+Error 0.207985
+Acierto 0.98
+Error 0.19662
+Acierto 0.98
+Error 0.191034
+Acierto 0.98
+Error 0.314093
+Acierto 0.946667
+Error 0.223749
+Acierto 0.966667
+Error 0.232234
+Acierto 0.966667
+Error 0.230666
+Acierto 0.966667
+Error 0.266112
+Acierto 0.953333
+Error 0.253321
+Acierto 0.96
+Error 0.202022
+Acierto 0.973333
+Error 0.322737
+Acierto 0.933333
+Error 0.253626
+Acierto 0.96
+Error 0.216994
+Acierto 0.966667
+Error 0.195268
+Acierto 0.973333
+Error 0.176384
+Acierto 0.98
+Error 0.17691
+Acierto 0.98
+Error 0.17766
+Acierto 0.98
+Error 0.178297
+Acierto 0.98
+Error 0.260533
+Acierto 0.953333
+Error 0.228931
+Acierto 0.966667
+Error 0.224197
+Acierto 0.966667
+Error 0.218252
+Acierto 0.966667
+Error 0.336473
+Acierto 0.94
+Error 0.26775
+Acierto 0.953333
+Error 0.183262
+Acierto 0.98
+Error 0.22973
+Acierto 0.966667
+Error 0.188303
+Acierto 0.98
+Error 0.186063
+Acierto 0.98
+Error 0.185117
+Acierto 0.98
+Error 0.184601
+Acierto 0.98
+Error 0.184186
+Acierto 0.98
+Error 0.186356
+Acierto 0.98
+Error 0.183898
+Acierto 0.98
+Error 0.183195
+Acierto 0.98
+Error 0.182871
+Acierto 0.98
+Error 0.182614
+Acierto 0.98
+Error 0.184841
+Acierto 0.98
+Error 0.182514
+Acierto 0.98
+Error 0.181894
+Acierto 0.98
+Error 0.181642
+Acierto 0.98
+Error 0.181446
+Acierto 0.98
+Error 0.183953
+Acierto 0.98
+Error 0.18137
+Acierto 0.98
+Error 0.180818
+Acierto 0.98
+Error 0.180624
+Acierto 0.98
+Error 0.180422
+Acierto 0.98
+Error 0.226407
+Acierto 0.966667
+Error 0.213481
+Acierto 0.973333
+Error 0.178431
+Acierto 0.98
+Error 0.193686
+Acierto 0.98
+Error 0.180622
+Acierto 0.98
+Error 0.186623
+Acierto 0.98
+Error 0.180464
+Acierto 0.98
+Error 0.180734
+Acierto 0.98
+Error 0.234473
+Acierto 0.966667
+Error 0.231481
+Acierto 0.966667
+Error 0.191762
+Acierto 0.98
+Error 0.188059
+Acierto 0.98
+Error 0.185841
+Acierto 0.98
+Error 0.362691
+Acierto 0.926667
+Error 0.287915
+Acierto 0.953333
+Error 0.296104
+Acierto 0.953333
+Error 0.287751
+Acierto 0.953333
+Error 0.227068
+Acierto 0.966667
+Error 0.193472
+Acierto 0.973333
+Error 0.179886
+Acierto 0.98
+Error 0.18013
+Acierto 0.98
+Error 0.180555
+Acierto 0.98
+Error 0.180916
+Acierto 0.98
+Error 0.182981
+Acierto 0.98
+Error 0.181579
+Acierto 0.98
+Error 0.181214
+Acierto 0.98
+Error 0.181142
+Acierto 0.98
+Error 0.181204
+Acierto 0.98
+Error 0.344485
+Acierto 0.933333
+Error 0.220367
+Acierto 0.966667
+Error 0.272147
+Acierto 0.953333
+Error 0.281775
+Acierto 0.953333
+Error 0.292435
+Acierto 0.953333
+Error 0.203086
+Acierto 0.98
+Error 0.193593
+Acierto 0.98
+Error 0.189084
+Acierto 0.98
+Error 0.186344
+Acierto 0.98
+Error 0.226791
+Acierto 0.966667
+Error 0.330182
+Acierto 0.946667
+Error 0.182635
+Acierto 0.98
+Error 0.176439
+Acierto 0.98
+Error 0.364519
+Acierto 0.926667
+Error 0.219895
+Acierto 0.973333
+Error 0.209283
+Acierto 0.98
+Error 0.219989
+Acierto 0.966667
+Error 0.226865
+Acierto 0.966667
+Error 0.18964
+Acierto 0.98
+Error 0.187389
+Acierto 0.98
+Error 0.186602
+Acierto 0.98
+Error 0.184779
+Acierto 0.98
+Error 0.183997
+Acierto 0.98
+Error 0.183591
+Acierto 0.98
+Error 0.18334
+Acierto 0.98
+Error 0.272559
+Acierto 0.953333
+Error 0.190279
+Acierto 0.98
+Error 0.186863
+Acierto 0.98
+Error 0.205388
+Acierto 0.973333
+Error 0.271513
+Acierto 0.953333
+Error 0.21528
+Acierto 0.973333
+Error 0.26946
+Acierto 0.953333
+Error 0.275255
+Acierto 0.953333
+Error 0.285182
+Acierto 0.953333
+Error 0.295138
+Acierto 0.953333
+Error 0.290247
+Acierto 0.953333
+Error 0.254586
+Acierto 0.966667
+Error 0.271296
+Acierto 0.953333
+Error 0.278818
+Acierto 0.953333
+Error 0.289215
+Acierto 0.953333
+Error 0.296882
+Acierto 0.953333
+Error 0.202046
+Acierto 0.98
+Error 0.280003
+Acierto 0.953333
+Error 0.285191
+Acierto 0.953333
+Error 0.342117
+Acierto 0.933333
+Error 0.192645
+Acierto 0.98
+Error 0.189773
+Acierto 0.98
+Error 0.187383
+Acierto 0.98
+Error 0.186258
+Acierto 0.98
+Error 0.185551
+Acierto 0.98
+Error 0.184578
+Acierto 0.98
+Error 0.18806
+Acierto 0.98
+Error 0.183026
+Acierto 0.98
+Error 0.1825
+Acierto 0.98
+Error 0.18222
+Acierto 0.98
+Error 0.182149
+Acierto 0.98
+Error 0.181864
+Acierto 0.98
+Error 0.272049
+Acierto 0.953333
+Error 0.192002
+Acierto 0.98
+Error 0.18814
+Acierto 0.98
+Error 0.185788
+Acierto 0.98
+Error 0.18431
+Acierto 0.98
+Error 0.183347
+Acierto 0.98
+Error 0.363337
+Acierto 0.926667
+Error 0.334053
+Acierto 0.94
+Error 0.173641
+Acierto 0.98
+Error 0.268884
+Acierto 0.953333
+Error 0.27448
+Acierto 0.953333
+Error 0.283677
+Acierto 0.953333
+Error 0.294125
+Acierto 0.953333
+Error 0.287675
+Acierto 0.96
+Error 0.327134
+Acierto 0.946667
+Error 0.287686
+Acierto 0.953333
+Error 0.283707
+Acierto 0.953333
+Error 0.201049
+Acierto 0.98
+Error 0.202066
+Acierto 0.98
+Error 0.191464
+Acierto 0.98
+Error 0.189358
+Acierto 0.98
+Error 0.187974
+Acierto 0.98
+Error 0.186989
+Acierto 0.98
+Error 0.24202
+Acierto 0.966667
+Error 0.225103
+Acierto 0.966667
+Error 0.210981
+Acierto 0.973333
+Error 0.272516
+Acierto 0.953333
+Error 0.280072
+Acierto 0.953333
+Error 0.290304
+Acierto 0.953333
+Error 0.298683
+Acierto 0.953333
+Error 0.206012
+Acierto 0.98
+Error 0.196331
+Acierto 0.98
+Error 0.191288
+Acierto 0.98
+Error 0.187676
+Acierto 0.98
+Error 0.186272
+Acierto 0.98
+Error 0.184973
+Acierto 0.98
+Error 0.250971
+Acierto 0.96
+Error 0.187527
+Acierto 0.98
+Error 0.185147
+Acierto 0.98
+Error 0.18443
+Acierto 0.98
+Error 0.183767
+Acierto 0.98
+Error 0.311845
+Acierto 0.946667
+Error 0.231267
+Acierto 0.966667
+Error 0.205841
+Acierto 0.973333
+Error 0.18162
+Acierto 0.98
+Error 0.179169
+Acierto 0.98
+Error 0.179105
+Acierto 0.98
+Error 0.179201
+Acierto 0.98
+Error 0.179417
+Acierto 0.98
+Error 0.279496
+Acierto 0.953333
+Error 0.277065
+Acierto 0.953333
+Error 0.233171
+Acierto 0.966667
+Error 0.234709
+Acierto 0.966667
+Error 0.193125
+Acierto 0.98
+Error 0.18826
+Acierto 0.98
+Error 0.185417
+Acierto 0.98
+Error 0.183602
+Acierto 0.98
+Error 0.361489
+Acierto 0.926667
+Error 0.286386
+Acierto 0.953333
+Error 0.202135
+Acierto 0.98
+Error 0.192516
+Acierto 0.98
+Error 0.187573
+Acierto 0.98
+Error 0.184459
+Acierto 0.98
+Error 0.182738
+Acierto 0.98
+Error 0.181819
+Acierto 0.98
+Error 0.180515
+Acierto 0.98
+Error 0.177426
+Acierto 0.98
+Error 0.178278
+Acierto 0.98
+Error 0.220441
+Acierto 0.966667
+Error 0.187989
+Acierto 0.98
+Error 0.177552
+Acierto 0.98
+Error 0.177121
+Acierto 0.98
+Error 0.176915
+Acierto 0.98
+Error 0.176897
+Acierto 0.98
+Error 0.177039
+Acierto 0.98
+Error 0.219622
+Acierto 0.966667
+Error 0.177712
+Acierto 0.98
+Error 0.177599
+Acierto 0.98
+Error 0.364389
+Acierto 0.926667
+Error 0.238924
+Acierto 0.966667
+Error 0.193874
+Acierto 0.98
+Error 0.186157
+Acierto 0.98
+Error 0.183419
+Acierto 0.98
+Error 0.181175
+Acierto 0.98
+Error 0.177037
+Acierto 0.98
+Error 0.205271
+Acierto 0.973333
+Error 0.310761
+Acierto 0.946667
+Error 0.227966
+Acierto 0.96
+Error 0.216885
+Acierto 0.966667
+Error 0.177516
+Acierto 0.98
+Error 0.177005
+Acierto 0.98
+Error 0.17687
+Acierto 0.98
+Error 0.176913
+Acierto 0.98
+Error 0.176878
+Acierto 0.98
+Error 0.175547
+Acierto 0.98
+Error 0.175929
+Acierto 0.98
+Error 0.177181
+Acierto 0.98
+Error 0.176677
+Acierto 0.98
+Error 0.176463
+Acierto 0.98
+Error 0.176468
+Acierto 0.98
+Error 0.176569
+Acierto 0.98
+Error 0.254922
+Acierto 0.96
+Error 0.170223
+Acierto 0.98
+Error 0.171912
+Acierto 0.98
+Error 0.172102
+Acierto 0.98
+Error 0.172526
+Acierto 0.98
+Error 0.173056
+Acierto 0.98
+Error 0.173692
+Acierto 0.98
+Error 0.173944
+Acierto 0.98
+Error 0.264363
+Acierto 0.953333
+Error 0.182794
+Acierto 0.98
+Error 0.179918
+Acierto 0.98
+Error 0.178606
+Acierto 0.98
+Error 0.361488
+Acierto 0.926667
+Error 0.280394
+Acierto 0.953333
+Error 0.19367
+Acierto 0.98
+Error 0.186589
+Acierto 0.98
+Error 0.182804
+Acierto 0.98
+Error 0.18056
+Acierto 0.98
+Error 0.179138
+Acierto 0.98
+Error 0.36245
+Acierto 0.926667
+Error 0.287182
+Acierto 0.953333
+Error 0.293917
+Acierto 0.953333
+Error 0.295951
+Acierto 0.953333
+Error 0.283595
+Acierto 0.96
+Error 0.192069
+Acierto 0.98
+Error 0.178556
+Acierto 0.98
+Error 0.177784
+Acierto 0.98
+Error 0.177343
+Acierto 0.98
+Error 0.177069
+Acierto 0.98
+Error 0.193523
+Acierto 0.973333
+Error 0.177532
+Acierto 0.98
+Error 0.348672
+Acierto 0.933333
+Error 0.281945
+Acierto 0.953333
+Error 0.198073
+Acierto 0.98
+Error 0.18896
+Acierto 0.98
+Error 0.184268
+Acierto 0.98
+Error 0.181441
+Acierto 0.98
+Error 0.179647
+Acierto 0.98
+Error 0.178532
+Acierto 0.98
+Error 0.177281
+Acierto 0.98
+Error 0.174059
+Acierto 0.98
+Error 0.21372
+Acierto 0.966667
+Error 0.305024
+Acierto 0.946667
+Error 0.161506
+Acierto 0.98
+Error 0.165457
+Acierto 0.98
+Error 0.17904
+Acierto 0.98
+Error 0.166667
+Acierto 0.98
+Error 0.167546
+Acierto 0.98
+Error 0.168526
+Acierto 0.98
+Error 0.16957
+Acierto 0.98
+Error 0.170692
+Acierto 0.98
+Error 0.171388
+Acierto 0.98
+Error 0.260869
+Acierto 0.953333
+Error 0.176712
+Acierto 0.98
+Error 0.176244
+Acierto 0.98
+Error 0.173581
+Acierto 0.98
+Error 0.174282
+Acierto 0.98
+Error 0.229785
+Acierto 0.966667
+Error 0.221429
+Acierto 0.966667
+Error 0.182832
+Acierto 0.98
+Error 0.179411
+Acierto 0.98
+Error 0.177979
+Acierto 0.98
+Error 0.173535
+Acierto 0.98
+Error 0.172353
+Acierto 0.98
+Error 0.17297
+Acierto 0.98
+Error 0.362136
+Acierto 0.926667
+Error 0.27464
+Acierto 0.953333
+Error 0.285111
+Acierto 0.946667
+Error 0.280882
+Acierto 0.953333
+Error 0.296869
+Acierto 0.946667
+Error 0.288895
+Acierto 0.953333
+Error 0.293791
+Acierto 0.953333
+Error 0.244599
+Acierto 0.966667
+Error 0.242914
+Acierto 0.966667
+Error 0.238147
+Acierto 0.966667
+Error 0.19354
+Acierto 0.98
+Error 0.186582
+Acierto 0.98
+Error 0.182718
+Acierto 0.98
+Error 0.180333
+Acierto 0.98
+Error 0.178835
+Acierto 0.98
+Error 0.177819
+Acierto 0.98
+Error 0.234085
+Acierto 0.966667
+Error 0.227389
+Acierto 0.966667
+Error 0.186644
+Acierto 0.98
+Error 0.182625
+Acierto 0.98
+Error 0.180263
+Acierto 0.98
+Error 0.178161
+Acierto 0.98
+Error 0.174296
+Acierto 0.98
+Error 0.264908
+Acierto 0.953333
+Error 0.27318
+Acierto 0.953333
+Error 0.283462
+Acierto 0.953333
+Error 0.292016
+Acierto 0.953333
+Error 0.264601
+Acierto 0.96
+Error 0.239018
+Acierto 0.966667
+Error 0.35893
+Acierto 0.926667
+Error 0.28866
+Acierto 0.953333
+Error 0.295079
+Acierto 0.953333
+Error 0.297437
+Acierto 0.953333
+Error 0.292894
+Acierto 0.953333
+Error 0.199783
+Acierto 0.98
+Error 0.186835
+Acierto 0.98
+Error 0.183013
+Acierto 0.98
+Error 0.180654
+Acierto 0.98
+Error 0.178982
+Acierto 0.98
+Error 0.178261
+Acierto 0.98
+Error 0.364797
+Acierto 0.926667
+Error 0.268789
+Acierto 0.96
+Error 0.310761
+Acierto 0.946667
+Error 0.223896
+Acierto 0.966667
+Error 0.226687
+Acierto 0.966667
+Error 0.229403
+Acierto 0.966667
+Error 0.231229
+Acierto 0.966667
+Error 0.18866
+Acierto 0.98
+Error 0.183817
+Acierto 0.98
+Error 0.180863
+Acierto 0.98
+Error 0.178985
+Acierto 0.98
+Error 0.177679
+Acierto 0.98
+Error 0.221299
+Acierto 0.966667
+Error 0.182274
+Acierto 0.98
+Error 0.183544
+Acierto 0.98
+Error 0.177867
+Acierto 0.98
+Error 0.176566
+Acierto 0.98
+Error 0.175749
+Acierto 0.98
+Error 0.17525
+Acierto 0.98
+Error 0.358582
+Acierto 0.926667
+Error 0.232657
+Acierto 0.966667
+Error 0.272965
+Acierto 0.953333
+Error 0.283338
+Acierto 0.953333
+Error 0.29084
+Acierto 0.953333
+Error 0.194745
+Acierto 0.98
+Error 0.186433
+Acierto 0.98
+Error 0.207853
+Acierto 0.973333
+Error 0.26385
+Acierto 0.953333
+Error 0.272704
+Acierto 0.953333
+Error 0.222802
+Acierto 0.966667
+Error 0.229639
+Acierto 0.966667
+Error 0.261077
+Acierto 0.953333
+Error 0.266995
+Acierto 0.953333
+Error 0.181893
+Acierto 0.98
+Error 0.179686
+Acierto 0.98
+Error 0.178195
+Acierto 0.98
+Error 0.177202
+Acierto 0.98
+Error 0.176597
+Acierto 0.98
+Error 0.175607
+Acierto 0.98
+Error 0.185587
+Acierto 0.973333
+Error 0.172165
+Acierto 0.98
+Error 0.173119
+Acierto 0.98
+Error 0.267906
+Acierto 0.953333
+Error 0.27746
+Acierto 0.953333
+Error 0.287125
+Acierto 0.953333
+Error 0.233202
+Acierto 0.973333
+Error 0.275824
+Acierto 0.953333
+Error 0.223376
+Acierto 0.973333
+Error 0.218794
+Acierto 0.966667
+Error 0.247151
+Acierto 0.96
+Error 0.209053
+Acierto 0.966667
+Error 0.304009
+Acierto 0.946667
+Error 0.16649
+Acierto 0.98
+Error 0.167779
+Acierto 0.98
+Error 0.358792
+Acierto 0.926667
+Error 0.276664
+Acierto 0.953333
+Error 0.19079
+Acierto 0.98
+Error 0.185825
+Acierto 0.98
+Error 0.182288
+Acierto 0.98
+Error 0.202194
+Acierto 0.973333
+Error 0.266037
+Acierto 0.953333
+Error 0.217669
+Acierto 0.966667
+Error 0.356326
+Acierto 0.926667
+Error 0.200739
+Acierto 0.973333
+Error 0.235688
+Acierto 0.96
+Error 0.179261
+Acierto 0.98
+Error 0.178731
+Acierto 0.98
+Error 0.269472
+Acierto 0.953333
+Error 0.276999
+Acierto 0.953333
+Error 0.286935
+Acierto 0.953333
+Error 0.29508
+Acierto 0.953333
+Error 0.298238
+Acierto 0.953333
+Error 0.214918
+Acierto 0.98
+Error 0.191628
+Acierto 0.98
+Error 0.185229
+Acierto 0.98
+Error 0.182806
+Acierto 0.98
+Error 0.181231
+Acierto 0.98
+Error 0.269427
+Acierto 0.953333
+Error 0.278691
+Acierto 0.953333
+Error 0.288879
+Acierto 0.953333
+Error 0.201341
+Acierto 0.98
+Error 0.191743
+Acierto 0.98
+Error 0.18628
+Acierto 0.98
+Error 0.17886
+Acierto 0.98
+Error 0.178104
+Acierto 0.98
+Error 0.177566
+Acierto 0.98
+Error 0.215584
+Acierto 0.966667
+Error 0.17751
+Acierto 0.98
+Error 0.176588
+Acierto 0.98
+Error 0.176288
+Acierto 0.98
+Error 0.176225
+Acierto 0.98
+Error 0.363118
+Acierto 0.926667
+Error 0.282634
+Acierto 0.953333
+Error 0.194127
+Acierto 0.98
+Error 0.197132
+Acierto 0.98
+Error 0.182133
+Acierto 0.98
+Error 0.180642
+Acierto 0.98
+Error 0.194412
+Acierto 0.973333
+Error 0.182482
+Acierto 0.98
+Error 0.178025
+Acierto 0.98
+Error 0.177524
+Acierto 0.98
+Error 0.177222
+Acierto 0.98
+Error 0.270256
+Acierto 0.953333
+Error 0.238044
+Acierto 0.966667
+Error 0.230598
+Acierto 0.966667
+Error 0.187257
+Acierto 0.98
+Error 0.183408
+Acierto 0.98
+Error 0.181196
+Acierto 0.98
+Error 0.179805
+Acierto 0.98
+Error 0.268007
+Acierto 0.953333
+Error 0.277288
+Acierto 0.953333
+Error 0.205595
+Acierto 0.973333
+Error 0.182122
+Acierto 0.98
+Error 0.180405
+Acierto 0.98
+Error 0.270851
+Acierto 0.953333
+Error 0.189486
+Acierto 0.98
+Error 0.300126
+Acierto 0.946667
+Error 0.282125
+Acierto 0.953333
+Error 0.291704
+Acierto 0.953333
+Error 0.294577
+Acierto 0.953333
+Error 0.25508
+Acierto 0.96
+Error 0.184627
+Acierto 0.98
+Error 0.182691
+Acierto 0.98
+Error 0.180413
+Acierto 0.98
+Error 0.179022
+Acierto 0.98
+Error 0.178145
+Acierto 0.98
+Error 0.2205
+Acierto 0.966667
+Error 0.207909
+Acierto 0.973333
+Error 0.273138
+Acierto 0.953333
+Error 0.279128
+Acierto 0.953333
+Error 0.288832
+Acierto 0.953333
+Error 0.29575
+Acierto 0.953333
+Error 0.297784
+Acierto 0.953333
+Error 0.200142
+Acierto 0.98
+Error 0.188119
+Acierto 0.98
+Error 0.184266
+Acierto 0.98
+Error 0.181313
+Acierto 0.98
+Error 0.223932
+Acierto 0.966667
+Error 0.22544
+Acierto 0.966667
+Error 0.256657
+Acierto 0.96
+Error 0.265354
+Acierto 0.953333
+Error 0.206601
+Acierto 0.973333
+Error 0.181522
+Acierto 0.98
+Error 0.179136
+Acierto 0.98
+Error 0.350035
+Acierto 0.933333
+Error 0.286119
+Acierto 0.953333
+Error 0.197281
+Acierto 0.98
+Error 0.189228
+Acierto 0.98
+Error 0.221605
+Acierto 0.966667
+Error 0.175771
+Acierto 0.98
+Error 0.17575
+Acierto 0.98
+Error 0.301538
+Acierto 0.946667
+Error 0.179594
+Acierto 0.98
+Error 0.178622
+Acierto 0.98
+Error 0.221008
+Acierto 0.966667
+Error 0.208773
+Acierto 0.973333
+Error 0.271673
+Acierto 0.953333
+Error 0.279858
+Acierto 0.953333
+Error 0.289397
+Acierto 0.953333
+Error 0.296271
+Acierto 0.953333
+Error 0.298682
+Acierto 0.953333
+Error 0.201951
+Acierto 0.98
+Error 0.190922
+Acierto 0.98
+Error 0.185838
+Acierto 0.98
+Error 0.182824
+Acierto 0.98
+Error 0.180917
+Acierto 0.98
+Error 0.178619
+Acierto 0.98
+Error 0.178313
+Acierto 0.98
+Error 0.197227
+Acierto 0.973333
+Error 0.224564
+Acierto 0.966667
+Error 0.201349
+Acierto 0.973333
+Error 0.203716
+Acierto 0.973333
+Error 0.179419
+Acierto 0.98
+Error 0.178274
+Acierto 0.98
+Error 0.177552
+Acierto 0.98
+Error 0.213513
+Acierto 0.966667
+Error 0.169542
+Acierto 0.98
+Error 0.328373
+Acierto 0.94
+Error 0.21485
+Acierto 0.966667
+Error 0.190477
+Acierto 0.973333
+Error 0.171944
+Acierto 0.98
+Error 0.172563
+Acierto 0.98
+Error 0.264665
+Acierto 0.953333
+Error 0.270047
+Acierto 0.953333
+Error 0.278609
+Acierto 0.953333
+Error 0.288565
+Acierto 0.953333
+Error 0.296375
+Acierto 0.953333
+Error 0.29718
+Acierto 0.953333
+Error 0.188903
+Acierto 0.98
+Error 0.181817
+Acierto 0.98
+Error 0.179761
+Acierto 0.98
+Error 0.26996
+Acierto 0.953333
+Error 0.278938
+Acierto 0.953333
+Error 0.289012
+Acierto 0.953333
+Error 0.293686
+Acierto 0.953333
+Error 0.201337
+Acierto 0.98
+Error 0.191945
+Acierto 0.98
+Error 0.18707
+Acierto 0.98
+Error 0.182288
+Acierto 0.98
+Error 0.180557
+Acierto 0.98
+Error 0.179579
+Acierto 0.98
+Error 0.178691
+Acierto 0.98
+Error 0.27946
+Acierto 0.953333
+Error 0.279811
+Acierto 0.953333
+Error 0.288555
+Acierto 0.953333
+Error 0.277779
+Acierto 0.953333
+Error 0.236898
+Acierto 0.966667
+Error 0.228873
+Acierto 0.966667
+Error 0.231383
+Acierto 0.966667
+Error 0.20774
+Acierto 0.973333
+Error 0.22912
+Acierto 0.966667
+Error 0.186294
+Acierto 0.98
+Error 0.272012
+Acierto 0.953333
+Error 0.242695
+Acierto 0.966667
+Error 0.219892
+Acierto 0.973333
+Error 0.189732
+Acierto 0.98
+Error 0.18529
+Acierto 0.98
+Error 0.181866
+Acierto 0.98
+Error 0.271087
+Acierto 0.953333
+Error 0.280037
+Acierto 0.953333
+Error 0.289655
+Acierto 0.953333
+Error 0.296833
+Acierto 0.953333
+Error 0.29893
+Acierto 0.953333
+Error 0.249161
+Acierto 0.966667
+Error 0.211286
+Acierto 0.973333
+Error 0.184348
+Acierto 0.98
+Error 0.181914
+Acierto 0.98
+Error 0.1797
+Acierto 0.98
+Error 0.270708
+Acierto 0.953333
+Error 0.278956
+Acierto 0.953333
+Error 0.288287
+Acierto 0.953333
+Error 0.296203
+Acierto 0.953333
+Error 0.300583
+Acierto 0.953333
+Error 0.297517
+Acierto 0.953333
+Error 0.202675
+Acierto 0.98
+Error 0.191536
+Acierto 0.98
+Error 0.183059
+Acierto 0.98
+Error 0.181506
+Acierto 0.98
+Error 0.179905
+Acierto 0.98
+Error 0.18478
+Acierto 0.98
+Error 0.17431
+Acierto 0.98
+Error 0.174205
+Acierto 0.98
+Error 0.173482
+Acierto 0.98
+Error 0.178508
+Acierto 0.98
+Error 0.173935
+Acierto 0.98
+Error 0.173876
+Acierto 0.98
+Error 0.265351
+Acierto 0.953333
+Error 0.177036
+Acierto 0.98
+Error 0.226332
+Acierto 0.966667
+Error 0.222163
+Acierto 0.966667
+Error 0.190734
+Acierto 0.98
+Error 0.356519
+Acierto 0.926667
+Error 0.284166
+Acierto 0.953333
+Error 0.293042
+Acierto 0.953333
+Error 0.298519
+Acierto 0.953333
+Error 0.291687
+Acierto 0.953333
+Error 0.190309
+Acierto 0.98
+Error 0.260489
+Acierto 0.953333
+Error 0.233151
+Acierto 0.966667
+Error 0.180657
+Acierto 0.98
+Error 0.178474
+Acierto 0.98
+Error 0.269375
+Acierto 0.953333
+Error 0.180771
+Acierto 0.98
+Error 0.197548
+Acierto 0.973333
+Error 0.231306
+Acierto 0.966667
+Error 0.212447
+Acierto 0.973333
+Error 0.184367
+Acierto 0.98
+Error 0.181393
+Acierto 0.98
+Error 0.271846
+Acierto 0.953333
+Error 0.272666
+Acierto 0.953333
+Error 0.281199
+Acierto 0.953333
+Error 0.290409
+Acierto 0.953333
+Error 0.296839
+Acierto 0.953333
+Error 0.299529
+Acierto 0.953333
+Error 0.298847
+Acierto 0.953333
+Error 0.215332
+Acierto 0.98
+Error 0.191077
+Acierto 0.98
+Error 0.277463
+Acierto 0.953333
+Error 0.284658
+Acierto 0.953333
+Error 0.293151
+Acierto 0.953333
+Error 0.298856
+Acierto 0.953333
+Error 0.301384
+Acierto 0.953333
+Error 0.301741
+Acierto 0.953333
+Error 0.206051
+Acierto 0.98
+Error 0.193916
+Acierto 0.98
+Error 0.186927
+Acierto 0.98
+Error 0.182898
+Acierto 0.98
+Error 0.180638
+Acierto 0.98
+Error 0.178977
+Acierto 0.98
+Error 0.178706
+Acierto 0.98
+Error 0.1768
+Acierto 0.98
+Error 0.269559
+Acierto 0.953333
+Error 0.277821
+Acierto 0.953333
+Error 0.287102
+Acierto 0.953333
+Error 0.2953
+Acierto 0.953333
+Error 0.300233
+Acierto 0.953333
+Error 0.289644
+Acierto 0.953333
+Error 0.173866
+Acierto 0.986667
+Error 0.271653
+Acierto 0.953333
+Error 0.280412
+Acierto 0.953333
+Error 0.289859
+Acierto 0.953333
+Error 0.281511
+Acierto 0.96
+Error 0.284701
+Acierto 0.953333
+Error 0.293192
+Acierto 0.953333
+Error 0.299899
+Acierto 0.953333
+Error 0.303682
+Acierto 0.953333
+Error 0.305006
+Acierto 0.953333
+Error 0.248498
+Acierto 0.966667
+Error 0.192985
+Acierto 0.98
+Error 0.187604
+Acierto 0.98
+Error 0.184478
+Acierto 0.98
+Error 0.182416
+Acierto 0.98
+Error 0.18007
+Acierto 0.98
+Error 0.180158
+Acierto 0.98
+Error 0.179012
+Acierto 0.98
+Error 0.178013
+Acierto 0.98
+Error 0.177993
+Acierto 0.98
+Error 0.176629
+Acierto 0.98
+Error 0.193398
+Acierto 0.973333
+Error 0.25151
+Acierto 0.96
+Error 0.185905
+Acierto 0.973333
+Error 0.168559
+Acierto 0.98
+Error 0.212287
+Acierto 0.966667
+Error 0.213723
+Acierto 0.966667
+Error 0.171283
+Acierto 0.98
+Error 0.22725
+Acierto 0.966667
+Error 0.21262
+Acierto 0.966667
+Error 0.372017
+Acierto 0.926667
+Error 0.321003
+Acierto 0.94
+Error 0.262155
+Acierto 0.953333
+Error 0.259223
+Acierto 0.953333
+Error 0.198513
+Acierto 0.973333
+Error 0.174645
+Acierto 0.98
+Error 0.17523
+Acierto 0.98
+Error 0.175964
+Acierto 0.98
+Error 0.175898
+Acierto 0.98
+Error 0.176231
+Acierto 0.98
+Error 0.175581
+Acierto 0.98
+Error 0.176955
+Acierto 0.98
+Error 0.178034
+Acierto 0.98
+Error 0.178075
+Acierto 0.98
+Error 0.178341
+Acierto 0.98
+Error 0.177775
+Acierto 0.98
+Error 0.177139
+Acierto 0.98
+Error 0.177172
+Acierto 0.98
+No hubo convergencia
+Con los datos de prueba se obtuvo %98 de acierto
