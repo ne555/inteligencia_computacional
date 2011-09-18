@@ -34,17 +34,15 @@ test: $(bin) input.txt
 
 input.txt: $(bindir)/input
 	$< > $@
-	
 
 bin/perceptron: $(object_perceptron)
 	$(CXX) $(LIBRARIES_perceptron) $(object_perceptron) -o $@
 
 bin/grapher: $(object_grapher)
 	$(CXX) $(LIBRARIES_grapher) $(object_grapher) -o $@
-	
+
 bin/input: $(object_input)
 	$(CXX) $(LIBRARIES_input) $(object_input) -o $@
-	
 
 $(objdir)/capa.o: $(addprefix $(headerdir)/,neurona.h math_vector.h capa.h util.h)
 $(objdir)/ej1_1.o: $(addprefix $(headerdir)/,simulator.h capa.h math_vector.h neurona.h util.h)
@@ -53,12 +51,9 @@ $(objdir)/input.o: $(addprefix $(headerdir)/,util.h math_vector.h)
 $(objdir)/neurona.o: $(addprefix $(headerdir)/,neurona.h math_vector.h util.h)
 $(objdir)/simulator.o: $(addprefix $(headerdir)/,simulator.h capa.h math_vector.h neurona.h util.h)
 
-	 
 $(objdir)/%.o : src/%.cpp
 	$(CXX) $< -c $(CPPFLAGS) -I$(headerdir) -o $@
 
-obj/simulator.o : src/simulator.cpp
-	$(CXX) $< -c $(CPPFLAGS) -I$(headerdir) -o $@
 
 $(objects): | $(objdir)
 
