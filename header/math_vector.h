@@ -13,6 +13,7 @@ namespace math{
 
 	template<class T>
 	inline typename T::value_type dot(const T &a, const T&b){
+		if(a.size() != b.size()) throw "math_vector::dot";
 		return (a*b).sum();
 	}
 

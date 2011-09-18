@@ -50,12 +50,11 @@ float offset2(float f){
 }
 
 int main(int argc, char **argv){
-	fun oper = &hole_circ;
+	fun oper = &hole_rect;
 	srand(0);
 	int n=700, p=2;
 	//float ratio = 0.3;
-	cout << n << ' ' << p << endl;
-	#if 1
+	cout << n <<endl;
 	for(int K=0; K<n; ++K){
 		valarray<float> percepcion(p);
 		generate_n(
@@ -71,55 +70,6 @@ int main(int argc, char **argv){
 		);
 		cout << oper(percepcion) << endl;
 	}
-	#else
-	for(int K=0; K<n/4; ++K){
-		valarray<float> percepcion(p);
-		generate_n(
-			&percepcion[0],
-			percepcion.size(),
-			randomize<float>(-0.7,0.7)
-		);
-		print(
-			&percepcion[0],
-			&percepcion[0]+percepcion.size(),
-			cout
-		);
-		cout << oper(percepcion) << endl;
-	}
-	for(int K=0; K<n/2; ++K){
-		valarray<float> percepcion(p);
-		generate_n(
-			&percepcion[0],
-			percepcion.size(),
-			randomize<float>(-0.7,0.7)
-		);
-		percepcion = percepcion.apply( offset1 );
-
-		print(
-			&percepcion[0],
-			&percepcion[0]+percepcion.size(),
-			cout
-		);
-		cout << oper(percepcion) << endl;
-	}
-	for(int K=0; K<n/4; ++K){
-		valarray<float> percepcion(p);
-		generate_n(
-			&percepcion[0],
-			percepcion.size(),
-			randomize<float>(-0.5,0.5)
-		);
-		percepcion = percepcion.apply( offset2 );
-
-		print(
-			&percepcion[0],
-			&percepcion[0]+percepcion.size(),
-			cout
-		);
-		cout << oper(percepcion) << endl;
-	}
-	#endif
-	
 	return 0;
 }
 

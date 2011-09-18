@@ -1,41 +1,44 @@
 #ifndef SIMULATOR_H
 #define SIMULATOR_H
 
-#include <iostream>
 #include <vector>
-#include "capa.h"
+#include "network.h"
 
+	#include <iostream>
 class simulator{
 public:
-	typedef capa::value_type value_type;
-	typedef capa::vector vector;
+	typedef network::value_type value_type;
+	typedef network::vector vector;
 
 	typedef std::vector<vector> matrix;
-	typedef std::vector<capa> container;
+	typedef std::vector<network> container;
 
-	simulator(size_t patrones, size_t percepciones, size_t salidas, std::ostream *out=NULL);
+	simulator(size_t percepciones, size_t salidas, std::ostream *out=NULL);
 	void read(std::istream &in);
 
 	value_type test();
 	int train(size_t cant, float success_rate, float error);
-	vector test(vector v);
 
-	//agrega al final. La ultima debe ser la capa de salida (error prone)
+	//agrega al final. La ultima debe ser la network de salida (error prone)
 	//solo llamarse luego de cargar los datos
 	void addlayer(size_t n, value_type alpha, value_type momentum);
 
 	void graph();
 
-private:
-	bool done(float success, float error);
-	inline vector test(size_t index){
-		return test(input[index]);
+	void structure(){
+		using std::cerr;
+		cerr << "input " << input.size() << 'x' << input[0].size() << '\n';
+		cerr << "result " << result.size() << 'x' << result[0].size() << '\n';
+		red.structure();
 	}
 
-	matrix input, result; //, prev_error, actual_error;
-	container network;
+private:
+	bool done(float success, float error);
 
-	float prev_error, actual_error;
+	matrix input, result; //, prev_error, actual_error;
+	network red;
+
+	size_t percepciones, salidas;
 
 	std::ostream *out;
 };

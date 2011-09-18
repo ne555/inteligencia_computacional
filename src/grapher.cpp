@@ -51,7 +51,7 @@ void init(){
 	//glutReshapeFunc(reshape);
 	glutIdleFunc(wait_for_input);
 
-	glClearColor( black[0], black[1], black[2], 1);
+	glClearColor( white[0], white[1], white[2], 1);
 	glMatrixMode(GL_MODELVIEW); glLoadIdentity();
 
 	const float factor=0.5;
@@ -90,7 +90,7 @@ void fixed_background(){
 	glStencilOp(GL_KEEP,GL_KEEP,GL_KEEP);
 	glAccum(GL_LOAD, 1);
 
-	glPointSize(7);
+	glPointSize(4);
 }
 
 void reshape(int w, int h){
@@ -136,8 +136,9 @@ void axis(const float *color){
 
 void wait_for_input(){
 	static bool first_time=true;
-	int n,p;
-	cin>>n>>p; //compatibilidad con la prueba
+	size_t n;
+	cin>>n; //compatibilidad con la prueba
+	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	if(not cin){
 		cin.clear();
 		string s;

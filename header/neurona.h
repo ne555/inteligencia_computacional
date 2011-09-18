@@ -1,8 +1,8 @@
 #ifndef NEURONA_H
 #define NEURONA_H
 
-#include <valarray>
 #include <iostream>
+#include <valarray>
 
 /*
 	Perceptron simple
@@ -20,13 +20,18 @@ public:
 
 	neurona(int p, value_type alpha, value_type momentum); 
 	//input es la entrada aumentada (la correspondiente al umbral es siempre 1)
-	value_type test(const vector &input) const ; 
+	value_type output(const vector &input) const; 
 	void train(const vector &input, value_type delta); 
 	void print(std::ostream &out) const;
 
 	vector error(value_type delta) const;
 
 	void init(); //error prone
+
+	void structure(){
+		using std::cerr;
+		cerr << "pesos " << weight.size() << '\n';
+	}
 
 private:
 	vector weight, delta_weight;

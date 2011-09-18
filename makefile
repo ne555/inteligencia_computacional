@@ -8,7 +8,7 @@ headerdir = header
 bindir = bin
 bin = $(addprefix $(bindir)/,perceptron grapher input)
 
-obj_perceptron = ej1_1.o neurona.o simulator.o capa.o
+obj_perceptron = ej1_1.o neurona.o simulator.o capa.o network.o
 obj_input = input.o
 obj_grapher = grapher.o
 
@@ -21,14 +21,15 @@ objects = $(object_perceptron) $(object_grapher) $(object_input)
 all: $(bin)
 
 test: $(bin) input.txt
-	#./$(bindir)/perceptron < iris.txt 2>debug.log | cat input.txt - | ./$(bindir)/grapher
-	#./$(bindir)/perceptron < iris.txt 1>/dev/null 2>debug.log 
-	./$(bindir)/perceptron < iris.txt 1>output.log 2>debug.log 
-	grep -Po '(?<=Error ).*$$' debug.log  > error.log
-	grep -Po '(?<=Acierto ).*$$' debug.log  > acierto.log
-	gnuplot graph_error.gp 
-	gnuplot graph_acierto.gp 
-	#grep -Po '(?<=Diff ).*$$' debug.log  > diff.log
+	./$(bindir)/perceptron -e input.txt -p input.txt -n 1000 -a 0.1 -m 0.2< config.txt | cat input.txt - | ./$(bindir)/grapher
+	@##./$(bindir)/perceptron < iris.txt 2>debug.log | cat input.txt - | ./$(bindir)/grapher
+	@##./$(bindir)/perceptron < iris.txt 1>/dev/null 2>debug.log 
+	@#./$(bindir)/perceptron < iris.txt 1>output.log 2>debug.log 
+	@#grep -Po '(?<=Error ).*$$' debug.log  > error.log
+	@#grep -Po '(?<=Acierto ).*$$' debug.log  > acierto.log
+	@#gnuplot graph_error.gp 
+	@#gnuplot graph_acierto.gp 
+	@##grep -Po '(?<=Diff ).*$$' debug.log  > diff.log
 
 
 
@@ -49,7 +50,8 @@ $(objdir)/ej1_1.o: $(addprefix $(headerdir)/,simulator.h capa.h math_vector.h ne
 $(objdir)/grapher.o: 
 $(objdir)/input.o: $(addprefix $(headerdir)/,util.h math_vector.h)
 $(objdir)/neurona.o: $(addprefix $(headerdir)/,neurona.h math_vector.h util.h)
-$(objdir)/simulator.o: $(addprefix $(headerdir)/,simulator.h capa.h math_vector.h neurona.h util.h)
+$(objdir)/network.o: $(addprefix $(headerdir)/,network.h capa.h math_vector.h neurona.h util.h)
+$(objdir)/simulator.o: $(addprefix $(headerdir)/,simulator.h network.h capa.h math_vector.h neurona.h util.h)
 
 $(objdir)/%.o : src/%.cpp
 	$(CXX) $< -c $(CPPFLAGS) -I$(headerdir) -o $@
