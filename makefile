@@ -21,17 +21,7 @@ objects = $(object_perceptron) $(object_grapher) $(object_input)
 all: $(bin)
 
 test: $(bin) input.txt
-	./$(bindir)/perceptron -e input.txt -p input.txt -n 1000 -a 0.1 -m 0.2< config.txt | cat input.txt - | ./$(bindir)/grapher
-	@##./$(bindir)/perceptron < iris.txt 2>debug.log | cat input.txt - | ./$(bindir)/grapher
-	@##./$(bindir)/perceptron < iris.txt 1>/dev/null 2>debug.log 
-	@#./$(bindir)/perceptron < iris.txt 1>output.log 2>debug.log 
-	@#grep -Po '(?<=Error ).*$$' debug.log  > error.log
-	@#grep -Po '(?<=Acierto ).*$$' debug.log  > acierto.log
-	@#gnuplot graph_error.gp 
-	@#gnuplot graph_acierto.gp 
-	@##grep -Po '(?<=Diff ).*$$' debug.log  > diff.log
-
-
+	./$(bindir)/perceptron -e input.txt -p input.txt -n 1000 -a 0.05 -m 0.2 -g < config.txt 
 
 input.txt: $(bindir)/input
 	$< > $@

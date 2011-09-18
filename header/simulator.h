@@ -13,7 +13,7 @@ public:
 	typedef std::vector<vector> matrix;
 	typedef std::vector<network> container;
 
-	simulator(size_t percepciones, size_t salidas, std::ostream *out=NULL);
+	simulator(size_t percepciones, size_t salidas, FILE *out=NULL);
 	void read(std::istream &in);
 
 	value_type test();
@@ -40,7 +40,7 @@ private:
 
 	size_t percepciones, salidas;
 
-	std::ostream *out;
+	FILE *out;
 };
 
 #endif

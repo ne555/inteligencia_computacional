@@ -50,9 +50,9 @@ float offset2(float f){
 }
 
 int main(int argc, char **argv){
-	fun oper = &hole_rect;
+	fun oper = &hole_circ;
 	srand(0);
-	int n=700, p=2;
+	int n=1000, p=2;
 	//float ratio = 0.3;
 	cout << n <<endl;
 	for(int K=0; K<n; ++K){

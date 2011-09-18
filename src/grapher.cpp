@@ -28,7 +28,7 @@ vector<int> clase;
 
 void display();
 void reshape(int w, int h);
-void draw(const float *c1, const float *c2);
+void draw(int id);
 void axis(const float *color);
 void wait_for_input();
 void fixed_background();
@@ -43,7 +43,6 @@ int main(int argc, char **argv){
 }
 
 void init(){
-	//glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_ACCUM);
 	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_STENCIL | GLUT_ACCUM);
 	glutInitWindowSize(width,height); glutInitWindowPosition(50,50);
 	glutCreateWindow("Graficador de puntos de colores");
@@ -59,7 +58,6 @@ void init(){
 	
 	glEnable(GL_STENCIL_TEST);
 	glClearStencil(1);
-	//glEnable(GL_POINT_SMOOTH);
 	glLineWidth(4);
 }
 
@@ -69,14 +67,13 @@ void display(){
 	glAccum(GL_RETURN, 1);
 	glStencilFunc(GL_EQUAL, 1, ~0);
 
-	draw(white, light_blue);
-
+	draw(-1);
 	glutSwapBuffers();
-	//usleep(100e3);
+
 }
 
 void fixed_background(){
-	glPointSize(3);
+	glPointSize(5);
 
 	glClear(GL_COLOR_BUFFER_BIT | GL_STENCIL_BUFFER_BIT | GL_ACCUM_BUFFER_BIT);
 
@@ -84,13 +81,16 @@ void fixed_background(){
 	glStencilOp(GL_KEEP,GL_ZERO,GL_ZERO);
 
 	axis(black);
-	draw(red, dark_blue);
+	glColor3fv(red); draw(1);
+	glColor3fv(dark_blue); draw(-1);
+
+	glColor3fv(blue);
 
 	glStencilFunc(GL_EQUAL, 1, ~0);
 	glStencilOp(GL_KEEP,GL_KEEP,GL_KEEP);
 	glAccum(GL_LOAD, 1);
 
-	glPointSize(4);
+	glPointSize(3);
 }
 
 void reshape(int w, int h){
@@ -106,22 +106,12 @@ void reshape(int w, int h){
 	glutPostRedisplay();
 }
 
-void draw(const float *c1, const float *c2){
+void draw(int id){
 	glBegin(GL_POINTS);{
-		for(size_t K=0; K<points.size(); ++K){
-			if(clase[K] == 1) glColor4fv( c1 );
-			else glColor4fv( c2 );
-			glVertex2f(points[K][0], points[K][1]);
-		}
+		for(size_t K=0; K<points.size(); ++K)
+			if(clase[K] == id)
+				glVertex2f(points[K][0], points[K][1]);
 	};glEnd();
-//	glPointSize(7);
-//	glBegin(GL_POINTS);{
-//		glColor3fv( black );
-//		glVertex2f(-1, -1);
-//		glVertex2f(1, -1);
-//		glVertex2f(-1, 1);
-//		glVertex2f(1, 1);
-//	};glEnd();
 }
 
 void axis(const float *color){
@@ -140,13 +130,13 @@ void wait_for_input(){
 	cin>>n; //compatibilidad con la prueba
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	if(not cin){
+		glutIdleFunc(NULL);
 		cin.clear();
 		string s;
-		while(getline(cin,s))
+		while(getline(cin,s)) //el programa finalizo. se hace un bypass a la entrada
 			cerr << s << endl;
-		glutIdleFunc(NULL);
-		cerr << "Fin\n";
-		return;
+		cerr << "Fin" << endl;
+		exit(EXIT_SUCCESS);
 	}
 
 	points.resize(n, vector<float>(2));

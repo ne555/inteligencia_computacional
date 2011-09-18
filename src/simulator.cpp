@@ -1,4 +1,6 @@
 #include <iostream>
+#include <sstream>
+#include <cstdio>
 #include <valarray>
 #include "simulator.h"
 #include "capa.h"
@@ -9,7 +11,7 @@ using namespace std;
 using math::sign;
 using math::sigmoid;
 
-simulator::simulator(size_t percepciones, size_t salidas, ostream *out):
+simulator::simulator(size_t percepciones, size_t salidas, FILE *out):
 	percepciones(percepciones),
 	salidas(salidas),
 	red(percepciones, salidas),
@@ -39,6 +41,23 @@ void simulator::read(istream &in){
 		input[K][percepciones] = 1; //entrada extendida
 		result[K][salidas] = 1; //entrada extendida
 	}
+
+	if(out){
+		#if 0
+		ostringstream salida;
+		salida << input.size() << endl;
+		for(size_t K=0; K<patrones; ++K){
+			salida << input[K][0] << ' ' << input[K][1] << ' ';
+			salida << result[K][0] << '\n';
+		}
+		fwrite( salida.str().c_str(), salida.str().size(), sizeof(char), out ); 
+		#else
+		fprintf(out, "%lu\n", input.size());
+		for(size_t K=0; K<input.size(); ++K)
+			fprintf( out, "%f %f %d\n", input[K][0], input[K][1], math::sign(result[K][0]) );
+		fflush(out);
+		#endif
+	}
 }
 
 bool simulator::done(float success, float tol){
@@ -63,7 +82,8 @@ int simulator::train(size_t cant, float success_rate, float error_umbral){
 		for(size_t K=0; K<input.size(); ++K)
 			red.train(input[K], result[K]);
 		
-		graph();
+		if(out)
+			graph();
 		if( done(success_rate, error_umbral) )
 			return epoch+1;
 	}
@@ -71,19 +91,22 @@ int simulator::train(size_t cant, float success_rate, float error_umbral){
 }
 
 void simulator::graph(){
-	const int n=75;
+	const size_t n=100;
 	const float limit=2.f;
-	cout << n*n << endl; //solo se visualiza con dos percepciones
-	for(int K=0; K<n; ++K){
-		for(int L=0; L<n; ++L){
+	//ostringstream salida;
+	//salida << n*n << endl; //solo se visualiza con dos percepciones
+	fprintf(out, "%lu\n", n*n);
+	for(size_t K=0; K<n; ++K){
+		for(size_t L=0; L<n; ++L){
 			float x = K/float(n)*limit*2 - limit, y = L/float(n)*limit*2 - limit;
 			vector v(3);
-			v[0] = x;
-			v[1] = y;
-			v[2] = 1;
-			cout << x << ' ' << y << ' ';
-			cout << math::sign(red.output(v)[0]) << endl;
+			v[0] = x; v[1] = y; v[2] = 1;
+	//		salida << x << ' ' << y << ' ';
+	//		salida << math::sign(red.output(v)[0]) << endl;
+			fprintf( out, "%f %f %d\n", v[0], v[1], math::sign(red.output(v)[0]) );
 		}
 	}
+	fflush(out);
+	//fwrite( salida.str().c_str(), salida.str().size(), sizeof(char), out ); 
 }
 

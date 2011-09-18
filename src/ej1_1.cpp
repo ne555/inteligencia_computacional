@@ -6,6 +6,7 @@
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
+#include <cstdio>
 #include <unistd.h>
 
 #include "simulator.h"
@@ -20,12 +21,13 @@ void usage (int status)
 	else{
 		cerr << "Usage: program.bin [OPTIONS]\n";
 		cerr << "Clasifica entre grupos.\n" << 
-		"-n N \t Indica la cantidad maxima de epocas de entrenamiento\n" <<
 		"-a R \t Parametro de velocidad de aprendizaje\n" <<
-		"-s R \t Porcentaje de exito para detener el entrenamiento [0..1]\n" << 
-		"-m R \t Termino de momento\n" << 
 		"-e string \t Nombre del archivo de entrenamiento\n" << 
+		"-g \t Graficar\n" << 
+		"-m R \t Termino de momento\n" << 
+		"-n N \t Indica la cantidad maxima de epocas de entrenamiento\n" <<
 		"-p string \t Nombre del archivo de prueba\n" << 
+		"-s R \t Porcentaje de exito para detener el entrenamiento [0..1]\n" << 
 		"-h \t Ayuda del programa\n";
 	}
 
@@ -44,15 +46,17 @@ int main(int argc, char **argv){
 	int p,s,epoch=1500;
 	float success=0.90, alpha=0.07, momentum=0.03;
     const char *train_file=NULL, *test_file=NULL;
+	FILE *out=NULL;
 	int option;
-	while( (option=getopt(argc, argv, "n:a:s:m:e:p:h")) != -1 ){
+	while( (option=getopt(argc, argv, "a:e:gm:n:p:s:h")) != -1 ){
 		switch(option){
-		case 'n': epoch=convert<int>(optarg); break;
 		case 'a': alpha=convert<float>(optarg); break;
-		case 's': success=convert<float>(optarg); break;
-		case 'm': momentum=convert<float>(optarg); break;
 		case 'e': train_file=optarg; break;
+		case 'g': if(not out) out = popen("./bin/grapher", "w");break;
+		case 'm': momentum=convert<float>(optarg); break;
+		case 'n': epoch=convert<int>(optarg); break;
 		case 'p': test_file=optarg; break;
+		case 's': success=convert<float>(optarg); break;
 		case 'h': usage(EXIT_SUCCESS); break;
 		default: usage(EXIT_FAILURE);
 		}
@@ -66,7 +70,12 @@ int main(int argc, char **argv){
 
 	cin>>p>>s;
 
-	simulator benchmark(p,s,&cout);
+	if(not out){
+		perror("popen");
+		cerr << "Could not make the pipe";
+		return EXIT_FAILURE;
+	}
+	simulator benchmark(p,s,out);
 
     // Agregar capas
 	int capas;
@@ -89,6 +98,8 @@ int main(int argc, char **argv){
 		cerr << "Convergencia en " << cant << " epocas" << endl;
 
 	cerr << "Con los datos de prueba se obtuvo " << rate << " de error" <<endl;
+
+	pclose(out);
 	return EXIT_SUCCESS;
 }
 
