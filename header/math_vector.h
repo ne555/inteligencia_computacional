@@ -33,7 +33,7 @@ namespace math{
 
 	template<class T>
 	void assign(std::valarray<T> &lvalue, const std::valarray<T> &rvalue){
-		if( &lvalue == &rvalue ) throw "they are the same";
+		if( &lvalue == &rvalue ) return;
 		lvalue.resize( rvalue.size() );
 		lvalue = rvalue;
 	}

@@ -3,9 +3,7 @@
 
 #include <valarray>
 #include <vector>
-#include "math_vector.h"
 #include "neurona.h"
-	#include <iostream>
 
 class capa{
 public:
@@ -20,16 +18,9 @@ public:
 	vector error(const vector &delta);
 
 	capa(size_t n, size_t in, value_type alpha, value_type momentum);
-	size_t size();
+	size_t size() const;
 
-	void print(){
-		for(size_t K=0; K<layer.size(); ++K) {
-			std::cout << "neurona " << K << ": ";
-			layer[K].print(std::cout);
-		}
-	}
-
-//private:
+private:
 	container layer;
 	vector delta, salida, input;
 };

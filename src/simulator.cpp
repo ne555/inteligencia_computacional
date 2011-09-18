@@ -3,6 +3,7 @@
 #include "simulator.h"
 #include "capa.h"
 #include "util.h"
+#include "math_vector.h"
 using namespace std;
 using math::sign;
 using math::sigmoid;
@@ -10,8 +11,6 @@ using math::sigmoid;
 simulator::simulator(size_t patrones, size_t percepciones, size_t salidas, ostream *out):
 	input(patrones, vector(percepciones+1)), 
 	result(patrones, vector(salidas) ), 
-	//prev_error(patrones, vector(salidas) ), 
-	//actual_error(patrones, vector(salidas) ), 
 	out(out){}
 
 static bool equal_sign(const simulator::vector &a, const simulator::vector &b){
@@ -49,45 +48,21 @@ void simulator::read(istream &in){
 }
 
 bool simulator::done(float success, float tol){
-	//vector error(input.size()), diff(input.size());
-	//for(size_t K=0; K<prev_error.size(); ++K){
-	//	diff[K] = math::norm2( actual_error[K]-prev_error[K] );
-	//	error[K] = math::norm2( actual_error[K] );	
-	//}
-	//float umbral = math::norm2(diff)/diff.size();
-	//float umbral = fabs(actual_error - prev_error)/actual_error;
-	//cerr << "Diff " << umbral << '\n';
-	float aciertos = test();
-	cerr << "Error " << actual_error << "\nAcierto " << aciertos << '\n';
-
-	//prev_error = actual_error;
-		
-	//if( test() > success and actual_error<tol )
-	//	cerr << "Meansaje alusivo de fin final " << actual_error << ' ' << tol << '\n';
-
-	return ( aciertos > success and actual_error<tol );
+	float error = test();
+	return error<tol;
 }
 
-float simulator::test(){ //devolver el procentaje de aciertos y el error en las salidas
+float simulator::test(){ //devolver el error en las salidas
 	vector error(input.size());
-	int aciertos=0;
 
 	for(size_t K=0; K<input.size(); ++K){
 		vector sal=test(K);
-		if(sal.size() != result[K].size()){
-			//cerr << "Sizes don't match " << sal.size() << ' ' << result[K].size() << '\n';
-			//if(K) cerr << result[K].size() << '\n';
-			//else cerr << "K es 0\n";
+		if(sal.size() != result[K].size())
 			throw "simulator::test";
-		}
 		error[K] = math::norm1( sal-result[K] );
 
-		if( equal_sign(sal, result[K]) )
-			aciertos++;
 	}
-	actual_error = math::norm1(error)/error.size();
-
-	return float(aciertos)/input.size();
+	return math::norm1(error)/error.size();
 }
 
 
@@ -98,58 +73,28 @@ simulator::vector simulator::test(simulator::vector v){
 }
 
 int simulator::train(size_t cant, float success_rate, float error_umbral){
-	cerr << "Inicio del entrenamiento \n";
-	cerr << "Epocas " << cant << '\n';
-	cerr << "Success " << success_rate << '\n';
-	cerr << "Input " << input.size() << "\n";
-
-	cerr << "Structure " << network.size() << '\n';
-	for(size_t K=0; K<network.size(); ++K)
-		cerr << network[K].size() << ' ';
-	cerr << endl;
-
 	for(size_t epoch=0; epoch<cant; ++epoch){
 		for(size_t K=0; K<input.size(); ++K){
 			vector sal = test(K);
 
-		if(sal.size() != result[K].size()){
-			cerr << "Sizes don't match " << sal.size() << ' ' << result[K].size() << '\n';
-			if(K) cerr << result[K].size() << '\n';
-			else cerr << "K es 0\n";
-			throw "simulator::test";
-		}
+			if(sal.size() != result[K].size())
+				throw "simulator::test";
+			
 			vector delta = result[K]-sal;
-
 			for(size_t L=network.size(); L>0; --L)
 				math::assign(delta, network[L-1].error(delta));
-
 			for(size_t L=0; L<network.size(); ++L)
 				network[L].update();
 		}
 		//graph();
-		if( done(success_rate, error_umbral) ){
-			print_result();
+		if( done(success_rate, error_umbral) )
 			return epoch+1;
-		}
+		
 	}
-	print_result();
 	return -1;
 }
 
-void simulator::print_result(){
-	cout << input.size() << ' ' << input[0].size()-1 << ' ' << result[0].size() << endl;
-	for(size_t K=0; K<input.size(); ++K){
-		vector sal = test(K);
-		for(size_t L=0; L<input[0].size()-1; ++L)
-			cout << input[K][L] << ' ';
-		for(size_t L=0; L<sal.size(); ++L)
-			cout << math::sign(sal[L]) << ' ';
-		cout << endl;
-	}
-}
-
 void simulator::graph(){
-	#if 1
 	const int n=90;
 	const float limit=2.f;
 	cout << n*n << ' ' << 2 << endl; //solo se visualiza con dos percepciones
@@ -163,12 +108,5 @@ void simulator::graph(){
 			cout << math::sign(test(v)[0]) << endl;
 		}
 	}
-	#else
-	cout << input.size() << endl;
-	for(size_t K=0; K<input.size(); ++K){
-		cout << input[K][0] << ' ' << input[K][1] << ' ';
-		cout << math::sign(test(K)[0]) << endl;
-	}
-	#endif
 }
 

@@ -19,7 +19,7 @@ void capa::update(){
 		layer[K].train(input,delta[K]);
 }
 
-capa::vector capa::test(const capa::vector &input_){
+capa::vector capa::test(const capa::vector &input_) {
 	for(size_t K=0; K<input_.size(); ++K)
 		input[K] = input_[K];
 
@@ -39,7 +39,7 @@ capa::vector capa::error(const capa::vector &d){
 	return next;
 }
 
-size_t capa::size(){
+size_t capa::size() const{
 	return layer.size();
 }
 

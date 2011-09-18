@@ -17,7 +17,7 @@ void neurona::init(){
 	);
 }
 
-neurona::value_type neurona::test(const vector &input){ 
+neurona::value_type neurona::test(const vector &input) const{ 
 	//return math::sign( math::dot(weight,input) );
 	return math::sigmoid( math::dot(weight,input) );
 }
@@ -29,14 +29,14 @@ void neurona::train(const vector &input, value_type delta){
 	//prev_weight = temp;
 }
 
-void neurona::print(ostream &out){
+void neurona::print(ostream &out) const{
 	for(size_t K=0; K<weight.size(); ++K)
 		out << weight[K] << ' ';
 	
 	out << endl;
 }
 
-neurona::vector neurona::error(neurona::value_type delta){
+neurona::vector neurona::error(neurona::value_type delta) const{
 	return vector(delta*weight);
 }
 

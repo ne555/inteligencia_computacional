@@ -1,8 +1,8 @@
 #ifndef NEURONA_H
 #define NEURONA_H
-//#include <valarray>
+
+#include <valarray>
 #include <iostream>
-#include "math_vector.h"
 
 /*
 	Perceptron simple
@@ -18,21 +18,19 @@ public:
 	typedef float value_type;
 	typedef std::valarray<value_type> vector;
 
-	//neurona(){}
-	neurona(int p, value_type alpha, value_type momentum); //, value_type dead_zone);
+	neurona(int p, value_type alpha, value_type momentum); 
 	//input es la entrada aumentada (la correspondiente al umbral es siempre 1)
-	value_type test(const vector &input); 
+	value_type test(const vector &input) const ; 
 	void train(const vector &input, value_type delta); 
-	void print(std::ostream &out);
+	void print(std::ostream &out) const;
 
-	vector error(value_type delta);
+	vector error(value_type delta) const;
 
 	void init(); //error prone
 
-//private:
-	//value_type delta;
+private:
 	vector weight, delta_weight;
-	value_type alpha, momentum; //, dead_zone;
+	value_type alpha, momentum; 
 };
 
 #endif
