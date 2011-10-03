@@ -23,6 +23,8 @@ const float
 
 int width=480, height=480;
 
+bool last = false;
+
 vector< vector<float> > points;
 vector<int> clase;
 
@@ -108,9 +110,9 @@ void reshape(int w, int h){
 
 void draw(int id){
 	glBegin(GL_POINTS);{
-		for(size_t K=0; K<points.size(); ++K)
+		for(size_t K=0; K<points.size(); ++K){
 			if(clase[K] == id)
-				glVertex2f(points[K][0], points[K][1]);
+				glVertex2f(points[K][0], points[K][1]);}
 	};glEnd();
 }
 
@@ -131,12 +133,9 @@ void wait_for_input(){
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	if(not cin){
 		glutIdleFunc(NULL);
-		cin.clear();
-		string s;
-		while(getline(cin,s)) //el programa finalizo. se hace un bypass a la entrada
-			cerr << s << endl;
-		cerr << "Fin" << endl;
-		exit(EXIT_SUCCESS);
+	   last = true;
+	   glutPostRedisplay();
+	   return;
 	}
 
 	points.resize(n, vector<float>(2));

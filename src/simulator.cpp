@@ -91,7 +91,7 @@ int simulator::train(size_t cant, float success_rate, float error_umbral){
 }
 
 void simulator::graph(){
-	const size_t n=100;
+	const size_t n=200;
 	const float limit=2.f;
 	//ostringstream salida;
 	//salida << n*n << endl; //solo se visualiza con dos percepciones

@@ -70,11 +70,6 @@ int main(int argc, char **argv){
 
 	cin>>p>>s;
 
-	if(not out){
-		perror("popen");
-		cerr << "Could not make the pipe";
-		return EXIT_FAILURE;
-	}
 	simulator benchmark(p,s,out);
 
     // Agregar capas
@@ -89,7 +84,7 @@ int main(int argc, char **argv){
 
 	benchmark.read(train);
 	int cant = benchmark.train(epoch, success, 0.2);
-	benchmark.read(test);
+	//benchmark.read(test);
 	float rate = benchmark.test();
 
 	if(cant == -1)
@@ -99,7 +94,7 @@ int main(int argc, char **argv){
 
 	cerr << "Con los datos de prueba se obtuvo " << rate << " de error" <<endl;
 
-	pclose(out);
+	if(out) pclose(out);
 	return EXIT_SUCCESS;
 }
 
