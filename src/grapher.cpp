@@ -64,10 +64,10 @@ void init(){
 }
 
 void display(){
-	glClear(GL_COLOR_BUFFER_BIT);
-	glStencilFunc(GL_EQUAL, 0, ~0);
-	glAccum(GL_RETURN, 1);
-	glStencilFunc(GL_EQUAL, 1, ~0);
+	glClear(GL_COLOR_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
+	//glStencilFunc(GL_EQUAL, 0, ~0);
+	//glAccum(GL_RETURN, 1);
+	//glStencilFunc(GL_EQUAL, 1, ~0);
 
 	draw(-1);
 	glutSwapBuffers();
@@ -133,9 +133,9 @@ void wait_for_input(){
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	if(not cin){
 		glutIdleFunc(NULL);
-	   last = true;
-	   glutPostRedisplay();
-	   return;
+		last = true;
+		glutPostRedisplay();
+		return;
 	}
 
 	points.resize(n, vector<float>(2));

@@ -62,10 +62,12 @@ void simulator::read(istream &in){
 
 bool simulator::done(float success, float tol){
 	float error = test();
-	return error<tol;
+	//return error<tol;
+	return error>success;
 }
 
 float simulator::test(){ //devolver el error en las salidas
+	#if 0
 	vector error(input.size());
 
 	for(size_t K=0; K<input.size(); ++K){
@@ -75,6 +77,16 @@ float simulator::test(){ //devolver el error en las salidas
 		error[K] = math::norm1( sal-result[K] );
 	}
 	return math::norm1(error)/error.size();
+	#else
+	int acierto=0;
+	for(size_t K=0; K<input.size(); ++K){
+		float sal=red.output(input[K])[0];
+		if( math::sign(sal) == math::sign(result[K][0]) )
+			acierto++;
+	}
+	return 1-float(acierto)/input.size();
+	#endif
+
 }
 
 int simulator::train(size_t cant, float success_rate, float error_umbral){
