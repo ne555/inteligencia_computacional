@@ -84,7 +84,7 @@ float simulator::test(){ //devolver el error en las salidas
 		if( math::sign(sal) == math::sign(result[K][0]) )
 			acierto++;
 	}
-	return 1-float(acierto)/input.size();
+	return float(acierto)/input.size();
 	#endif
 
 }

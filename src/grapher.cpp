@@ -69,7 +69,10 @@ void display(){
 	//glAccum(GL_RETURN, 1);
 	//glStencilFunc(GL_EQUAL, 1, ~0);
 
+	glColor3fv(blue);
 	draw(-1);
+	glColor3fv(red);
+	draw(1);
 	glutSwapBuffers();
 
 }
