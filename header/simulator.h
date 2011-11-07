@@ -14,7 +14,8 @@ public:
 	typedef std::vector<network> container;
 
 	simulator(size_t percepciones, size_t salidas, FILE *out=NULL);
-	void read(std::istream &in);
+	//void read(std::istream &in);
+	void read(std::istream &pattern, std::istream &label);
 
 	value_type test();
 	int train(size_t cant, float success_rate, float error);
@@ -31,6 +32,8 @@ public:
 		cerr << "result " << result.size() << 'x' << result[0].size() << '\n';
 		red.structure();
 	}
+
+	void classify(std::ostream &);
 
 private:
 	bool done(float success, float error);

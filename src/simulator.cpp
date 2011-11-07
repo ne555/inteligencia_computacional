@@ -1,6 +1,7 @@
 #include <iostream>
 #include <sstream>
 #include <cstdio>
+#include <cstdlib>
 #include <valarray>
 #include "simulator.h"
 #include "capa.h"
@@ -21,43 +22,41 @@ void simulator::addlayer(size_t n, float alpha, float momentum){
 	red.addlayer(n,alpha,momentum);
 }
 
-void simulator::read(istream &in){
-	size_t patrones;
-	in >> patrones;
+void simulator::read(std::istream &pattern, std::istream &label){
+	cerr << "Inicio de la lectura\n";
+	size_t patrones = 60e3, im_size=28*28; //60e3
+
 	input.resize(patrones, vector(percepciones+1));
-	result.resize(patrones, vector(salidas+1) );
+	result.resize(patrones, vector(-1, salidas+1) );
+
+	unsigned char *buff_pattern = new unsigned char [patrones*im_size];
+	unsigned char *buff_label = new unsigned char [patrones];
+
+	pattern.read( (char*) buff_pattern, patrones*im_size );
+	label.read( (char*) buff_label, patrones );
 
 	for(size_t K=0; K<patrones; ++K){
-		for(size_t L=0; L<percepciones; ++L){
-			in >> input[K][L];
-			in.ignore(); //csv o ssv funciona
-		}
+		for(size_t L=0; L<percepciones; ++L)
+			input[K][L] = buff_pattern[K*percepciones + L];
 		
-		for(size_t L=0; L<salidas; ++L){
-			in >> result[K][L];
-			in.ignore(); //csv o ssv funciona
-		}
+		//result[K][0] = (buff_label[K] == 1) ? 1: -1; //solo clasifica los '1'
+		result[K][ buff_label[K] ] = 1;
 
 		input[K][percepciones] = 1; //entrada extendida
 		result[K][salidas] = 1; //entrada extendida
 	}
 
 	if(out){
-		#if 0
-		ostringstream salida;
-		salida << input.size() << endl;
-		for(size_t K=0; K<patrones; ++K){
-			salida << input[K][0] << ' ' << input[K][1] << ' ';
-			salida << result[K][0] << '\n';
-		}
-		fwrite( salida.str().c_str(), salida.str().size(), sizeof(char), out ); 
-		#else
 		fprintf(out, "%lu\n", input.size());
 		for(size_t K=0; K<input.size(); ++K)
 			fprintf( out, "%f %f %d\n", input[K][0], input[K][1], math::sign(result[K][0]) );
 		fflush(out);
-		#endif
 	}
+
+	delete [] buff_pattern;
+	delete [] buff_label;
+
+	cerr << "Fin de la lectura\n";
 }
 
 bool simulator::done(float success, float tol){
@@ -66,31 +65,28 @@ bool simulator::done(float success, float tol){
 	return error>success;
 }
 
-float simulator::test(){ //devolver el error en las salidas
-	#if 0
-	vector error(input.size());
+bool equal_sign( const simulator::vector &a, const simulator::vector &b){
+	for(size_t K=0; K<a.size(); ++K)
+		if( math::sign(a[K]) != math::sign(b[K]) )
+			return false;
+	return true;
+}
 
-	for(size_t K=0; K<input.size(); ++K){
-		vector sal=red.output(input[K]);
-		//if(sal.size() != result[K].size())
-		//	throw "simulator::test";
-		error[K] = math::norm1( sal-result[K] );
-	}
-	return math::norm1(error)/error.size();
-	#else
+float simulator::test(){ //devolver el error en las salidas
 	int acierto=0;
 	for(size_t K=0; K<input.size(); ++K){
-		float sal=red.output(input[K])[0];
-		if( math::sign(sal) == math::sign(result[K][0]) )
+		vector sal=red.output(input[K]);
+		if( equal_sign(sal, result[K]) )
 			acierto++;
 	}
+	cerr << float(acierto)/input.size() << '\n';
 	return float(acierto)/input.size();
-	#endif
-
 }
 
 int simulator::train(size_t cant, float success_rate, float error_umbral){
+	cerr << "Inicio del entrenamiento\n";
 	for(size_t epoch=0; epoch<cant; ++epoch){
+		cerr << "Iter " << epoch << ' ';
 		for(size_t K=0; K<input.size(); ++K)
 			red.train(input[K], result[K]);
 		
@@ -120,5 +116,18 @@ void simulator::graph(){
 	}
 	fflush(out);
 	//fwrite( salida.str().c_str(), salida.str().size(), sizeof(char), out ); 
+}
+
+void simulator::classify(std::ostream &output){
+	for(size_t K=0; K<input.size(); ++K){
+		vector sal=red.output(input[K]);
+		size_t L;
+		for(L=0; L<sal.size()-1; ++L)
+			if(sal[L] > 0){
+				output << L << ' ';
+				break;
+			}
+		if(L==sal.size()-1) output <<"* ";
+	}
 }
 

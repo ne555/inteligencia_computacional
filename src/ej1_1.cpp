@@ -48,11 +48,11 @@ int main(int argc, char **argv){
     const char *train_file=NULL, *test_file=NULL;
 	FILE *out=NULL;
 	int option;
-	while( (option=getopt(argc, argv, "a:e:gm:n:p:s:h")) != -1 ){
+	while( (option=getopt(argc, argv, "a:e:m:n:p:s:h")) != -1 ){
 		switch(option){
 		case 'a': alpha=convert<float>(optarg); break;
 		case 'e': train_file=optarg; break;
-		case 'g': if(not out) out = popen("./bin/grapher", "w");break;
+		//case 'g': if(not out) out = popen("./bin/grapher", "w");break;
 		case 'm': momentum=convert<float>(optarg); break;
 		case 'n': epoch=convert<int>(optarg); break;
 		case 'p': test_file=optarg; break;
@@ -61,13 +61,14 @@ int main(int argc, char **argv){
 		default: usage(EXIT_FAILURE);
 		}
 	}
-
+/*
     if (train_file==NULL||test_file==NULL) {
         cerr << "Hay que indicar los archivos de entrenamiento y prueba" << endl;
         return EXIT_FAILURE;
     }
-	ifstream train(train_file), test(test_file);
+*/
 
+	//ifstream train(train_file, ios::binary), test(test_file, ios::binary);
 	cin>>p>>s;
 
 	simulator benchmark(p,s,out);
@@ -82,19 +83,24 @@ int main(int argc, char **argv){
 	}
 	benchmark.addlayer(s,alpha,momentum);
 
-	benchmark.read(train);
+	ifstream train_image("mnist_train_image", ios::binary), train_label("mnist_train_label", ios::binary);
+	train_image.seekg(sizeof(int)*4, ios::beg);
+	train_label.seekg(sizeof(int)*2, ios::beg);
+	benchmark.read( train_image, train_label );
+
 	int cant = benchmark.train(epoch, success, 0.2);
 	//benchmark.read(test);
-	float rate = benchmark.test();
+	//float rate = benchmark.test();
 
 	if(cant == -1)
 		cerr << "No hubo convergencia" <<endl;
 	else
 		cerr << "Convergencia en " << cant << " epocas" << endl;
 
-	cerr << "Con los datos de prueba se obtuvo " << rate << " de error" <<endl;
+	benchmark.classify(cout);
+	//cerr << "Con los datos de prueba se obtuvo " << rate << " de error" <<endl;
 
-	if(out) pclose(out);
+	//if(out) pclose(out);
 	return EXIT_SUCCESS;
 }
 
