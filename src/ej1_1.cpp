@@ -44,7 +44,7 @@ int main(int argc, char **argv){
 	//srand(42);
 
 	int p,s,epoch=1500;
-	float success=0.90, alpha=0.07, momentum=0.03;
+	float success=0.90, alpha=0.7, momentum=0.3;
     const char *train_file=NULL, *test_file=NULL;
 	FILE *out=NULL;
 	int option;
@@ -61,12 +61,13 @@ int main(int argc, char **argv){
 		default: usage(EXIT_FAILURE);
 		}
 	}
-
+/*
     if (train_file==NULL||test_file==NULL) {
         cerr << "Hay que indicar los archivos de entrenamiento y prueba" << endl;
         return EXIT_FAILURE;
     }
-	ifstream train(train_file), test(test_file);
+*/
+//	ifstream train(train_file), test(test_file);
 
 	cin>>p>>s;
 
@@ -82,7 +83,17 @@ int main(int argc, char **argv){
 	}
 	benchmark.addlayer(s,alpha,momentum);
 
-	benchmark.read(train);
+	ifstream train_data("mnist_train_image", ios::binary), train_label("mnist_train_label", ios::binary);
+	int dummy;
+
+	train_label.read( (char*)&dummy, sizeof(dummy) );
+	
+	for(size_t K=0; K<4; ++K)
+		train_data.read( (char*)&dummy, sizeof(dummy) );
+	//train_data.seekg(16, ios::beg);
+	//train_label.seekg(8, ios::beg);
+	//benchmark.read(train);
+	benchmark.read(train_data, train_label);
 	int cant = benchmark.train(epoch, success, 0.2);
 	//benchmark.read(test);
 	float rate = benchmark.test();
@@ -94,7 +105,12 @@ int main(int argc, char **argv){
 
 	cerr << "Con los datos de prueba se obtuvo " << rate << " de error" <<endl;
 
+	//mostrar clasificacion
+	benchmark.classify(cout);
+
 	if(out) pclose(out);
+
+
 	return EXIT_SUCCESS;
 }
 
