@@ -98,8 +98,12 @@ float simulator::test(){ //devolver el error en las salidas
 		if( equal_sign(sal, result[K]) )
 			acierto++;
 	}
+<<<<<<< HEAD
 	cerr << float(acierto)/input.size() << '\n';
 	return float(acierto)/input.size();
+=======
+	return 1-float(acierto)/input.size();
+>>>>>>> parent of 48a1053... Success
 	#endif
 
 }
