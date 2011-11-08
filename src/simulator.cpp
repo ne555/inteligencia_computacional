@@ -24,29 +24,22 @@ void simulator::addlayer(size_t n, float alpha, float momentum){
 void simulator::read(std::istream &pattern, std::istream &label){
 	cerr << "Inicia la lectura\n";
 	const size_t patrones = 60000;
-	//in >> patrones;
 	input.resize(patrones, vector(percepciones+1));
 	result.resize(patrones, vector(-1, salidas+1) );
 
-	//unsigned char buffer[ patrones*28*28 ]; //demasiado para el stack
 	size_t im_size = 28*28, size = patrones*im_size;
-	char *buffer_patrones = new char [size];
+	char *buffer_patrones = new char [size];//demasiado para el stack
 	char *buffer_label = new char [patrones];
 
 	pattern.read( buffer_patrones, size);
 	label.read( buffer_label, patrones);
-#if 0
-	for(size_t K=0; K<patrones; ++K)
-		cout << int (buffer_label[K]) << ' ';
-	
-	cout << endl;
-#else
+
 	for(size_t K=0; K<patrones; ++K){
 		for(size_t L=0; L<percepciones; ++L)
 			input[K][L] = buffer_patrones[K*im_size+L];
 		
-		result[K][0] = (buffer_label[K] == 1)? 1: -1;
-		//result[K][ buffer_label[K] ] = 1;
+		//result[K][0] = (buffer_label[K] == 1)? 1: -1;
+		result[K][ buffer_label[K] ] = 1;
 
 		input[K][percepciones] = 1; //entrada extendida
 		result[K][salidas] = 1; //entrada extendida
@@ -60,7 +53,6 @@ void simulator::read(std::istream &pattern, std::istream &label){
 	}
 
 	cerr << "Fin de la lectura\n";
-#endif
 
 	delete [] buffer_patrones;
 	delete [] buffer_label;
@@ -68,7 +60,6 @@ void simulator::read(std::istream &pattern, std::istream &label){
 
 bool simulator::done(float success, float tol){
 	float error = test();
-	//return error<tol;
 	return error>success;
 }
 
@@ -80,17 +71,6 @@ static bool equal_sign( const simulator::vector &a, const simulator::vector &b){
 }
 
 float simulator::test(){ //devolver el error en las salidas
-	#if 0
-	vector error(input.size());
-
-	for(size_t K=0; K<input.size(); ++K){
-		vector sal=red.output(input[K]);
-		//if(sal.size() != result[K].size())
-		//	throw "simulator::test";
-		error[K] = math::norm1( sal-result[K] );
-	}
-	return math::norm1(error)/error.size();
-	#else
 	int acierto=0;
 	for(size_t K=0; K<input.size(); ++K){
 		vector sal=red.output(input[K]);
@@ -98,14 +78,8 @@ float simulator::test(){ //devolver el error en las salidas
 		if( equal_sign(sal, result[K]) )
 			acierto++;
 	}
-<<<<<<< HEAD
-	cerr << float(acierto)/input.size() << '\n';
-	return float(acierto)/input.size();
-=======
+	cerr <<  1-float(acierto)/input.size() << '\n';
 	return 1-float(acierto)/input.size();
->>>>>>> parent of 48a1053... Success
-	#endif
-
 }
 
 int simulator::train(size_t cant, float success_rate, float error_umbral){
@@ -126,21 +100,16 @@ int simulator::train(size_t cant, float success_rate, float error_umbral){
 void simulator::graph(){
 	const size_t n=200;
 	const float limit=2.f;
-	//ostringstream salida;
-	//salida << n*n << endl; //solo se visualiza con dos percepciones
 	fprintf(out, "%lu\n", n*n);
 	for(size_t K=0; K<n; ++K){
 		for(size_t L=0; L<n; ++L){
 			float x = K/float(n)*limit*2 - limit, y = L/float(n)*limit*2 - limit;
 			vector v(3);
 			v[0] = x; v[1] = y; v[2] = 1;
-	//		salida << x << ' ' << y << ' ';
-	//		salida << math::sign(red.output(v)[0]) << endl;
 			fprintf( out, "%f %f %d\n", v[0], v[1], math::sign(red.output(v)[0]) );
 		}
 	}
 	fflush(out);
-	//fwrite( salida.str().c_str(), salida.str().size(), sizeof(char), out ); 
 }
 
 void simulator::classify(std::ostream &output){
