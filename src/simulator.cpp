@@ -17,30 +17,25 @@ simulator::simulator(size_t percepciones, size_t salidas, FILE *out):
 	red(percepciones, salidas),
 	out(out){}
 
-void simulator::addlayer(size_t n, float alpha, float momentum){
+void simulator::addlayer(size_t n, value_type alpha, value_type momentum){
 	red.addlayer(n,alpha,momentum);
 }
 
-void simulator::read(std::istream &pattern, std::istream &label){
-	cerr << "Inicia la lectura\n";
-	const size_t patrones = 60000;
+void simulator::read(std::istream &in){
+	int patrones;
+	in >> patrones;
+	input.clear(); result.clear();
 	input.resize(patrones, vector(percepciones+1));
 	result.resize(patrones, vector(-1, salidas+1) );
 
-	size_t im_size = 28*28, size = patrones*im_size;
-	char *buffer_patrones = new char [size];//demasiado para el stack
-	char *buffer_label = new char [patrones];
-
-	pattern.read( buffer_patrones, size);
-	label.read( buffer_label, patrones);
-
 	for(size_t K=0; K<patrones; ++K){
 		for(size_t L=0; L<percepciones; ++L)
-			input[K][L] = buffer_patrones[K*im_size+L];
-		
-		//result[K][0] = (buffer_label[K] == 1)? 1: -1;
-		result[K][ buffer_label[K] ] = 1;
+			in >> input[K][L];
 
+		int clase;
+		in>>clase;
+		result[K][clase] = 1;
+		
 		input[K][percepciones] = 1; //entrada extendida
 		result[K][salidas] = 1; //entrada extendida
 	}
@@ -51,11 +46,6 @@ void simulator::read(std::istream &pattern, std::istream &label){
 			fprintf( out, "%f %f %d\n", input[K][0], input[K][1], math::sign(result[K][0]) );
 		fflush(out);
 	}
-
-	cerr << "Fin de la lectura\n";
-
-	delete [] buffer_patrones;
-	delete [] buffer_label;
 }
 
 bool simulator::done(float success, float tol){
@@ -78,8 +68,8 @@ float simulator::test(){ //devolver el error en las salidas
 		if( equal_sign(sal, result[K]) )
 			acierto++;
 	}
-	cerr <<  1-float(acierto)/input.size() << '\n';
-	return 1-float(acierto)/input.size();
+	cerr <<  acierto << ' ' << float(acierto)/input.size() << '\n';
+	return float(acierto)/input.size();
 }
 
 int simulator::train(size_t cant, float success_rate, float error_umbral){
@@ -88,8 +78,7 @@ int simulator::train(size_t cant, float success_rate, float error_umbral){
 		for(size_t K=0; K<input.size(); ++K)
 			red.train(input[K], result[K]);
 		
-		if(out)
-			graph();
+		if(out) graph();
 		cerr << "T " << epoch << ' ' ;
 		if( done(success_rate, error_umbral) )
 			return epoch+1;
@@ -113,8 +102,8 @@ void simulator::graph(){
 }
 
 void simulator::classify(std::ostream &output){
-	for(size_t K=0; K<input.size(); ++K){
-		vector sal=red.output(input[K]);
+	for(size_t L=0; L<input.size(); ++L){
+		vector sal=red.output(input[L]);
 		size_t K;
 		for(K=0; K<sal.size()-1; ++K)
 			if(sal[K] > 0){
@@ -122,7 +111,7 @@ void simulator::classify(std::ostream &output){
 				break;
 			}
 		if(K == sal.size()-1) 
-			output << "* ";
+			output << K << ' ';
 	}
 }
 

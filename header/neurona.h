@@ -15,7 +15,7 @@
 
 class neurona{
 public:
-	typedef float value_type;
+	typedef double value_type;
 	typedef std::valarray<value_type> vector;
 
 	neurona(int p, value_type alpha, value_type momentum); 

@@ -84,7 +84,7 @@ void fixed_background(){
 
 	axis(black);
 	glColor3fv(red); draw(1);
-	glColor3fv(dark_blue); draw(-1);
+	glColor3fv(dark_blue); draw(0);
 
 	glColor3fv(blue);
 

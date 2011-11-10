@@ -14,10 +14,9 @@ public:
 	typedef std::vector<network> container;
 
 	simulator(size_t percepciones, size_t salidas, FILE *out=NULL);
-	//void read(std::istream &in);
-	void read(std::istream &pattern, std::istream &label);
+	void read(std::istream &in);
 
-	value_type test();
+	float test();
 	int train(size_t cant, float success_rate, float error);
 
 	//agrega al final. La ultima debe ser la network de salida (error prone)

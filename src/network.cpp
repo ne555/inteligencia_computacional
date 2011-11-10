@@ -18,7 +18,7 @@ network::network(size_t percepciones, size_t salidas):
 	cache_delta.push_back( vector(cant_entradas+1) );
 }
 
-void network::addlayer(size_t neuronas, float alpha, float momentum){
+void network::addlayer(size_t neuronas, value_type alpha, value_type momentum){
 	size_t n_entradas;
 	if( red.empty() )
 		n_entradas = cant_entradas;
